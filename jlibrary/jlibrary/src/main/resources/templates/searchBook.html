@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<th:block th:with="UrlConsts=${T(jp.co.jwebgate.jlibrary.consts.UrlConsts)}">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <!-- BootStrapのCSSの読み込み -->
+    <link href="/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQueryの読み込み -->
+    <script src="/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <!-- BootStrapのJSの読み込み -->
+    <script src="/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <title>図書検索</title>
+  </head>
+
+  <body>
+    <a sec:authorize="hasRole('ADMIN')" th:href="@{${UrlConsts.LOGOUT}}">ログアウトA</a>
+    <a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.LOGOUT}}">ログアウトS</a>
+    <a sec:authorize="hasRole('GENERAL')" th:href="@{${UrlConsts.LOGOUT}}">ログアウトG</a>
+    
+    <a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.STAFF_USER_LIST}}">職員一覧S</a>
+    <a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.GENERAL_USER_LIST}}">利用者一覧S</a>
+    <a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.REGISTER_BOOK}}">図書登録S</a>
+    
+    
+    <h1>図書検索</h1>
+    <form class="form" th:action="@{${UrlConsts.SEARCH_BOOK} + '/search'}" th:method="POST" th:object="${form}">
+     <div>
+       <input type="text" th:field="*{title}" th:placeholder="${message}">
+     </div>
+     <div>
+       <button type="submit">検索</button>
+     </div>
+   </form>
+  </body>
+</html>

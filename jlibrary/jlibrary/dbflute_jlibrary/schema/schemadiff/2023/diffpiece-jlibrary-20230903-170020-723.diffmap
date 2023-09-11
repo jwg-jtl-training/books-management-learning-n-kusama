@@ -1,0 +1,26 @@
+map:{
+    ; 2023/09/03 17:00:20.723 = map:{
+        ; diffDate = 2023/09/03 17:00:20.723
+        ; diffAuthor = santa
+        ; tableDiff = map:{
+            ; GENRE = map:{
+                ; tableName = GENRE
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; PARENT_GENRE_ID = map:{
+                        ; columnName = PARENT_GENRE_ID
+                        ; diffType = CHANGE
+                        ; dbTypeDiff = map:{
+                            ; next = INT
+                            ; previous = VARCHAR
+                        }
+                        ; columnSizeDiff = map:{
+                            ; next = 10
+                            ; previous = 3
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

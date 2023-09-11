@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+  <th:block th:with="UrlConsts=${T(jp.co.jwebgate.jlibrary.consts.UrlConsts)}">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" th:href="@{/css/style.css}">
+      <!-- BootStrapのCSSの読み込み -->
+      <link href="/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- jQueryの読み込み -->
+      <script src="/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+      <!-- BootStrapのJSの読み込み -->
+      <script src="/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+      <title>新規図書登録</title>
+      <script th:inline="javascript">
+        function selectGenre(){
+          let obj = $('input:radio[name="genre-radio"]:checked');
+          $('#genre-code').text(obj.attr('genreCode'));
+          $('#genre-name').text(obj.attr('genreName'));
+          $('#genreId').val(obj.val());
+        }
+        
+        function generateControlNumber(){
+          let url = /*[[@{${UrlConsts.REGISTER_BOOK} + '/generate'}]]*/"url"
+          $.ajax({
+              type : "GET",
+              url : url,
+              dataType : "text",
+              success : function(data, status, xhr) {
+                // div#resultBoxへ結果(HTML)を反映
+                $('#controlNumber').val(data);
+                $('#control-number').text(data);
+              },
+              error : function(XMLHttpRequest, status, errorThrown) {
+              // エラー処理
+              }
+          });
+        }
+      </script>
+    </head>
+
+    <body class="container">
+      <h1>新規図書登録</h1>
+      <form class="form" th:action="@{${UrlConsts.REGISTER_BOOK}}" th:method="POST" th:object="${form}">
+        <div class="col-12 row pt-4">
+          <span class="col-1">
+            <label class="form-label">タイトル</label>
+          </span>
+          <span class="col-5">
+           <input class="form-control" type="text" th:field="*{title}">
+          </span>
+        </div>
+        <div class="col-12 row pt-4">
+          <span class="col-1">
+            <label class="form-label">著者</label>
+          </span>
+          <span class="col-5">
+            <input class="form-control" type="text" th:field="*{author}">
+          </span>
+        </div>
+        <div class="col-12 row pt-4">
+          <span class="col-1">
+            <label class="form-label">ISBN-10</label>
+          </span>
+          <span class="col-5">
+            <input class="form-control" type="text" th:field="*{isbn10}">
+          </span>
+          <span class="col-1">
+            <label class="form-label">ISBN-13</label>
+          </span>
+          <span class="col-5">
+            <input class="form-control" type="text" th:field="*{isbn13}">
+          </span>
+        </div>
+        <div class="col-12 row pt-4">
+          <span class="col-1">
+            <label class="form-label">出版社</label>
+          </span>
+          <span class="col-5">
+            <input class="form-control" type="text" th:field="*{publisher}">
+          </span>
+        </div>
+        <div class="col-12 row pt-4">
+          <span class="col-1">
+            <label class="form-label">ジャンル</label>
+          </span>
+          <span class="col-2 pe-0">
+            <button type="button" class="btn btn-info col-12" data-bs-toggle="modal" data-bs-target="#genreModal">ジャンル選択</button>
+          </span>
+          <span id="genre-code" class="col-1 border rounded-2 d-flex align-items-center"></span>
+          <span id="genre-name" class="col-7 border rounded-2 d-flex align-items-center"></span>
+          <input class="form-control" type="hidden" th:field="*{genreId}">
+        </div>
+        <div class="col-12 row pt-4">
+          <span class="col-1">
+            <label class="form-label">棚番号</label>
+          </span>
+          <span class="col-5">
+            <input class="form-control" type="text" th:field="*{shelfNumber}">
+          </span>
+          <span class="col-1">
+            <label class="form-label">管理番号</label>
+          </span>
+          <span id="control-number" class="col-4 border rounded-2 d-flex align-items-center">
+          </span>
+          <input class="form-control" type="hidden" th:field="*{controlNumber}">
+          <span class="col-1">
+            <button class="btn btn-warning" type="button" onclick="generateControlNumber()">生成</button>
+          </span>
+        </div>
+        <div class="d-md-flex justify-content-md-end pt-5">
+          <a class="btn btn-secondary m-1" type="submit" th:href="@{${UrlConsts.SEARCH_BOOK}}">キャンセル</a>
+          <button class="btn btn-primary m-1" type="submit">登録</button>
+        </div>
+      </form>
+      <!-- Modal -->
+      <div class="modal fade" id="genreModal" tabindex="-1" aria-labelledby="genreModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="genreModalLabel">ジャンルを選択してください。</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <th:block th:each="parentDto : ${genreDtoList}">
+                <div class="bg-info bg-gradient">
+                  <span>
+                    <input class="form-check-input" type="radio" name="genre-radio" th:value="${parentDto.id}"
+                      th:id="${parentDto.id}" th:genreCode="${parentDto.genreCode}" th:genreName="${parentDto.genreName}"/>
+                    <label class="form-check-label" th:for="${parentDto.id}"
+                      th:text="${parentDto.genreCode + ' ' + parentDto.genreName}"></label>
+                  </span>
+                </div>
+                <th:block th:each="dto : ${parentDto.childrenGenreDtoList}">
+                  <div th:if="${dto.genreName != null}" class="bg-light bg-gradient">
+                    <span>
+                      <input class="form-check-input" type="radio" name="genre-radio" th:value="${dto.id}"
+                        th:id="${dto.id}" th:genreCode="${dto.genreCode}" th:genreName="${dto.genreName}"/>
+                      <label class="form-check-label" th:for="${dto.id}"
+                        th:text="${dto.genreCode + ' ' + dto.genreName}"></label>
+                    </span>
+                  </div>
+                </th:block>
+                <br>
+                </dvi>
+              </th:block>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+              <button type="button" class="btn btn-primary" onClick="selectGenre()" data-bs-dismiss="modal">選択</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+  </html>

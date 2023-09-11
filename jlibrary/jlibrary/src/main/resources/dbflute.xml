@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//DBFLUTE//DTD LastaDi 1.0//EN"
+	"http://dbflute.org/meta/lastadi10.dtd">
+<components namespace="dbflute">
+	<include condition="#exists('#path')" path="my_included_dbflute.xml"/>
+	<include path="rdb.xml"/>
+
+	<!-- The components of DBFlute Runtime. -->
+	<component name="introduction" class="jp.co.jwebgate.jlibrary.dbflute.allcommon.DBFluteInitializer"/>
+	<component name="invokerAssistant" class="jp.co.jwebgate.jlibrary.dbflute.allcommon.ImplementedInvokerAssistant"/>
+	<component name="behaviorCommandInvoker" class="org.dbflute.bhv.core.BehaviorCommandInvoker"/>
+	<component name="behaviorSelector" class="jp.co.jwebgate.jlibrary.dbflute.allcommon.ImplementedBehaviorSelector"/>
+	<component name="commonColumnAutoSetupper" class="jp.co.jwebgate.jlibrary.dbflute.allcommon.ImplementedCommonColumnAutoSetupper"/>
+
+	<!-- The components of Behavior. -->
+	<component name="bookBhv" class="jp.co.jwebgate.jlibrary.dbflute.exbhv.BookBhv"/>
+	<component name="generalUserBhv" class="jp.co.jwebgate.jlibrary.dbflute.exbhv.GeneralUserBhv"/>
+	<component name="roleBhv" class="jp.co.jwebgate.jlibrary.dbflute.exbhv.RoleBhv"/>
+	<component name="staffUserBhv" class="jp.co.jwebgate.jlibrary.dbflute.exbhv.StaffUserBhv"/>
+	<component name="userRoleMapBhv" class="jp.co.jwebgate.jlibrary.dbflute.exbhv.UserRoleMapBhv"/>
+</components>

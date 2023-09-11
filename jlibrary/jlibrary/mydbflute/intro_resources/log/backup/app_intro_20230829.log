@@ -1,0 +1,1125 @@
+2023-08-29 18:13:32,874 [main] INFO  (LastaDiProperties@deriveSmartDeployModeFromLocation():167) - ...Loading specified properties and get by the key: intro_env_production.properties, lasta_di.smart.deploy.mode
+2023-08-29 18:13:32,881 [main] INFO  (SmartDeployMode@setValue():62) - ...Setting smart deploy mode: cool
+2023-08-29 18:13:32,900 [main] INFO  (LaContainerFactory@show():158) - ...Reading lasta_di.xml
+2023-08-29 18:13:32,931 [main] INFO  (LaContainerFactory@show():158) - ...Reading   redefiner.xml
+2023-08-29 18:13:33,014 [main] INFO  (LaContainerFactory@show():158) - ...Reading   smartdeploy.xml
+2023-08-29 18:13:33,023 [main] INFO  (LaContainerFactory@show():158) - ...Reading     smart/cooldeploy.xml
+2023-08-29 18:13:33,045 [main] INFO  (LaContainerFactory@show():158) - ...Reading app.xml
+2023-08-29 18:13:33,051 [main] INFO  (LaContainerFactory@show():158) - ...Reading   convention.xml
+2023-08-29 18:13:33,058 [main] INFO  (LaContainerFactory@show():158) - ...Reading     embedded_convention.xml
+2023-08-29 18:13:33,085 [main] INFO  (LaContainerFactory@show():158) - ...Reading   dbflute.xml
+2023-08-29 18:13:33,090 [main] INFO  (LaContainerFactory@show():158) - ...Reading     rdb.xml
+2023-08-29 18:13:33,095 [main] INFO  (LaContainerFactory@show():158) - ...Reading       jta.xml
+2023-08-29 18:13:33,115 [main] INFO  (LaContainerFactory@show():158) - ...Reading       jdbc.xml
+2023-08-29 18:13:33,119 [main] INFO  (LaContainerFactory@show():158) - ...Reading         jta.xml (recycle)
+2023-08-29 18:13:33,120 [main] INFO  (LaContainerFactory@show():158) - ...Reading         lastaflute_assist.xml
+2023-08-29 18:13:33,125 [main] INFO  (LaContainerFactory@show():158) - ...Reading           lastaflute_director.xml
+2023-08-29 18:13:33,182 [main] INFO  (LaContainerFactory@show():158) - ...Reading       tx_aop.xml
+2023-08-29 18:13:33,187 [main] INFO  (LaContainerFactory@show():158) - ...Reading         jta.xml (recycle)
+2023-08-29 18:13:33,262 [main] INFO  (LaContainerFactory@show():158) - ...Reading   lastaflute.xml
+2023-08-29 18:13:33,267 [main] INFO  (LaContainerFactory@show():158) - ...Reading     lastaflute_core.xml
+2023-08-29 18:13:33,272 [main] INFO  (LaContainerFactory@show():158) - ...Reading       lastaflute_assist.xml (recycle)
+2023-08-29 18:13:33,314 [main] INFO  (LaContainerFactory@show():158) - ...Reading     lastaflute_db.xml
+2023-08-29 18:13:33,319 [main] INFO  (LaContainerFactory@show():158) - ...Reading       jta.xml (recycle)
+2023-08-29 18:13:33,323 [main] INFO  (LaContainerFactory@show():158) - ...Reading     lastaflute_web.xml
+2023-08-29 18:13:33,328 [main] INFO  (LaContainerFactory@show():158) - ...Reading       lastaflute_core.xml (recycle)
+2023-08-29 18:13:33,328 [main] INFO  (LaContainerFactory@show():158) - ...Reading       lastaflute_db.xml (recycle)
+2023-08-29 18:13:33,329 [main] INFO  (LaContainerFactory@show():158) - ...Reading       convention.xml (recycle)
+2023-08-29 18:13:33,382 [main] INFO  (LaContainerFactory@show():158) - ...Reading smart/cooldeploy-autoregister.xml
+2023-08-29 18:13:33,387 [main] INFO  (LaContainerFactory@show():158) - ...Reading   convention.xml (recycle)
+2023-08-29 18:13:33,388 [main] INFO  (LaContainerFactory@show():158) - ...Reading   creator.xml
+2023-08-29 18:13:33,394 [main] INFO  (LaContainerFactory@show():158) - ...Reading     convention.xml (recycle)
+2023-08-29 18:13:33,395 [main] INFO  (LaContainerFactory@show():158) - ...Reading     customizer.xml
+2023-08-29 18:13:33,402 [main] INFO  (LaContainerFactory@show():158) - ...Reading       lastafw_customizer.xml
+2023-08-29 18:13:33,417 [main] INFO  (LaContainerFactory@show():158) - ...Reading       embedded_customizer.xml
+2023-08-29 18:13:33,422 [main] INFO  (LaContainerFactory@show():158) - ...Reading         tx_customizer.xml
+2023-08-29 18:13:33,443 [main] INFO  (LaContainerFactory@show():158) - ...Reading     lastafw_creator.xml
+2023-08-29 18:13:33,449 [main] INFO  (LaContainerFactory@show():158) - ...Reading       convention.xml (recycle)
+2023-08-29 18:13:33,450 [main] INFO  (LaContainerFactory@show():158) - ...Reading       customizer.xml (recycle)
+2023-08-29 18:13:33,468 [main] INFO  (LaContainerFactory@show():158) - ...Reading     embedded_creator.xml
+2023-08-29 18:13:33,473 [main] INFO  (LaContainerFactory@show():158) - ...Reading       convention.xml (recycle)
+2023-08-29 18:13:33,473 [main] INFO  (LaContainerFactory@show():158) - ...Reading       customizer.xml (recycle)
+2023-08-29 18:13:33,486 [main] INFO  (LaContainerFactory@show():158) - ...Reading   customizer.xml (recycle)
+2023-08-29 18:13:33,560 [main] INFO  (ObjectiveConfig@showBootLogging():242) - [Objective Config]
+2023-08-29 18:13:33,561 [main] INFO  (ObjectiveConfig@showBootLogging():243) -  intro_config.properties extends [intro_env_production.properties]
+2023-08-29 18:13:33,561 [main] INFO  (ObjectiveConfig@showBootLogging():246) -  checkImplicitOverride=true, propertyCount=20
+2023-08-29 18:13:33,568 [main] INFO  (HookedXADataSource@showBootLogging():78) - [XA DataSource]
+2023-08-29 18:13:33,569 [main] INFO  (HookedXADataSource@showBootLogging():79) -  driver: org.h2.Driver
+2023-08-29 18:13:33,569 [main] INFO  (HookedXADataSource@showBootLogging():80) -  url: jdbc:h2:mem:introdb;DB_CLOSE_DELAY=-1
+2023-08-29 18:13:33,569 [main] INFO  (HookedXADataSource@showBootLogging():81) -  newbornConnectionHook: null
+2023-08-29 18:13:33,580 [main] INFO  (HookedConnectionPool@showBootLogging():60) - [Connection Pool]
+2023-08-29 18:13:33,581 [main] INFO  (HookedConnectionPool@showBootLogging():61) -  maxPoolSize: 10
+2023-08-29 18:13:33,581 [main] INFO  (HookedConnectionPool@showBootLogging():62) -  minPoolSize: 0
+2023-08-29 18:13:33,582 [main] INFO  (HookedConnectionPool@showBootLogging():63) -  maxWait: 10000 milliseconds
+2023-08-29 18:13:33,582 [main] INFO  (HookedConnectionPool@showBootLogging():64) -  timeout: 600 seconds
+2023-08-29 18:13:33,584 [main] INFO  (DBFluteInitializer@announce():58) - ...Initializing DBFlute components
+2023-08-29 18:13:33,598 [main] INFO  (SimplePrimaryCipher@showBootLogging():80) - [Primary Cipher]
+2023-08-29 18:13:33,599 [main] INFO  (SimplePrimaryCipher@showBootLogging():81) -  invertibleCryptographer: {Blowfish, UTF-8}
+2023-08-29 18:13:33,599 [main] INFO  (SimplePrimaryCipher@showBootLogging():82) -  oneWayCryptographer: {SHA-256, UTF-8}
+2023-08-29 18:13:33,603 [main] INFO  (SimpleTimeManager@showBootLogging():111) - [Time Manager]
+2023-08-29 18:13:33,603 [main] INFO  (SimpleTimeManager@showBootLogging():112) -  businessTimeHandler: TypicalBusinessTimeHandler:{IntroTimeResourceProvider$$Lambda$156/0x000000012d9f6be0, IntroTimeResourceProvider$$Lambda$157/0x000000012d9f6fe8}
+2023-08-29 18:13:33,604 [main] INFO  (SimpleTimeManager@showBootLogging():116) -  currentIgnoreTransaction: false
+2023-08-29 18:13:33,604 [main] INFO  (SimpleTimeManager@showBootLogging():117) -  adjustTimeMillis: 0
+2023-08-29 18:13:33,605 [main] INFO  (SimpleTimeManager@showBootLogging():118) -  adjustAbsoluteMode: false
+2023-08-29 18:13:33,681 [main] INFO  (SimpleJsonManager@showBootLogging():147) - [JSON Manager]
+2023-08-29 18:13:33,682 [main] INFO  (SimpleJsonManager@showBootLogging():148) -  realJsonParser: GsonJsonEngine
+2023-08-29 18:13:33,685 [main] INFO  (ExceptionTranslator@showBootLogging():68) - [Exception Translator]
+2023-08-29 18:13:33,686 [main] INFO  (ExceptionTranslator@showBootLogging():69) -  exceptionTranslationProvider: null
+2023-08-29 18:13:33,690 [main] INFO  (SimpleAsyncManager@showBootLogging():242) - [Async Manager]
+2023-08-29 18:13:33,691 [main] INFO  (SimpleAsyncManager@showBootLogging():243) -  defaultConcurrentAsyncOption: {no option}
+2023-08-29 18:13:33,691 [main] INFO  (SimpleAsyncManager@showBootLogging():244) -  primaryExecutorService: ThreadPoolExecutor@7cd1ac19
+2023-08-29 18:13:33,691 [main] INFO  (SimpleAsyncManager@showBootLogging():245) -  secondaryExecutorService: ThreadPoolExecutor@3caa4757
+2023-08-29 18:13:33,692 [main] INFO  (SimpleAsyncManager@showBootLogging():246) -  tertiaryExecutorService: ThreadPoolExecutor@1804f60d
+2023-08-29 18:13:33,693 [main] INFO  (Postbox@showBootLogging():81) - [Postbox]
+2023-08-29 18:13:33,694 [main] INFO  (Postbox@showBootLogging():88) -  postOffice: *no used
+2023-08-29 18:13:33,706 [main] INFO  (ActionPathResolver@showBootLogging():95) - [Action Resolver]
+2023-08-29 18:13:33,706 [main] INFO  (ActionPathResolver@showBootLogging():96) -  actionAdjustmentProvider: org.dbflute.intro.mylasta.direction.sponsor.IntroActionAdjustmentProvider@1af7f54a
+2023-08-29 18:13:33,707 [main] INFO  (SimpleResponseManager@showBootLogging():106) - [Response Manager]
+2023-08-29 18:13:33,708 [main] INFO  (SimpleResponseManager@showBootLogging():107) -  responseWritePerformerCreator: null
+2023-08-29 18:13:33,708 [main] INFO  (SimpleResponseManager@showBootLogging():108) -  responseDownloadPerformerCreator: null
+2023-08-29 18:13:33,708 [main] INFO  (SimpleResponseManager@showBootLogging():109) -  downloadExtensionContentTypeMap: null
+2023-08-29 18:13:33,711 [main] INFO  (SimpleSessionManager@showBootLogging():109) - [Session Manager]
+2023-08-29 18:13:33,712 [main] INFO  (SimpleSessionManager@showBootLogging():110) -  sessionSharedStorage: opt:{null}
+2023-08-29 18:13:33,712 [main] INFO  (SimpleSessionManager@showBootLogging():111) -  httpSessionArranger: opt:{null}
+2023-08-29 18:13:33,713 [main] INFO  (SimpleCookieManager@showBootLogging():93) - [Cookie Manager]
+2023-08-29 18:13:33,714 [main] INFO  (SimpleCookieManager@showBootLogging():94) -  cookieCipher: {{Blowfish, UTF-8}}
+2023-08-29 18:13:33,714 [main] INFO  (SimpleCookieManager@showBootLogging():95) -  defaultPath: /
+2023-08-29 18:13:33,714 [main] INFO  (SimpleCookieManager@showBootLogging():96) -  defaultExpire: 31556926
+2023-08-29 18:13:33,715 [main] INFO  (SimpleApiManager@showBootLogging():79) - [API Manager]
+2023-08-29 18:13:33,716 [main] INFO  (SimpleApiManager@showBootLogging():80) -  apiFailureHook: IntroApiFailureHook
+2023-08-29 18:13:33,717 [main] INFO  (SimpleRequestManager@showBootLogging():164) - [Request Manager]
+2023-08-29 18:13:33,718 [main] INFO  (SimpleRequestManager@showBootLogging():165) -  localeProvider: {acceptCookieLocale=false}
+2023-08-29 18:13:33,718 [main] INFO  (SimpleRequestManager@showBootLogging():166) -  timeZoneProvider: {useTimeZoneHandling=false, acceptCookieTimeZone=false}
+2023-08-29 18:13:33,720 [main] INFO  (SimpleCsrfManager@showBootLogging():109) - [Csrf Manager]
+2023-08-29 18:13:33,721 [main] INFO  (SimpleCsrfManager@showBootLogging():110) -  tokenHeaderName: X-CSRF-TOKEN
+2023-08-29 18:13:33,721 [main] INFO  (SimpleCsrfManager@showBootLogging():111) -  tokenParameterName: _csrf
+2023-08-29 18:13:33,721 [main] INFO  (SimpleCsrfManager@showBootLogging():112) -  tokenGenerator: org.lastaflute.web.token.SimpleCsrfManager$$Lambda$179/0x000000012da148d8@50b8ae8d
+2023-08-29 18:13:33,722 [main] INFO  (SimpleDoubleSubmitManager@showBootLogging():96) - [DoubleSubmit Manager]
+2023-08-29 18:13:33,723 [main] INFO  (SimpleDoubleSubmitManager@showBootLogging():97) -  allowsVerifyTokenBeforeValidation: false
+2023-08-29 18:13:33,802 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.intro.IntroAction[intro_introAction]).
+2023-08-29 18:13:33,807 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.SwaggerAction[swaggerAction]).
+2023-08-29 18:13:33,848 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.document.hacomment.DocumentHacommentAction[document_hacomment_documentHacommentAction]).
+2023-08-29 18:13:33,853 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.document.DocumentAction[document_documentAction]).
+2023-08-29 18:13:33,873 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.document.decomment.DocumentDecommentAction[document_decomment_documentDecommentAction]).
+2023-08-29 18:13:33,896 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.welcome.WelcomeAction[welcome_welcomeAction]).
+2023-08-29 18:13:33,903 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.task.TaskAction[task_taskAction]).
+2023-08-29 18:13:33,908 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.log.LogAction[log_logAction]).
+2023-08-29 18:13:33,920 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.settings.DfpropSettingsAction[dfprop_settings_dfpropSettingsAction]).
+2023-08-29 18:13:33,936 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.schemapolicy.statement.DfpropSchemapolicyStatementAction[dfprop_schemapolicy_statement_dfpropSchemapolicyStatementAction]).
+2023-08-29 18:13:33,950 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.schemapolicy.DfpropSchemapolicyAction[dfprop_schemapolicy_dfpropSchemapolicyAction]).
+2023-08-29 18:13:33,956 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.schemasync.DfpropSchemasyncAction[dfprop_schemasync_dfpropSchemasyncAction]).
+2023-08-29 18:13:33,962 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.document.DfpropDocumentAction[dfprop_document_dfpropDocumentAction]).
+2023-08-29 18:13:33,967 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.DfpropAction[dfprop_dfpropAction]).
+2023-08-29 18:13:33,974 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.engine.EngineAction[engine_engineAction]).
+2023-08-29 18:13:33,979 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.client.propbase.ClientPropbaseAction[client_propbase_clientPropbaseAction]).
+2023-08-29 18:13:33,982 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.client.ClientUpdateAssist[client_clientUpdateAssist]).
+2023-08-29 18:13:33,987 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.client.ClientAction[client_clientAction]).
+2023-08-29 18:13:33,992 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.client.list.ClientListAction[client_list_clientListAction]).
+2023-08-29 18:13:33,998 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.playsql.PlaysqlAction[playsql_playsqlAction]).
+2023-08-29 18:13:34,002 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.playsql.data.PlaysqlDataAction[playsql_data_playsqlDataAction]).
+2023-08-29 18:13:34,006 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.playsql.migration.alter.PlaysqlMigrationAlterAssist[playsql_migration_alter_playsqlMigrationAlterAssist]).
+2023-08-29 18:13:34,015 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.playsql.migration.alter.PlaysqlMigrationAlterAction[playsql_migration_alter_playsqlMigrationAlterAction]).
+2023-08-29 18:13:34,018 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.base.cls.IntroClsAssist[base_cls_introClsAssist]).
+2023-08-29 18:13:34,022 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.context.AccessContextLogic[context_accessContextLogic]).
+2023-08-29 18:13:34,024 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.core.FlutyFileLogic[core_flutyFileLogic]).
+2023-08-29 18:13:34,026 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.core.PublicPropertiesLogic[core_publicPropertiesLogic]).
+2023-08-29 18:13:34,028 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.core.MapStringLogic[core_mapStringLogic]).
+2023-08-29 18:13:34,030 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.intro.IntroPhysicalLogic[intro_introPhysicalLogic]).
+2023-08-29 18:13:34,031 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.intro.IntroReadLogic[intro_introReadLogic]).
+2023-08-29 18:13:34,032 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.intro.IntroSystemLogic[intro_introSystemLogic]).
+2023-08-29 18:13:34,035 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.hacomment.DocumentHacommentPhysicalLogic[document_hacomment_documentHacommentPhysicalLogic]).
+2023-08-29 18:13:34,036 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.DocumentPhysicalLogic[document_documentPhysicalLogic]).
+2023-08-29 18:13:34,037 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.DocumentDisplayLogic[document_documentDisplayLogic]).
+2023-08-29 18:13:34,039 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.DocumentAuthorLogic[document_documentAuthorLogic]).
+2023-08-29 18:13:34,042 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.decomment.DocumentDecommentPhysicalLogic[document_decomment_documentDecommentPhysicalLogic]).
+2023-08-29 18:13:34,044 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.task.TaskExecutionLogic[task_taskExecutionLogic]).
+2023-08-29 18:13:34,046 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.log.LogPhysicalLogic[log_logPhysicalLogic]).
+2023-08-29 18:13:34,048 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.database.DatabaseInfoLogic[dfprop_database_databaseInfoLogic]).
+2023-08-29 18:13:34,051 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.DfpropSchemaPolicyReadLogic[dfprop_schemapolicy_dfpropSchemaPolicyReadLogic]).
+2023-08-29 18:13:34,053 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.file.DfpropSchemaPolicyFileCommentLogic[dfprop_schemapolicy_file_dfpropSchemaPolicyFileCommentLogic]).
+2023-08-29 18:13:34,058 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.file.DfpropSchemaPolicyFileReplaceLogic[dfprop_schemapolicy_file_dfpropSchemaPolicyFileReplaceLogic]).
+2023-08-29 18:13:34,061 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.DfpropSchemaPolicyUpdateLogic[dfprop_schemapolicy_dfpropSchemaPolicyUpdateLogic]).
+2023-08-29 18:13:34,062 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.DfpropSchemaPolicyDefLogic[dfprop_schemapolicy_dfpropSchemaPolicyDefLogic]).
+2023-08-29 18:13:34,064 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.basic.BasicInfoLogic[dfprop_basic_basicInfoLogic]).
+2023-08-29 18:13:34,067 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.TestConnectionLogic[dfprop_testConnectionLogic]).
+2023-08-29 18:13:34,070 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.DfpropReadLogic[dfprop_dfpropReadLogic]).
+2023-08-29 18:13:34,071 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.DfpropUpdateLogic[dfprop_dfpropUpdateLogic]).
+2023-08-29 18:13:34,073 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.DfpropPhysicalLogic[dfprop_dfpropPhysicalLogic]).
+2023-08-29 18:13:34,075 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.engine.EngineInstallLogic[engine_engineInstallLogic]).
+2023-08-29 18:13:34,077 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.engine.EngineReadLogic[engine_engineReadLogic]).
+2023-08-29 18:13:34,079 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.engine.EnginePhysicalLogic[engine_enginePhysicalLogic]).
+2023-08-29 18:13:34,084 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.client.ClientUpdateLogic[client_clientUpdateLogic]).
+2023-08-29 18:13:34,090 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.client.ClientReadLogic[client_clientReadLogic]).
+2023-08-29 18:13:34,092 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.client.ClientPhysicalLogic[client_clientPhysicalLogic]).
+2023-08-29 18:13:34,093 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.client.projectinfra.ClientProjectInfraReadLogic[client_projectinfra_clientProjectInfraReadLogic]).
+2023-08-29 18:13:34,095 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.data.PlaysqlDataLogic[playsql_data_playsqlDataLogic]).
+2023-08-29 18:13:34,101 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.migration.info.PlaysqlMigrationReadLogic[playsql_migration_info_playsqlMigrationReadLogic]).
+2023-08-29 18:13:34,103 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.migration.PlaysqlMigrationPhysicalLogic[playsql_migration_playsqlMigrationPhysicalLogic]).
+2023-08-29 18:13:34,104 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.migration.PlaysqlMigrationUpdateLogic[playsql_migration_playsqlMigrationUpdateLogic]).
+2023-08-29 18:13:34,106 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.PlaysqlPhysicalLogic[playsql_playsqlPhysicalLogic]).
+2023-08-29 18:13:34,115 [main] INFO  (SingletonLaContainerFactory@showBoot():119) - Lasta Di boot successfully.
+2023-08-29 18:13:34,117 [main] INFO  (SingletonLaContainerFactory@showBoot():120) -   SmartDeploy Mode: Cool Deploy
+2023-08-29 18:13:34,118 [main] INFO  (SingletonLaContainerFactory@showBoot():130) -   Smart Package: org.dbflute.intro.app
+2023-08-29 18:13:34,122 [main] INFO  (MessageResourcesHolder@acceptGateway():61) - ...Accepting the gateway of message resources: gateway:{ObjectiveMessageResources:{application=not initialized yet, cached=[no cached bundle]}}
+2023-08-29 18:13:34,123 [main] INFO  (DBFluteSystem@unlock():242) - ...Unlocking the DBFlute system
+2023-08-29 18:13:34,124 [main] INFO  (DBFluteSystem@setFinalTimeZoneProvider():218) - ...Setting finalTimeZoneProvider: IntroCurtainBeforeHook$1:{Asia/Tokyo}
+2023-08-29 18:13:34,125 [main] INFO  (DBFluteSystem@lock():232) - ...Locking the DBFlute system
+2023-08-29 18:13:34,127 [main] DEBUG (IntroDBInitializer@createSchema():70) - ...Creating IntroDB: introdb/create-schema.sql
+2023-08-29 18:13:34,385 [main] DEBUG (SimpleConnectionPool@createConnection():277) - Created physical connection: tx=null, conn=conn0: url=jdbc:h2:mem:introdb user=INTRODB
+2023-08-29 18:13:34,450 [main] DEBUG (IntroDBInitializer@registerTsv():123) - ...Registering TSV: 10-CLS_TARGET_DATABASE.tsv
+2023-08-29 18:13:34,542 [main] DEBUG (XLog@log():43) - ...Initializing sqlExecution for the key 'CLS_TARGET_DATABASE:batchInsert(List<ClsTargetDatabase>)'
+2023-08-29 18:13:34,582 [main] DEBUG (XLog@log():43) - SqlExecution Initialization Cost: [00m00s042ms]
+2023-08-29 18:13:34,588 [main] DEBUG (XLog@log():43) - /==================================================================================
+2023-08-29 18:13:34,588 [main] DEBUG (XLog@log():43) -                                                       BehaviorWritable.lumpCreate()
+2023-08-29 18:13:34,588 [main] DEBUG (XLog@log():43) -                                                       ============================/
+2023-08-29 18:13:34,604 [main] DEBUG (QLog@log():43) - 
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('mysql', 'MySQL', 'com.mysql.jdbc.Driver', 'jdbc:mysql://localhost:3306/xxx', null, 0, 0, 0, 1, 1);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('postgresql', 'PostgreSQL', 'org.postgresql.Driver', 'jdbc:postgresql://localhost:5432/xxx', 'public', 1, 0, 0, 1, 2);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('oracle', 'Oracle', 'oracle.jdbc.OracleDriver', 'jdbc:oracle:thin:@localhost:1521:xxx', 'xxx', 1, 1, 1, 0, 3);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('db2', 'DB2', 'com.ibm.db2.jcc.DB2Driver', 'jdbc:db2://localhost:50000/xxx', 'xxx', 1, 1, 1, 0, 4);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('sqlserver', 'SQLServer', 'com.microsoft.sqlserver.jdbc.SQLServerDriver', 'jdbc:sqlserver://localhost:1433;DatabaseName=xxx;', 'dbo', 1, 0, 0, 0, 5);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('h2', 'H2 Database', 'org.h2.Driver', 'jdbc:h2:file:xxx', 'PUBLIC', 1, 0, 0, 1, 6);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('derby', 'Apache Derby', 'org.apache.derby.jdbc.EmbeddedDriver', 'jdbc:derby:xxx;create=true', 'xxx', 1, 1, 1, 0, 7);
+2023-08-29 18:13:34,615 [main] DEBUG (XLog@log():43) - ===========/ [00m00s025ms all-updated=(7) result={1,1,1,1,1,1,1}]
+2023-08-29 18:13:34,615 [main] DEBUG (XLog@log():43) -  
+2023-08-29 18:13:34,616 [main] DEBUG (IntroDBInitializer@registerTsv():123) - ...Registering TSV: 12-CLS_TARGET_LANGUAGE.tsv
+2023-08-29 18:13:34,623 [main] DEBUG (XLog@log():43) - ...Initializing sqlExecution for the key 'CLS_TARGET_LANGUAGE:batchInsert(List<ClsTargetLanguage>)'
+2023-08-29 18:13:34,625 [main] DEBUG (XLog@log():43) - SqlExecution Initialization Cost: [00m00s002ms]
+2023-08-29 18:13:34,626 [main] DEBUG (XLog@log():43) - /==================================================================================
+2023-08-29 18:13:34,626 [main] DEBUG (XLog@log():43) -                                                       BehaviorWritable.lumpCreate()
+2023-08-29 18:13:34,627 [main] DEBUG (XLog@log():43) -                                                       ============================/
+2023-08-29 18:13:34,628 [main] DEBUG (QLog@log():43) - 
+insert into CLS_TARGET_LANGUAGE (LANGUAGE_CODE, LANGUAGE_NAME, DISPLAY_ORDER)
+ values ('java', 'Java', 1);
+insert into CLS_TARGET_LANGUAGE (LANGUAGE_CODE, LANGUAGE_NAME, DISPLAY_ORDER)
+ values ('csharp', 'C#', 2);
+insert into CLS_TARGET_LANGUAGE (LANGUAGE_CODE, LANGUAGE_NAME, DISPLAY_ORDER)
+ values ('scala', 'Scala', 3);
+2023-08-29 18:13:34,630 [main] DEBUG (XLog@log():43) - ===========/ [00m00s003ms all-updated=(3) result={1,1,1}]
+2023-08-29 18:13:34,631 [main] DEBUG (XLog@log():43) -  
+2023-08-29 18:13:34,631 [main] DEBUG (IntroDBInitializer@registerTsv():123) - ...Registering TSV: 14-CLS_TARGET_CONTAINER.tsv
+2023-08-29 18:13:34,637 [main] DEBUG (XLog@log():43) - ...Initializing sqlExecution for the key 'CLS_TARGET_CONTAINER:batchInsert(List<ClsTargetContainer>)'
+2023-08-29 18:13:34,640 [main] DEBUG (XLog@log():43) - SqlExecution Initialization Cost: [00m00s003ms]
+2023-08-29 18:13:34,641 [main] DEBUG (XLog@log():43) - /==================================================================================
+2023-08-29 18:13:34,641 [main] DEBUG (XLog@log():43) -                                                       BehaviorWritable.lumpCreate()
+2023-08-29 18:13:34,641 [main] DEBUG (XLog@log():43) -                                                       ============================/
+2023-08-29 18:13:34,643 [main] DEBUG (QLog@log():43) - 
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('lasta_di', 'Lasta Di', 1);
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('spring', 'Spring Framework', 2);
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('guice', 'Google Guice', 3);
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('seasar', 'Seasar (S2Container)', 4);
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('cdi', 'CDI', 5);
+2023-08-29 18:13:34,647 [main] DEBUG (XLog@log():43) - ===========/ [00m00s005ms all-updated=(5) result={1,1,1,1,1}]
+2023-08-29 18:13:34,647 [main] DEBUG (XLog@log():43) -  
+2023-08-29 18:13:34,657 [main] INFO  (LastaToActionFilter@showBoot():106) - _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2023-08-29 18:13:34,657 [main] INFO  (LastaToActionFilter@showBoot():107) -  the system has been initialized:
+2023-08-29 18:13:34,657 [main] INFO  (LastaToActionFilter@showBoot():108) - 
+2023-08-29 18:13:34,658 [main] INFO  (LastaToActionFilter@showBoot():109) -   -> Intro (Production)
+2023-08-29 18:13:34,658 [main] INFO  (LastaToActionFilter@showBoot():110) - _/_/_/_/_/_/_/_/_/_/
+2023-08-29 18:16:50,308 [main] INFO  (LastaDiProperties@deriveSmartDeployModeFromLocation():167) - ...Loading specified properties and get by the key: intro_env_production.properties, lasta_di.smart.deploy.mode
+2023-08-29 18:16:50,314 [main] INFO  (SmartDeployMode@setValue():62) - ...Setting smart deploy mode: cool
+2023-08-29 18:16:50,333 [main] INFO  (LaContainerFactory@show():158) - ...Reading lasta_di.xml
+2023-08-29 18:16:50,361 [main] INFO  (LaContainerFactory@show():158) - ...Reading   redefiner.xml
+2023-08-29 18:16:50,444 [main] INFO  (LaContainerFactory@show():158) - ...Reading   smartdeploy.xml
+2023-08-29 18:16:50,453 [main] INFO  (LaContainerFactory@show():158) - ...Reading     smart/cooldeploy.xml
+2023-08-29 18:16:50,469 [main] INFO  (LaContainerFactory@show():158) - ...Reading app.xml
+2023-08-29 18:16:50,477 [main] INFO  (LaContainerFactory@show():158) - ...Reading   convention.xml
+2023-08-29 18:16:50,484 [main] INFO  (LaContainerFactory@show():158) - ...Reading     embedded_convention.xml
+2023-08-29 18:16:50,508 [main] INFO  (LaContainerFactory@show():158) - ...Reading   dbflute.xml
+2023-08-29 18:16:50,514 [main] INFO  (LaContainerFactory@show():158) - ...Reading     rdb.xml
+2023-08-29 18:16:50,520 [main] INFO  (LaContainerFactory@show():158) - ...Reading       jta.xml
+2023-08-29 18:16:50,549 [main] INFO  (LaContainerFactory@show():158) - ...Reading       jdbc.xml
+2023-08-29 18:16:50,555 [main] INFO  (LaContainerFactory@show():158) - ...Reading         jta.xml (recycle)
+2023-08-29 18:16:50,557 [main] INFO  (LaContainerFactory@show():158) - ...Reading         lastaflute_assist.xml
+2023-08-29 18:16:50,564 [main] INFO  (LaContainerFactory@show():158) - ...Reading           lastaflute_director.xml
+2023-08-29 18:16:50,646 [main] INFO  (LaContainerFactory@show():158) - ...Reading       tx_aop.xml
+2023-08-29 18:16:50,653 [main] INFO  (LaContainerFactory@show():158) - ...Reading         jta.xml (recycle)
+2023-08-29 18:16:50,754 [main] INFO  (LaContainerFactory@show():158) - ...Reading   lastaflute.xml
+2023-08-29 18:16:50,762 [main] INFO  (LaContainerFactory@show():158) - ...Reading     lastaflute_core.xml
+2023-08-29 18:16:50,767 [main] INFO  (LaContainerFactory@show():158) - ...Reading       lastaflute_assist.xml (recycle)
+2023-08-29 18:16:50,821 [main] INFO  (LaContainerFactory@show():158) - ...Reading     lastaflute_db.xml
+2023-08-29 18:16:50,828 [main] INFO  (LaContainerFactory@show():158) - ...Reading       jta.xml (recycle)
+2023-08-29 18:16:50,833 [main] INFO  (LaContainerFactory@show():158) - ...Reading     lastaflute_web.xml
+2023-08-29 18:16:50,839 [main] INFO  (LaContainerFactory@show():158) - ...Reading       lastaflute_core.xml (recycle)
+2023-08-29 18:16:50,841 [main] INFO  (LaContainerFactory@show():158) - ...Reading       lastaflute_db.xml (recycle)
+2023-08-29 18:16:50,842 [main] INFO  (LaContainerFactory@show():158) - ...Reading       convention.xml (recycle)
+2023-08-29 18:16:50,902 [main] INFO  (LaContainerFactory@show():158) - ...Reading smart/cooldeploy-autoregister.xml
+2023-08-29 18:16:50,906 [main] INFO  (LaContainerFactory@show():158) - ...Reading   convention.xml (recycle)
+2023-08-29 18:16:50,907 [main] INFO  (LaContainerFactory@show():158) - ...Reading   creator.xml
+2023-08-29 18:16:50,910 [main] INFO  (LaContainerFactory@show():158) - ...Reading     convention.xml (recycle)
+2023-08-29 18:16:50,911 [main] INFO  (LaContainerFactory@show():158) - ...Reading     customizer.xml
+2023-08-29 18:16:50,915 [main] INFO  (LaContainerFactory@show():158) - ...Reading       lastafw_customizer.xml
+2023-08-29 18:16:50,929 [main] INFO  (LaContainerFactory@show():158) - ...Reading       embedded_customizer.xml
+2023-08-29 18:16:50,934 [main] INFO  (LaContainerFactory@show():158) - ...Reading         tx_customizer.xml
+2023-08-29 18:16:50,953 [main] INFO  (LaContainerFactory@show():158) - ...Reading     lastafw_creator.xml
+2023-08-29 18:16:50,959 [main] INFO  (LaContainerFactory@show():158) - ...Reading       convention.xml (recycle)
+2023-08-29 18:16:50,960 [main] INFO  (LaContainerFactory@show():158) - ...Reading       customizer.xml (recycle)
+2023-08-29 18:16:50,978 [main] INFO  (LaContainerFactory@show():158) - ...Reading     embedded_creator.xml
+2023-08-29 18:16:50,982 [main] INFO  (LaContainerFactory@show():158) - ...Reading       convention.xml (recycle)
+2023-08-29 18:16:50,982 [main] INFO  (LaContainerFactory@show():158) - ...Reading       customizer.xml (recycle)
+2023-08-29 18:16:50,993 [main] INFO  (LaContainerFactory@show():158) - ...Reading   customizer.xml (recycle)
+2023-08-29 18:16:51,062 [main] INFO  (ObjectiveConfig@showBootLogging():242) - [Objective Config]
+2023-08-29 18:16:51,062 [main] INFO  (ObjectiveConfig@showBootLogging():243) -  intro_config.properties extends [intro_env_production.properties]
+2023-08-29 18:16:51,063 [main] INFO  (ObjectiveConfig@showBootLogging():246) -  checkImplicitOverride=true, propertyCount=20
+2023-08-29 18:16:51,070 [main] INFO  (HookedXADataSource@showBootLogging():78) - [XA DataSource]
+2023-08-29 18:16:51,071 [main] INFO  (HookedXADataSource@showBootLogging():79) -  driver: org.h2.Driver
+2023-08-29 18:16:51,071 [main] INFO  (HookedXADataSource@showBootLogging():80) -  url: jdbc:h2:mem:introdb;DB_CLOSE_DELAY=-1
+2023-08-29 18:16:51,072 [main] INFO  (HookedXADataSource@showBootLogging():81) -  newbornConnectionHook: null
+2023-08-29 18:16:51,085 [main] INFO  (HookedConnectionPool@showBootLogging():60) - [Connection Pool]
+2023-08-29 18:16:51,086 [main] INFO  (HookedConnectionPool@showBootLogging():61) -  maxPoolSize: 10
+2023-08-29 18:16:51,086 [main] INFO  (HookedConnectionPool@showBootLogging():62) -  minPoolSize: 0
+2023-08-29 18:16:51,086 [main] INFO  (HookedConnectionPool@showBootLogging():63) -  maxWait: 10000 milliseconds
+2023-08-29 18:16:51,087 [main] INFO  (HookedConnectionPool@showBootLogging():64) -  timeout: 600 seconds
+2023-08-29 18:16:51,088 [main] INFO  (DBFluteInitializer@announce():58) - ...Initializing DBFlute components
+2023-08-29 18:16:51,102 [main] INFO  (SimplePrimaryCipher@showBootLogging():80) - [Primary Cipher]
+2023-08-29 18:16:51,103 [main] INFO  (SimplePrimaryCipher@showBootLogging():81) -  invertibleCryptographer: {Blowfish, UTF-8}
+2023-08-29 18:16:51,104 [main] INFO  (SimplePrimaryCipher@showBootLogging():82) -  oneWayCryptographer: {SHA-256, UTF-8}
+2023-08-29 18:16:51,108 [main] INFO  (SimpleTimeManager@showBootLogging():111) - [Time Manager]
+2023-08-29 18:16:51,109 [main] INFO  (SimpleTimeManager@showBootLogging():112) -  businessTimeHandler: TypicalBusinessTimeHandler:{IntroTimeResourceProvider$$Lambda$156/0x00000001255f8448, IntroTimeResourceProvider$$Lambda$157/0x00000001255f8850}
+2023-08-29 18:16:51,110 [main] INFO  (SimpleTimeManager@showBootLogging():116) -  currentIgnoreTransaction: false
+2023-08-29 18:16:51,110 [main] INFO  (SimpleTimeManager@showBootLogging():117) -  adjustTimeMillis: 0
+2023-08-29 18:16:51,111 [main] INFO  (SimpleTimeManager@showBootLogging():118) -  adjustAbsoluteMode: false
+2023-08-29 18:16:51,185 [main] INFO  (SimpleJsonManager@showBootLogging():147) - [JSON Manager]
+2023-08-29 18:16:51,186 [main] INFO  (SimpleJsonManager@showBootLogging():148) -  realJsonParser: GsonJsonEngine
+2023-08-29 18:16:51,189 [main] INFO  (ExceptionTranslator@showBootLogging():68) - [Exception Translator]
+2023-08-29 18:16:51,190 [main] INFO  (ExceptionTranslator@showBootLogging():69) -  exceptionTranslationProvider: null
+2023-08-29 18:16:51,193 [main] INFO  (SimpleAsyncManager@showBootLogging():242) - [Async Manager]
+2023-08-29 18:16:51,194 [main] INFO  (SimpleAsyncManager@showBootLogging():243) -  defaultConcurrentAsyncOption: {no option}
+2023-08-29 18:16:51,194 [main] INFO  (SimpleAsyncManager@showBootLogging():244) -  primaryExecutorService: ThreadPoolExecutor@7cd1ac19
+2023-08-29 18:16:51,195 [main] INFO  (SimpleAsyncManager@showBootLogging():245) -  secondaryExecutorService: ThreadPoolExecutor@3caa4757
+2023-08-29 18:16:51,195 [main] INFO  (SimpleAsyncManager@showBootLogging():246) -  tertiaryExecutorService: ThreadPoolExecutor@1804f60d
+2023-08-29 18:16:51,196 [main] INFO  (Postbox@showBootLogging():81) - [Postbox]
+2023-08-29 18:16:51,197 [main] INFO  (Postbox@showBootLogging():88) -  postOffice: *no used
+2023-08-29 18:16:51,207 [main] INFO  (ActionPathResolver@showBootLogging():95) - [Action Resolver]
+2023-08-29 18:16:51,207 [main] INFO  (ActionPathResolver@showBootLogging():96) -  actionAdjustmentProvider: org.dbflute.intro.mylasta.direction.sponsor.IntroActionAdjustmentProvider@1af7f54a
+2023-08-29 18:16:51,208 [main] INFO  (SimpleResponseManager@showBootLogging():106) - [Response Manager]
+2023-08-29 18:16:51,208 [main] INFO  (SimpleResponseManager@showBootLogging():107) -  responseWritePerformerCreator: null
+2023-08-29 18:16:51,209 [main] INFO  (SimpleResponseManager@showBootLogging():108) -  responseDownloadPerformerCreator: null
+2023-08-29 18:16:51,209 [main] INFO  (SimpleResponseManager@showBootLogging():109) -  downloadExtensionContentTypeMap: null
+2023-08-29 18:16:51,212 [main] INFO  (SimpleSessionManager@showBootLogging():109) - [Session Manager]
+2023-08-29 18:16:51,213 [main] INFO  (SimpleSessionManager@showBootLogging():110) -  sessionSharedStorage: opt:{null}
+2023-08-29 18:16:51,213 [main] INFO  (SimpleSessionManager@showBootLogging():111) -  httpSessionArranger: opt:{null}
+2023-08-29 18:16:51,214 [main] INFO  (SimpleCookieManager@showBootLogging():93) - [Cookie Manager]
+2023-08-29 18:16:51,215 [main] INFO  (SimpleCookieManager@showBootLogging():94) -  cookieCipher: {{Blowfish, UTF-8}}
+2023-08-29 18:16:51,215 [main] INFO  (SimpleCookieManager@showBootLogging():95) -  defaultPath: /
+2023-08-29 18:16:51,215 [main] INFO  (SimpleCookieManager@showBootLogging():96) -  defaultExpire: 31556926
+2023-08-29 18:16:51,216 [main] INFO  (SimpleApiManager@showBootLogging():79) - [API Manager]
+2023-08-29 18:16:51,216 [main] INFO  (SimpleApiManager@showBootLogging():80) -  apiFailureHook: IntroApiFailureHook
+2023-08-29 18:16:51,217 [main] INFO  (SimpleRequestManager@showBootLogging():164) - [Request Manager]
+2023-08-29 18:16:51,218 [main] INFO  (SimpleRequestManager@showBootLogging():165) -  localeProvider: {acceptCookieLocale=false}
+2023-08-29 18:16:51,218 [main] INFO  (SimpleRequestManager@showBootLogging():166) -  timeZoneProvider: {useTimeZoneHandling=false, acceptCookieTimeZone=false}
+2023-08-29 18:16:51,220 [main] INFO  (SimpleCsrfManager@showBootLogging():109) - [Csrf Manager]
+2023-08-29 18:16:51,220 [main] INFO  (SimpleCsrfManager@showBootLogging():110) -  tokenHeaderName: X-CSRF-TOKEN
+2023-08-29 18:16:51,221 [main] INFO  (SimpleCsrfManager@showBootLogging():111) -  tokenParameterName: _csrf
+2023-08-29 18:16:51,221 [main] INFO  (SimpleCsrfManager@showBootLogging():112) -  tokenGenerator: org.lastaflute.web.token.SimpleCsrfManager$$Lambda$179/0x0000000125612430@50b8ae8d
+2023-08-29 18:16:51,223 [main] INFO  (SimpleDoubleSubmitManager@showBootLogging():96) - [DoubleSubmit Manager]
+2023-08-29 18:16:51,223 [main] INFO  (SimpleDoubleSubmitManager@showBootLogging():97) -  allowsVerifyTokenBeforeValidation: false
+2023-08-29 18:16:51,308 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.intro.IntroAction[intro_introAction]).
+2023-08-29 18:16:51,314 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.SwaggerAction[swaggerAction]).
+2023-08-29 18:16:51,404 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.document.hacomment.DocumentHacommentAction[document_hacomment_documentHacommentAction]).
+2023-08-29 18:16:51,420 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.document.DocumentAction[document_documentAction]).
+2023-08-29 18:16:51,465 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.document.decomment.DocumentDecommentAction[document_decomment_documentDecommentAction]).
+2023-08-29 18:16:51,511 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.welcome.WelcomeAction[welcome_welcomeAction]).
+2023-08-29 18:16:51,529 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.task.TaskAction[task_taskAction]).
+2023-08-29 18:16:51,549 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.log.LogAction[log_logAction]).
+2023-08-29 18:16:51,571 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.settings.DfpropSettingsAction[dfprop_settings_dfpropSettingsAction]).
+2023-08-29 18:16:51,597 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.schemapolicy.statement.DfpropSchemapolicyStatementAction[dfprop_schemapolicy_statement_dfpropSchemapolicyStatementAction]).
+2023-08-29 18:16:51,611 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.schemapolicy.DfpropSchemapolicyAction[dfprop_schemapolicy_dfpropSchemapolicyAction]).
+2023-08-29 18:16:51,617 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.schemasync.DfpropSchemasyncAction[dfprop_schemasync_dfpropSchemasyncAction]).
+2023-08-29 18:16:51,627 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.document.DfpropDocumentAction[dfprop_document_dfpropDocumentAction]).
+2023-08-29 18:16:51,631 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.dfprop.DfpropAction[dfprop_dfpropAction]).
+2023-08-29 18:16:51,640 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.engine.EngineAction[engine_engineAction]).
+2023-08-29 18:16:51,648 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.client.propbase.ClientPropbaseAction[client_propbase_clientPropbaseAction]).
+2023-08-29 18:16:51,651 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.client.ClientUpdateAssist[client_clientUpdateAssist]).
+2023-08-29 18:16:51,657 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.client.ClientAction[client_clientAction]).
+2023-08-29 18:16:51,662 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.client.list.ClientListAction[client_list_clientListAction]).
+2023-08-29 18:16:51,667 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.playsql.PlaysqlAction[playsql_playsqlAction]).
+2023-08-29 18:16:51,671 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.playsql.data.PlaysqlDataAction[playsql_data_playsqlDataAction]).
+2023-08-29 18:16:51,678 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.playsql.migration.alter.PlaysqlMigrationAlterAssist[playsql_migration_alter_playsqlMigrationAlterAssist]).
+2023-08-29 18:16:51,685 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.playsql.migration.alter.PlaysqlMigrationAlterAction[playsql_migration_alter_playsqlMigrationAlterAction]).
+2023-08-29 18:16:51,691 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.web.base.cls.IntroClsAssist[base_cls_introClsAssist]).
+2023-08-29 18:16:51,698 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.context.AccessContextLogic[context_accessContextLogic]).
+2023-08-29 18:16:51,700 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.core.FlutyFileLogic[core_flutyFileLogic]).
+2023-08-29 18:16:51,702 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.core.PublicPropertiesLogic[core_publicPropertiesLogic]).
+2023-08-29 18:16:51,703 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.core.MapStringLogic[core_mapStringLogic]).
+2023-08-29 18:16:51,704 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.intro.IntroPhysicalLogic[intro_introPhysicalLogic]).
+2023-08-29 18:16:51,706 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.intro.IntroReadLogic[intro_introReadLogic]).
+2023-08-29 18:16:51,708 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.intro.IntroSystemLogic[intro_introSystemLogic]).
+2023-08-29 18:16:51,714 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.hacomment.DocumentHacommentPhysicalLogic[document_hacomment_documentHacommentPhysicalLogic]).
+2023-08-29 18:16:51,716 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.DocumentPhysicalLogic[document_documentPhysicalLogic]).
+2023-08-29 18:16:51,717 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.DocumentDisplayLogic[document_documentDisplayLogic]).
+2023-08-29 18:16:51,719 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.DocumentAuthorLogic[document_documentAuthorLogic]).
+2023-08-29 18:16:51,723 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.document.decomment.DocumentDecommentPhysicalLogic[document_decomment_documentDecommentPhysicalLogic]).
+2023-08-29 18:16:51,728 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.task.TaskExecutionLogic[task_taskExecutionLogic]).
+2023-08-29 18:16:51,730 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.log.LogPhysicalLogic[log_logPhysicalLogic]).
+2023-08-29 18:16:51,732 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.database.DatabaseInfoLogic[dfprop_database_databaseInfoLogic]).
+2023-08-29 18:16:51,735 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.DfpropSchemaPolicyReadLogic[dfprop_schemapolicy_dfpropSchemaPolicyReadLogic]).
+2023-08-29 18:16:51,736 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.file.DfpropSchemaPolicyFileCommentLogic[dfprop_schemapolicy_file_dfpropSchemaPolicyFileCommentLogic]).
+2023-08-29 18:16:51,741 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.file.DfpropSchemaPolicyFileReplaceLogic[dfprop_schemapolicy_file_dfpropSchemaPolicyFileReplaceLogic]).
+2023-08-29 18:16:51,743 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.DfpropSchemaPolicyUpdateLogic[dfprop_schemapolicy_dfpropSchemaPolicyUpdateLogic]).
+2023-08-29 18:16:51,744 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.schemapolicy.DfpropSchemaPolicyDefLogic[dfprop_schemapolicy_dfpropSchemaPolicyDefLogic]).
+2023-08-29 18:16:51,745 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.basic.BasicInfoLogic[dfprop_basic_basicInfoLogic]).
+2023-08-29 18:16:51,747 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.TestConnectionLogic[dfprop_testConnectionLogic]).
+2023-08-29 18:16:51,749 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.DfpropReadLogic[dfprop_dfpropReadLogic]).
+2023-08-29 18:16:51,750 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.DfpropUpdateLogic[dfprop_dfpropUpdateLogic]).
+2023-08-29 18:16:51,751 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.dfprop.DfpropPhysicalLogic[dfprop_dfpropPhysicalLogic]).
+2023-08-29 18:16:51,753 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.engine.EngineInstallLogic[engine_engineInstallLogic]).
+2023-08-29 18:16:51,754 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.engine.EngineReadLogic[engine_engineReadLogic]).
+2023-08-29 18:16:51,755 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.engine.EnginePhysicalLogic[engine_enginePhysicalLogic]).
+2023-08-29 18:16:51,760 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.client.ClientUpdateLogic[client_clientUpdateLogic]).
+2023-08-29 18:16:51,764 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.client.ClientReadLogic[client_clientReadLogic]).
+2023-08-29 18:16:51,765 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.client.ClientPhysicalLogic[client_clientPhysicalLogic]).
+2023-08-29 18:16:51,767 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.client.projectinfra.ClientProjectInfraReadLogic[client_projectinfra_clientProjectInfraReadLogic]).
+2023-08-29 18:16:51,768 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.data.PlaysqlDataLogic[playsql_data_playsqlDataLogic]).
+2023-08-29 18:16:51,772 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.migration.info.PlaysqlMigrationReadLogic[playsql_migration_info_playsqlMigrationReadLogic]).
+2023-08-29 18:16:51,774 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.migration.PlaysqlMigrationPhysicalLogic[playsql_migration_playsqlMigrationPhysicalLogic]).
+2023-08-29 18:16:51,776 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.migration.PlaysqlMigrationUpdateLogic[playsql_migration_playsqlMigrationUpdateLogic]).
+2023-08-29 18:16:51,777 [main] DEBUG (LaLogger@log():118) - Registering component definition of class(org.dbflute.intro.app.logic.playsql.PlaysqlPhysicalLogic[playsql_playsqlPhysicalLogic]).
+2023-08-29 18:16:51,783 [main] INFO  (SingletonLaContainerFactory@showBoot():119) - Lasta Di boot successfully.
+2023-08-29 18:16:51,784 [main] INFO  (SingletonLaContainerFactory@showBoot():120) -   SmartDeploy Mode: Cool Deploy
+2023-08-29 18:16:51,785 [main] INFO  (SingletonLaContainerFactory@showBoot():130) -   Smart Package: org.dbflute.intro.app
+2023-08-29 18:16:51,790 [main] INFO  (MessageResourcesHolder@acceptGateway():61) - ...Accepting the gateway of message resources: gateway:{ObjectiveMessageResources:{application=not initialized yet, cached=[no cached bundle]}}
+2023-08-29 18:16:51,791 [main] INFO  (DBFluteSystem@unlock():242) - ...Unlocking the DBFlute system
+2023-08-29 18:16:51,793 [main] INFO  (DBFluteSystem@setFinalTimeZoneProvider():218) - ...Setting finalTimeZoneProvider: IntroCurtainBeforeHook$1:{Asia/Tokyo}
+2023-08-29 18:16:51,794 [main] INFO  (DBFluteSystem@lock():232) - ...Locking the DBFlute system
+2023-08-29 18:16:51,795 [main] DEBUG (IntroDBInitializer@createSchema():70) - ...Creating IntroDB: introdb/create-schema.sql
+2023-08-29 18:16:52,219 [main] DEBUG (SimpleConnectionPool@createConnection():277) - Created physical connection: tx=null, conn=conn0: url=jdbc:h2:mem:introdb user=INTRODB
+2023-08-29 18:16:52,319 [main] DEBUG (IntroDBInitializer@registerTsv():123) - ...Registering TSV: 10-CLS_TARGET_DATABASE.tsv
+2023-08-29 18:16:52,464 [main] DEBUG (XLog@log():43) - ...Initializing sqlExecution for the key 'CLS_TARGET_DATABASE:batchInsert(List<ClsTargetDatabase>)'
+2023-08-29 18:16:52,531 [main] DEBUG (XLog@log():43) - SqlExecution Initialization Cost: [00m00s068ms]
+2023-08-29 18:16:52,563 [main] DEBUG (XLog@log():43) - /==================================================================================
+2023-08-29 18:16:52,564 [main] DEBUG (XLog@log():43) -                                                       BehaviorWritable.lumpCreate()
+2023-08-29 18:16:52,567 [main] DEBUG (XLog@log():43) -                                                       ============================/
+2023-08-29 18:16:52,588 [main] DEBUG (QLog@log():43) - 
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('mysql', 'MySQL', 'com.mysql.jdbc.Driver', 'jdbc:mysql://localhost:3306/xxx', null, 0, 0, 0, 1, 1);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('postgresql', 'PostgreSQL', 'org.postgresql.Driver', 'jdbc:postgresql://localhost:5432/xxx', 'public', 1, 0, 0, 1, 2);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('oracle', 'Oracle', 'oracle.jdbc.OracleDriver', 'jdbc:oracle:thin:@localhost:1521:xxx', 'xxx', 1, 1, 1, 0, 3);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('db2', 'DB2', 'com.ibm.db2.jcc.DB2Driver', 'jdbc:db2://localhost:50000/xxx', 'xxx', 1, 1, 1, 0, 4);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('sqlserver', 'SQLServer', 'com.microsoft.sqlserver.jdbc.SQLServerDriver', 'jdbc:sqlserver://localhost:1433;DatabaseName=xxx;', 'dbo', 1, 0, 0, 0, 5);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('h2', 'H2 Database', 'org.h2.Driver', 'jdbc:h2:file:xxx', 'PUBLIC', 1, 0, 0, 1, 6);
+insert into CLS_TARGET_DATABASE (DATABASE_CODE, DATABASE_NAME, JDBC_DRIVER_FQCN, URL_TEMPLATE, DEFAULT_SCHEMA, SCHEMA_REQUIRED_FLG, SCHEMA_UPPER_CASE_FLG, USER_INPUT_ASSIST_FLG, EMBEDDED_JAR_FLG, DISPLAY_ORDER)
+ values ('derby', 'Apache Derby', 'org.apache.derby.jdbc.EmbeddedDriver', 'jdbc:derby:xxx;create=true', 'xxx', 1, 1, 1, 0, 7);
+2023-08-29 18:16:52,602 [main] DEBUG (XLog@log():43) - ===========/ [00m00s033ms all-updated=(7) result={1,1,1,1,1,1,1}]
+2023-08-29 18:16:52,603 [main] DEBUG (XLog@log():43) -  
+2023-08-29 18:16:52,604 [main] DEBUG (IntroDBInitializer@registerTsv():123) - ...Registering TSV: 12-CLS_TARGET_LANGUAGE.tsv
+2023-08-29 18:16:52,611 [main] DEBUG (XLog@log():43) - ...Initializing sqlExecution for the key 'CLS_TARGET_LANGUAGE:batchInsert(List<ClsTargetLanguage>)'
+2023-08-29 18:16:52,614 [main] DEBUG (XLog@log():43) - SqlExecution Initialization Cost: [00m00s003ms]
+2023-08-29 18:16:52,615 [main] DEBUG (XLog@log():43) - /==================================================================================
+2023-08-29 18:16:52,615 [main] DEBUG (XLog@log():43) -                                                       BehaviorWritable.lumpCreate()
+2023-08-29 18:16:52,615 [main] DEBUG (XLog@log():43) -                                                       ============================/
+2023-08-29 18:16:52,616 [main] DEBUG (QLog@log():43) - 
+insert into CLS_TARGET_LANGUAGE (LANGUAGE_CODE, LANGUAGE_NAME, DISPLAY_ORDER)
+ values ('java', 'Java', 1);
+insert into CLS_TARGET_LANGUAGE (LANGUAGE_CODE, LANGUAGE_NAME, DISPLAY_ORDER)
+ values ('csharp', 'C#', 2);
+insert into CLS_TARGET_LANGUAGE (LANGUAGE_CODE, LANGUAGE_NAME, DISPLAY_ORDER)
+ values ('scala', 'Scala', 3);
+2023-08-29 18:16:52,618 [main] DEBUG (XLog@log():43) - ===========/ [00m00s003ms all-updated=(3) result={1,1,1}]
+2023-08-29 18:16:52,618 [main] DEBUG (XLog@log():43) -  
+2023-08-29 18:16:52,618 [main] DEBUG (IntroDBInitializer@registerTsv():123) - ...Registering TSV: 14-CLS_TARGET_CONTAINER.tsv
+2023-08-29 18:16:52,625 [main] DEBUG (XLog@log():43) - ...Initializing sqlExecution for the key 'CLS_TARGET_CONTAINER:batchInsert(List<ClsTargetContainer>)'
+2023-08-29 18:16:52,627 [main] DEBUG (XLog@log():43) - SqlExecution Initialization Cost: [00m00s002ms]
+2023-08-29 18:16:52,627 [main] DEBUG (XLog@log():43) - /==================================================================================
+2023-08-29 18:16:52,627 [main] DEBUG (XLog@log():43) -                                                       BehaviorWritable.lumpCreate()
+2023-08-29 18:16:52,628 [main] DEBUG (XLog@log():43) -                                                       ============================/
+2023-08-29 18:16:52,629 [main] DEBUG (QLog@log():43) - 
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('lasta_di', 'Lasta Di', 1);
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('spring', 'Spring Framework', 2);
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('guice', 'Google Guice', 3);
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('seasar', 'Seasar (S2Container)', 4);
+insert into CLS_TARGET_CONTAINER (CONTAINER_CODE, CONTAINER_NAME, DISPLAY_ORDER)
+ values ('cdi', 'CDI', 5);
+2023-08-29 18:16:52,631 [main] DEBUG (XLog@log():43) - ===========/ [00m00s003ms all-updated=(5) result={1,1,1,1,1}]
+2023-08-29 18:16:52,632 [main] DEBUG (XLog@log():43) -  
+2023-08-29 18:16:52,639 [main] INFO  (LastaToActionFilter@showBoot():106) - _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+2023-08-29 18:16:52,640 [main] INFO  (LastaToActionFilter@showBoot():107) -  the system has been initialized:
+2023-08-29 18:16:52,640 [main] INFO  (LastaToActionFilter@showBoot():108) - 
+2023-08-29 18:16:52,640 [main] INFO  (LastaToActionFilter@showBoot():109) -   -> Intro (Production)
+2023-08-29 18:16:52,640 [main] INFO  (LastaToActionFilter@showBoot():110) - _/_/_/_/_/_/_/_/_/_/
+2023-08-29 18:16:55,118 [qtp1749186397-25] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/intro/manifest
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  ; url=http://127.0.0.1:8926/api/intro/manifest
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+2023-08-29 18:16:55,121 [qtp1749186397-23] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/engine/versions
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  ; url=http://127.0.0.1:8926/api/engine/versions
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+2023-08-29 18:16:55,119 [qtp1749186397-20] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/client/list
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  ; url=http://127.0.0.1:8926/api/client/list
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+2023-08-29 18:16:55,119 [qtp1749186397-19] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/intro/configuration
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  ; url=http://127.0.0.1:8926/api/intro/configuration
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+2023-08-29 18:16:55,119 [qtp1749186397-26] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/engine/latest
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  ; url=http://127.0.0.1:8926/api/engine/latest
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node0kjdv1d63v1dpd8teir8nlrvf0.node0
+2023-08-29 18:16:55,131 [qtp1749186397-26] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=engine_engineAction params={latest}
+2023-08-29 18:16:55,131 [qtp1749186397-25] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=intro_introAction params={manifest}
+2023-08-29 18:16:55,131 [qtp1749186397-26] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /engine/latest
+2023-08-29 18:16:55,132 [qtp1749186397-25] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /intro/manifest
+2023-08-29 18:16:55,132 [qtp1749186397-23] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=engine_engineAction params={versions}
+2023-08-29 18:16:55,132 [qtp1749186397-23] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /engine/versions
+2023-08-29 18:16:55,133 [qtp1749186397-19] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=intro_introAction params={configuration}
+2023-08-29 18:16:55,135 [qtp1749186397-19] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /intro/configuration
+2023-08-29 18:16:55,134 [qtp1749186397-20] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=client_list_clientListAction params={}
+2023-08-29 18:16:55,136 [qtp1749186397-20] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /client/list
+2023-08-29 18:16:55,173 [qtp1749186397-20] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:16:55,173 [qtp1749186397-25] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:16:55,173 [qtp1749186397-26] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:16:55,173 [qtp1749186397-19] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:16:55,173 [qtp1749186397-23] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:16:55,192 [qtp1749186397-20] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for ClientListAction
+2023-08-29 18:16:55,192 [qtp1749186397-23] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for EngineAction
+2023-08-29 18:16:55,192 [qtp1749186397-19] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for IntroAction
+2023-08-29 18:16:55,192 [qtp1749186397-25] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for IntroAction
+2023-08-29 18:16:55,194 [qtp1749186397-26] DEBUG (ActionFormMapper@prepareJsonFromRequestBody():235) - #flow ...Parsing JSON from request body: *empty body
+2023-08-29 18:16:55,202 [qtp1749186397-26] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for EngineAction
+2023-08-29 18:16:55,222 [qtp1749186397-20] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/4, BranchId=]
+2023-08-29 18:16:55,222 [qtp1749186397-23] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/1, BranchId=]
+2023-08-29 18:16:55,222 [qtp1749186397-25] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/2, BranchId=]
+2023-08-29 18:16:55,222 [qtp1749186397-26] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/0, BranchId=]
+2023-08-29 18:16:55,222 [qtp1749186397-19] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/3, BranchId=]
+2023-08-29 18:16:55,224 [qtp1749186397-25] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action IntroAction@manifest()
+2023-08-29 18:16:55,224 [qtp1749186397-23] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action EngineAction@versions()
+2023-08-29 18:16:55,224 [qtp1749186397-26] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action EngineAction@latest()
+2023-08-29 18:16:55,224 [qtp1749186397-20] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action ClientListAction@index()
+2023-08-29 18:16:55,224 [qtp1749186397-19] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action IntroAction@configuration()
+2023-08-29 18:16:55,774 [qtp1749186397-26] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/0, BranchId=]
+2023-08-29 18:16:55,783 [qtp1749186397-26] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for EngineAction
+2023-08-29 18:16:55,826 [qtp1749186397-26] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+{"latestReleaseVersion":"1.2.6","latestSnapshotVersion":"1.2.6"}
+2023-08-29 18:16:55,857 [qtp1749186397-26] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:16:55 GMT
+  [header] Expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [header] Set-Cookie=JSESSIONID=node0o6hr592681nii1gg173ozujg4.node0; Path=/
+  [request] engine_engineAction=org.dbflute.intro.app.web.engine.EngineAction@5218c4b3
+  [request] engine_engineAction_latest_Form=VirtualForm:{formMeta:{engine_engineAction_latest_Form, org.dbflute.intro.app.web.engine.EngineLatestBody, props=1}, realForm=org.dbflute.intro.app.web.engine.EngineLatestBody@7c283df3}@25e5c3e
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/engine/latest, public JsonResponse<EngineLatestBean> EngineAction@latest(EngineLatestBody), pathParam:{{}}, JsonResponse:{EngineLatestBean}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<EngineLatestBean> EngineAction@latest(EngineLatestBody), urlPattern:{latest, ^latest$}}@68815399
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [request] org.eclipse.jetty.server.newSessionId=node0o6hr592681nii1gg173ozujg4
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/engine/latest [00m00s746ms]
+
+
+2023-08-29 18:16:55,932 [qtp1749186397-20] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/4, BranchId=]
+2023-08-29 18:16:55,933 [qtp1749186397-20] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for ClientListAction
+2023-08-29 18:16:55,934 [qtp1749186397-23] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/1, BranchId=]
+2023-08-29 18:16:55,935 [qtp1749186397-20] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+[]
+2023-08-29 18:16:55,935 [qtp1749186397-23] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for EngineAction
+2023-08-29 18:16:55,936 [qtp1749186397-23] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+[]
+2023-08-29 18:16:55,938 [qtp1749186397-20] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:16:55 GMT
+  [header] Expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [header] Set-Cookie=JSESSIONID=node014nxlboyzvz8k40uz8sy7dvkj3.node0; Path=/
+  [request] client_list_clientListAction=org.dbflute.intro.app.web.client.list.ClientListAction@5fc04380
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/client/list, public JsonResponse<List<ClientRowResult>> ClientListAction@index(), pathParam:{{}}, JsonResponse:{ArrayList}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<List<ClientRowResult>> ClientListAction@index(), urlPattern:{, ^$}}@2c5615c2
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [request] org.eclipse.jetty.server.newSessionId=node014nxlboyzvz8k40uz8sy7dvkj3
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/client/list [00m00s827ms]
+
+
+2023-08-29 18:16:55,943 [qtp1749186397-23] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:16:55 GMT
+  [header] Expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [header] Set-Cookie=JSESSIONID=node0vgehwvyipddwafmsh28l0eqt2.node0; Path=/
+  [request] engine_engineAction=org.dbflute.intro.app.web.engine.EngineAction@620cad1d
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/engine/versions, public JsonResponse<List<String>> EngineAction@versions(), pathParam:{{}}, JsonResponse:{ArrayList}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<List<String>> EngineAction@versions(), urlPattern:{versions, ^versions$}}@3d028c9a
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [request] org.eclipse.jetty.server.newSessionId=node0vgehwvyipddwafmsh28l0eqt2
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/engine/versions [00m00s834ms]
+
+
+2023-08-29 18:16:55,978 [qtp1749186397-24] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/intro/classifications
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node0vgehwvyipddwafmsh28l0eqt2.node0
+  ; url=http://127.0.0.1:8926/api/intro/classifications
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node0vgehwvyipddwafmsh28l0eqt2.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node0vgehwvyipddwafmsh28l0eqt2.node0
+  [session] lastaflute.action.USER_LOCALE=ja
+2023-08-29 18:16:55,978 [qtp1749186397-22] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/engine/latest
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node0vgehwvyipddwafmsh28l0eqt2.node0
+  ; url=http://127.0.0.1:8926/api/engine/latest
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node0vgehwvyipddwafmsh28l0eqt2.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node0vgehwvyipddwafmsh28l0eqt2.node0
+  [session] lastaflute.action.USER_LOCALE=ja
+2023-08-29 18:16:55,979 [qtp1749186397-22] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=engine_engineAction params={latest}
+2023-08-29 18:16:55,979 [qtp1749186397-24] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=intro_introAction params={classifications}
+2023-08-29 18:16:55,980 [qtp1749186397-22] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /engine/latest
+2023-08-29 18:16:55,980 [qtp1749186397-24] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /intro/classifications
+2023-08-29 18:16:55,982 [qtp1749186397-24] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:16:55,982 [qtp1749186397-22] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:16:55,983 [qtp1749186397-22] DEBUG (ActionFormMapper@prepareJsonFromRequestBody():235) - #flow ...Parsing JSON from request body: *empty body
+2023-08-29 18:16:55,983 [qtp1749186397-24] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for IntroAction
+2023-08-29 18:16:55,984 [qtp1749186397-24] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/5, BranchId=]
+2023-08-29 18:16:55,984 [qtp1749186397-22] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for EngineAction
+2023-08-29 18:16:55,984 [qtp1749186397-24] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action IntroAction@classifications()
+2023-08-29 18:16:55,984 [qtp1749186397-22] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/6, BranchId=]
+2023-08-29 18:16:55,985 [qtp1749186397-22] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action EngineAction@latest()
+2023-08-29 18:16:55,985 [qtp1749186397-22] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/6, BranchId=]
+2023-08-29 18:16:55,986 [qtp1749186397-22] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for EngineAction
+2023-08-29 18:16:55,987 [qtp1749186397-22] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+{"latestReleaseVersion":"1.2.6","latestSnapshotVersion":"1.2.6"}
+2023-08-29 18:16:55,989 [qtp1749186397-22] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:16:55 GMT
+  [request] engine_engineAction=org.dbflute.intro.app.web.engine.EngineAction@136ce123
+  [request] engine_engineAction_latest_Form=VirtualForm:{formMeta:{engine_engineAction_latest_Form, org.dbflute.intro.app.web.engine.EngineLatestBody, props=1}, realForm=org.dbflute.intro.app.web.engine.EngineLatestBody@1f5f811f}@7471cb62
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/engine/latest, public JsonResponse<EngineLatestBean> EngineAction@latest(EngineLatestBody), pathParam:{{}}, JsonResponse:{EngineLatestBean}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<EngineLatestBean> EngineAction@latest(EngineLatestBody), urlPattern:{latest, ^latest$}}@68815399
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/engine/latest [00m00s010ms]
+
+
+2023-08-29 18:16:55,990 [qtp1749186397-24] DEBUG (XLog@log():43) - ...Initializing sqlExecution for the key 'CLS_TARGET_DATABASE:selectList(ClsTargetDatabaseCB):ClsTargetDatabase'
+2023-08-29 18:16:56,003 [qtp1749186397-24] DEBUG (XLog@log():43) - SqlExecution Initialization Cost: [00m00s013ms]
+2023-08-29 18:16:56,005 [qtp1749186397-24] DEBUG (XLog@log():43) - /======================================================================================
+2023-08-29 18:16:56,005 [qtp1749186397-24] DEBUG (XLog@log():43) -                                                       ClsTargetDatabaseBhv.selectList()
+2023-08-29 18:16:56,006 [qtp1749186397-24] DEBUG (XLog@log():43) -                                                       ================================/
+2023-08-29 18:16:56,007 [qtp1749186397-24] DEBUG (XLog@log():43) - IntroAction.classifications():56 -> ...
+2023-08-29 18:16:56,063 [qtp1749186397-19] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/3, BranchId=]
+2023-08-29 18:16:56,065 [qtp1749186397-25] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/2, BranchId=]
+2023-08-29 18:16:56,065 [qtp1749186397-25] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for IntroAction
+2023-08-29 18:16:56,066 [qtp1749186397-25] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+{"Manifest-Version":"1.0","Implementation-Title":"dbflute-intro","Implementation-Version":"0.6.0","SCM-Branch":"master","SCM-Revision":"aa74dfb516c6b43693c7722bb3ec46a44b174ec4","Build-Timestamp":"2022/07/13 20:08:05.428","Jenkins-Build-Number":"","Main-Class":"org.dbflute.intro.IntroBoot"}
+2023-08-29 18:16:56,067 [qtp1749186397-19] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for IntroAction
+2023-08-29 18:16:56,081 [qtp1749186397-24] DEBUG (QLog@log():43) - 
+select dfloc.DATABASE_CODE as DATABASE_CODE, dfloc.DATABASE_NAME as DATABASE_NAME, dfloc.JDBC_DRIVER_FQCN as JDBC_DRIVER_FQCN, dfloc.URL_TEMPLATE as URL_TEMPLATE, dfloc.DEFAULT_SCHEMA as DEFAULT_SCHEMA, dfloc.SCHEMA_REQUIRED_FLG as SCHEMA_REQUIRED_FLG, dfloc.SCHEMA_UPPER_CASE_FLG as SCHEMA_UPPER_CASE_FLG, dfloc.USER_INPUT_ASSIST_FLG as USER_INPUT_ASSIST_FLG, dfloc.EMBEDDED_JAR_FLG as EMBEDDED_JAR_FLG, dfloc.DISPLAY_ORDER as DISPLAY_ORDER
+  from CLS_TARGET_DATABASE dfloc 
+ order by dfloc.DISPLAY_ORDER asc
+-- org.dbflute.intro.app.web.intro.IntroAction@classifications(): (ITR)
+2023-08-29 18:16:56,071 [qtp1749186397-25] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:16:55 GMT
+  [header] Expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [header] Set-Cookie=JSESSIONID=node01f1eu4g3k5h1e1qmycnh5bclbd1.node0; Path=/
+  [request] intro_introAction=org.dbflute.intro.app.web.intro.IntroAction@668d0715
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/intro/manifest, public JsonResponse<Map<String>> IntroAction@manifest(), pathParam:{{}}, JsonResponse:{LinkedHashMap}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<Map<String>> IntroAction@manifest(), urlPattern:{manifest, ^manifest$}}@58ccf164
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [request] org.eclipse.jetty.server.newSessionId=node01f1eu4g3k5h1e1qmycnh5bclbd1
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/intro/manifest [00m00s962ms]
+
+
+2023-08-29 18:16:56,085 [qtp1749186397-19] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+{"serverUrl":"http://null/","apiServerUrl":"http://null/api/"}
+2023-08-29 18:16:56,086 [qtp1749186397-19] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:16:55 GMT
+  [header] Expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [header] Set-Cookie=JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0; Path=/
+  [request] intro_introAction=org.dbflute.intro.app.web.intro.IntroAction@1af4940e
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/intro/configuration, public JsonResponse<Map<String>> IntroAction@configuration(), pathParam:{{}}, JsonResponse:{LinkedHashMap}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<Map<String>> IntroAction@configuration(), urlPattern:{configuration, ^configuration$}}@ca07ff0
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [request] org.eclipse.jetty.server.newSessionId=node01rnpwq6p8x20wj0yuuvrrfioy0
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/intro/configuration [00m00s977ms]
+
+
+2023-08-29 18:16:56,119 [qtp1749186397-24] DEBUG (XLog@log():43) - ===========/ [00m00s112ms (7) first={mysql, MySQL, com.mysql.jdbc.Driver, jdbc:mysql://localhost:3306/xxx, null, 0, 0, 0, 1, 1}@d8315fbf]
+2023-08-29 18:16:56,120 [qtp1749186397-24] DEBUG (XLog@log():43) -  
+2023-08-29 18:16:56,131 [qtp1749186397-24] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/5, BranchId=]
+2023-08-29 18:16:56,132 [qtp1749186397-24] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for IntroAction
+2023-08-29 18:16:56,137 [qtp1749186397-24] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+{"targetDatabaseMap":{"mysql":{"databaseName":"MySQL","driverName":"com.mysql.jdbc.Driver","urlTemplate":"jdbc:mysql://localhost:3306/xxx","defaultSchema":null,"schemaRequired":false,"schemaUpperCase":false,"userInputAssist":false,"embeddedJar":true},"postgresql":{"databaseName":"PostgreSQL","driverName":"org.postgresql.Driver","urlTemplate":"jdbc:postgresql://localhost:5432/xxx","defaultSchema":"public","schemaRequired":true,"schemaUpperCase":false,"userInputAssist":false,"embeddedJar":true},"o...
+2023-08-29 18:16:56,141 [qtp1749186397-24] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:16:55 GMT
+  [request] intro_introAction=org.dbflute.intro.app.web.intro.IntroAction@5542aebb
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/intro/classifications, public JsonResponse<Map<String>> IntroAction@classifications(), pathParam:{{}}, JsonResponse:{LinkedHashMap}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<Map<String>> IntroAction@classifications(), urlPattern:{classifications, ^classifications$}}@d6d335
+  [request] lastaflute.dbflute.SQL_COUNT={total=1, selectCB=1}
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/intro/classifications [00m00s163ms]
+
+
+2023-08-29 18:17:29,959 [qtp1749186397-39] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/welcome/create
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  ; url=http://127.0.0.1:8926/api/welcome/create
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=407 ; contentType=application/json ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=407
+  [header] Content-Type=application/json
+  [header] Cookie=JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [session] lastaflute.action.USER_LOCALE=ja
+2023-08-29 18:17:29,962 [qtp1749186397-39] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=welcome_welcomeAction params={create}
+2023-08-29 18:17:29,962 [qtp1749186397-39] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /welcome/create
+2023-08-29 18:17:29,963 [qtp1749186397-39] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:17:29,964 [qtp1749186397-39] DEBUG (ActionFormMapper@prepareJsonFromRequestBody():235) - #flow ...Parsing JSON from request body:
+{"client":{"projectName":"jlibrary","databaseCode":"mysql","create":true,"mainSchemaSettings":{"user":"jlibrary_user","url":"jdbc:mysql://localhost:3306/jlibrary","schema":"","password":"jlibrary_user"},"schemaSyncCheckMap":{},"dbfluteVersion":"1.2.6","packageBase":"org.docksidestage.dbflute","containerCode":"lasta_di","languageCode":"java","jdbcDriverFqcn":"com.mysql.jdbc.Driver"},"testConnection":true}
+2023-08-29 18:17:29,985 [qtp1749186397-39] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for WelcomeAction
+2023-08-29 18:17:29,985 [qtp1749186397-39] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/7, BranchId=]
+2023-08-29 18:17:29,986 [qtp1749186397-39] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action WelcomeAction@create()
+2023-08-29 18:17:30,023 [qtp1749186397-39] DEBUG (XLog@log():43) - ...Initializing sqlExecution for the key 'CLS_TARGET_DATABASE:selectEntity(ClsTargetDatabaseCB):ClsTargetDatabase'
+2023-08-29 18:17:30,027 [qtp1749186397-39] DEBUG (XLog@log():43) - SqlExecution Initialization Cost: [00m00s004ms]
+2023-08-29 18:17:30,029 [qtp1749186397-39] DEBUG (XLog@log():43) - /========================================================================================
+2023-08-29 18:17:30,030 [qtp1749186397-39] DEBUG (XLog@log():43) -                                                       ClsTargetDatabaseBhv.selectEntity()
+2023-08-29 18:17:30,030 [qtp1749186397-39] DEBUG (XLog@log():43) -                                                       ==================================/
+2023-08-29 18:17:30,031 [qtp1749186397-39] DEBUG (XLog@log():43) - WelcomeAction.lambda$create$3():89 -> DatabaseInfoLogic.isEmbeddedJar():67 -> ...
+2023-08-29 18:17:30,048 [qtp1749186397-39] DEBUG (QLog@log():43) - 
+select dfloc.DATABASE_CODE as DATABASE_CODE, dfloc.DATABASE_NAME as DATABASE_NAME, dfloc.JDBC_DRIVER_FQCN as JDBC_DRIVER_FQCN, dfloc.URL_TEMPLATE as URL_TEMPLATE, dfloc.DEFAULT_SCHEMA as DEFAULT_SCHEMA, dfloc.SCHEMA_REQUIRED_FLG as SCHEMA_REQUIRED_FLG, dfloc.SCHEMA_UPPER_CASE_FLG as SCHEMA_UPPER_CASE_FLG, dfloc.USER_INPUT_ASSIST_FLG as USER_INPUT_ASSIST_FLG, dfloc.EMBEDDED_JAR_FLG as EMBEDDED_JAR_FLG, dfloc.DISPLAY_ORDER as DISPLAY_ORDER
+  from CLS_TARGET_DATABASE dfloc
+ where dfloc.DATABASE_CODE = 'mysql'
+-- org.dbflute.intro.app.web.welcome.WelcomeAction@create(): (ITR)
+2023-08-29 18:17:30,054 [qtp1749186397-39] DEBUG (XLog@log():43) - ===========/ [00m00s022ms (1) entity={mysql, MySQL, com.mysql.jdbc.Driver, jdbc:mysql://localhost:3306/xxx, null, 0, 0, 0, 1, 1}@d8315fbf]
+2023-08-29 18:17:30,055 [qtp1749186397-39] DEBUG (XLog@log():43) -  
+2023-08-29 18:17:30,065 [qtp1749186397-39] DEBUG (EngineInstallLogic@downloadUnzipping():70) - ...Downloading DBflute Engine: 1.2.6
+2023-08-29 18:17:32,867 [qtp1749186397-39] DEBUG (EngineInstallLogic@downloadUnzipping():76) - ...Unzipping DBflute Engine: dbflute-1.2.6.zip
+2023-08-29 18:17:33,450 [qtp1749186397-39] DEBUG (TestConnectionLogic@testConnection():81) - ...Connecting the database: database:{com.mysql.jdbc.Driver, box:{jdbc:mysql://localhost:3306/jlibrary, , jlibrary_user}, []}
+2023-08-29 18:17:33,765 [qtp1749186397-39] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/7, BranchId=]
+2023-08-29 18:17:33,765 [qtp1749186397-39] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for WelcomeAction
+2023-08-29 18:17:33,766 [qtp1749186397-39] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+{}
+2023-08-29 18:17:33,768 [qtp1749186397-39] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:17:29 GMT
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/welcome/create, public JsonResponse<Void> WelcomeAction@create(WelcomeCreateBody), pathParam:{{}}, JsonResponse:{Object, emptyBody}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<Void> WelcomeAction@create(WelcomeCreateBody), urlPattern:{create, ^create$}}@3d6e37b
+  [request] lastaflute.dbflute.SQL_COUNT={total=1, selectCB=1}
+  [request] welcome_welcomeAction=org.dbflute.intro.app.web.welcome.WelcomeAction@2ea90c2f
+  [request] welcome_welcomeAction_create_Form=VirtualForm:{formMeta:{welcome_welcomeAction_create_Form, org.dbflute.intro.app.web.welcome.WelcomeCreateBody, props=3}, realForm=org.dbflute.intro.app.web.welcome.WelcomeCreateBody@1e79ea90}@3c9f17e6
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/welcome/create [00m03s809ms]
+
+
+2023-08-29 18:17:33,817 [qtp1749186397-22] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/intro/manifest
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  ; url=http://127.0.0.1:8926/api/intro/manifest
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [session] lastaflute.action.USER_LOCALE=ja
+2023-08-29 18:17:33,829 [qtp1749186397-22] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=intro_introAction params={manifest}
+2023-08-29 18:17:33,830 [qtp1749186397-22] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /intro/manifest
+2023-08-29 18:17:33,830 [qtp1749186397-22] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:17:33,831 [qtp1749186397-22] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for IntroAction
+2023-08-29 18:17:33,832 [qtp1749186397-22] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/8, BranchId=]
+2023-08-29 18:17:33,844 [qtp1749186397-22] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action IntroAction@manifest()
+2023-08-29 18:17:33,844 [qtp1749186397-19] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/engine/latest
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  ; url=http://127.0.0.1:8926/api/engine/latest
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [session] lastaflute.action.USER_LOCALE=ja
+2023-08-29 18:17:33,851 [qtp1749186397-22] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/8, BranchId=]
+2023-08-29 18:17:33,852 [qtp1749186397-22] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for IntroAction
+2023-08-29 18:17:33,856 [qtp1749186397-26] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/engine/versions
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  ; url=http://127.0.0.1:8926/api/engine/versions
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [session] lastaflute.action.USER_LOCALE=ja
+2023-08-29 18:17:33,867 [qtp1749186397-26] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=engine_engineAction params={versions}
+2023-08-29 18:17:33,867 [qtp1749186397-26] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /engine/versions
+2023-08-29 18:17:33,868 [qtp1749186397-26] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:17:33,836 [qtp1749186397-39] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/client/list
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  ; url=http://127.0.0.1:8926/api/client/list
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [session] lastaflute.action.USER_LOCALE=ja
+2023-08-29 18:17:33,875 [qtp1749186397-39] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=client_list_clientListAction params={}
+2023-08-29 18:17:33,876 [qtp1749186397-39] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /client/list
+2023-08-29 18:17:33,877 [qtp1749186397-39] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:17:33,841 [qtp1749186397-24] DEBUG (RequestLoggingFilter@before():405) - * * * * * * * * * * {BEGIN}: /api/intro/configuration
+  requestClass=org.eclipse.jetty.server.Request ; sessionId=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  ; url=http://127.0.0.1:8926/api/intro/configuration
+  ; method=POST ; protocol=HTTP/1.1 ; scheme=http ; secure=false ; remoteAddr=127.0.0.1 ; remoteHost=127.0.0.1
+  ; characterEncoding=UTF-8 ; contentLength=0 ; contentType=null ; locale=ja ; locales=ja,en_US,en
+  [header] Accept=*/*
+  [header] Accept-Encoding=gzip, deflate, br
+  [header] Accept-Language=ja,en-US;q=0.9,en;q=0.8
+  [header] Connection=keep-alive
+  [header] Content-Length=0
+  [header] Cookie=JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [header] Host=127.0.0.1:8926
+  [header] Origin=http://127.0.0.1:8926
+  [header] Referer=http://127.0.0.1:8926/
+  [header] Sec-Fetch-Dest=empty
+  [header] Sec-Fetch-Mode=cors
+  [header] Sec-Fetch-Site=same-origin
+  [header] User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+  [header] sec-ch-ua="Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+  [header] sec-ch-ua-mobile=?0
+  [header] sec-ch-ua-platform="macOS"
+  [cookie] JSESSIONID=node01rnpwq6p8x20wj0yuuvrrfioy0.node0
+  [session] lastaflute.action.USER_LOCALE=ja
+2023-08-29 18:17:33,863 [qtp1749186397-22] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+{"Manifest-Version":"1.0","Implementation-Title":"dbflute-intro","Implementation-Version":"0.6.0","SCM-Branch":"master","SCM-Revision":"aa74dfb516c6b43693c7722bb3ec46a44b174ec4","Build-Timestamp":"2022/07/13 20:08:05.428","Jenkins-Build-Number":"","Main-Class":"org.dbflute.intro.IntroBoot"}
+2023-08-29 18:17:33,886 [qtp1749186397-24] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=intro_introAction params={configuration}
+2023-08-29 18:17:33,886 [qtp1749186397-24] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /intro/configuration
+2023-08-29 18:17:33,851 [qtp1749186397-19] DEBUG (RequestRoutingFilter@processAction():284) - ...Routing to action: name=engine_engineAction params={latest}
+2023-08-29 18:17:33,887 [qtp1749186397-22] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:17:33 GMT
+  [request] intro_introAction=org.dbflute.intro.app.web.intro.IntroAction@2774ea45
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/intro/manifest, public JsonResponse<Map<String>> IntroAction@manifest(), pathParam:{{}}, JsonResponse:{LinkedHashMap}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<Map<String>> IntroAction@manifest(), urlPattern:{manifest, ^manifest$}}@58ccf164
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/intro/manifest [00m00s070ms]
+
+
+2023-08-29 18:17:33,870 [qtp1749186397-26] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for EngineAction
+2023-08-29 18:17:33,893 [qtp1749186397-26] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/9, BranchId=]
+2023-08-29 18:17:33,893 [qtp1749186397-26] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action EngineAction@versions()
+2023-08-29 18:17:33,895 [qtp1749186397-26] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/9, BranchId=]
+2023-08-29 18:17:33,896 [qtp1749186397-26] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for EngineAction
+2023-08-29 18:17:33,896 [qtp1749186397-26] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+["1.2.6"]
+2023-08-29 18:17:33,897 [qtp1749186397-26] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:17:33 GMT
+  [request] engine_engineAction=org.dbflute.intro.app.web.engine.EngineAction@16f61591
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/engine/versions, public JsonResponse<List<String>> EngineAction@versions(), pathParam:{{}}, JsonResponse:{ArrayList}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<List<String>> EngineAction@versions(), urlPattern:{versions, ^versions$}}@3d028c9a
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/engine/versions [00m00s042ms]
+
+
+2023-08-29 18:17:33,887 [qtp1749186397-24] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:17:33,889 [qtp1749186397-19] DEBUG (RequestRoutingFilter@processAction():285) -  by the mapping path: /engine/latest
+2023-08-29 18:17:33,921 [qtp1749186397-24] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for IntroAction
+2023-08-29 18:17:33,921 [qtp1749186397-24] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/10, BranchId=]
+2023-08-29 18:17:33,921 [qtp1749186397-19] DEBUG (SimpleRequestManager@saveUserLocaleToSession():738) - ...Saving user locale to session: ja
+2023-08-29 18:17:33,921 [qtp1749186397-24] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action IntroAction@configuration()
+2023-08-29 18:17:33,922 [qtp1749186397-19] DEBUG (ActionFormMapper@prepareJsonFromRequestBody():235) - #flow ...Parsing JSON from request body: *empty body
+2023-08-29 18:17:33,922 [qtp1749186397-24] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/10, BranchId=]
+2023-08-29 18:17:33,923 [qtp1749186397-24] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for IntroAction
+2023-08-29 18:17:33,923 [qtp1749186397-19] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for EngineAction
+2023-08-29 18:17:33,923 [qtp1749186397-24] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+{"serverUrl":"http://null/","apiServerUrl":"http://null/api/"}
+2023-08-29 18:17:33,923 [qtp1749186397-19] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/11, BranchId=]
+2023-08-29 18:17:33,923 [qtp1749186397-19] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action EngineAction@latest()
+2023-08-29 18:17:33,924 [qtp1749186397-19] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/11, BranchId=]
+2023-08-29 18:17:33,924 [qtp1749186397-24] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:17:33 GMT
+  [request] intro_introAction=org.dbflute.intro.app.web.intro.IntroAction@6e901c52
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/intro/configuration, public JsonResponse<Map<String>> IntroAction@configuration(), pathParam:{{}}, JsonResponse:{LinkedHashMap}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<Map<String>> IntroAction@configuration(), urlPattern:{configuration, ^configuration$}}@ca07ff0
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/intro/configuration [00m00s084ms]
+
+
+2023-08-29 18:17:33,924 [qtp1749186397-19] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for EngineAction
+2023-08-29 18:17:33,927 [qtp1749186397-19] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+{"latestReleaseVersion":"1.2.6","latestSnapshotVersion":"1.2.6"}
+2023-08-29 18:17:33,929 [qtp1749186397-19] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:17:33 GMT
+  [request] engine_engineAction=org.dbflute.intro.app.web.engine.EngineAction@3c94a175
+  [request] engine_engineAction_latest_Form=VirtualForm:{formMeta:{engine_engineAction_latest_Form, org.dbflute.intro.app.web.engine.EngineLatestBody, props=1}, realForm=org.dbflute.intro.app.web.engine.EngineLatestBody@ca8522c}@3242f48e
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/engine/latest, public JsonResponse<EngineLatestBean> EngineAction@latest(EngineLatestBody), pathParam:{{}}, JsonResponse:{EngineLatestBean}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<EngineLatestBean> EngineAction@latest(EngineLatestBody), urlPattern:{latest, ^latest$}}@68815399
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/engine/latest [00m00s085ms]
+
+
+2023-08-29 18:17:33,879 [qtp1749186397-39] DEBUG (GodHandableAction@showBefore():266) - #flow ...Calling back #before for ClientListAction
+2023-08-29 18:17:33,933 [qtp1749186397-39] DEBUG (LaTransaction@begin():83) - Begin transaction: [FormatId=4360, GlobalId=1693300615222/12, BranchId=]
+2023-08-29 18:17:33,933 [qtp1749186397-39] DEBUG (GodHandableAction@showAction():348) - #flow ...Beginning #action ClientListAction@index()
+2023-08-29 18:17:33,954 [qtp1749186397-39] DEBUG (LaTransaction@commit():210) - Commit transaction: [FormatId=4360, GlobalId=1693300615222/12, BranchId=]
+2023-08-29 18:17:33,954 [qtp1749186397-39] DEBUG (GodHandableAction@showFinally():306) - #flow ...Calling back #finally for ClientListAction
+2023-08-29 18:17:33,955 [qtp1749186397-39] DEBUG (ResponseWritePerformer@showWritingResponse():75) - #flow ...Writing response as application/json; charset=UTF-8: 
+[{"projectName":"jlibrary","databaseCode":"mysql","languageCode":"java","containerCode":"lasta_di"}]
+2023-08-29 18:17:33,957 [qtp1749186397-39] DEBUG (RequestLoggingFilter@after():480) - 
+  responseClass=org.eclipse.jetty.server.Response ; committed=true
+  ; httpStatus=200 ; contentType=application/json;charset=utf-8 ; locale=ja_JP
+  [header] Content-Type=application/json;charset=utf-8
+  [header] Date=Tue, 29 Aug 2023 09:17:33 GMT
+  [request] client_list_clientListAction=org.dbflute.intro.app.web.client.list.ClientListAction@b9ad595
+  [request] lastaflute.action.ACTION_RUMTIME=runtime:{/api/client/list, public JsonResponse<List<ClientRowResult>> ClientListAction@index(), pathParam:{{}}, JsonResponse:{ArrayList}}
+  [request] lastaflute.action.USER_LOCALE=ja
+  [request] lastaflute.config.ACTION_EXECUTE=execute:{public JsonResponse<List<ClientRowResult>> ClientListAction@index(), urlPattern:{, ^$}}@2c5615c2
+  [request] lastaflute.dbflute.SQL_COUNT={total=0}
+  [session] lastaflute.action.USER_LOCALE=ja
+* * * * * * * * * * {END}: /api/client/list [00m00s121ms]
+
+
+2023-08-29 18:27:33,945 [LastaDi-JTA-TimeoutManager] DEBUG (ConnectionWrapperImpl@closeReally():142) - Closed the physical connection: 
+HookedConnectionWrapper:{closed, xaConnection:{xaResource:{null, status=0}}@34cd3d78}@30f2af39
+ latest checkOut(): /api/welcome/create, JsonResponse create(WelcomeCreateBody), null, 1693300650047
+ latest checkIn(): /api/welcome/create, JsonResponse create(WelcomeCreateBody), null, 1693300653765
+ closeReally(): caller1::org.lastaflute.db.dbcp.HookedConnectionWrapper@closeReally(), caller5::java.lang.Thread@run(), null, null

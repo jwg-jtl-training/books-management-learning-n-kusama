@@ -1,0 +1,106 @@
+map:{
+    ; 2023/09/03 15:51:35.873 = map:{
+        ; diffDate = 2023/09/03 15:51:35.873
+        ; tableCount = map:{
+            ; next = 6
+            ; previous = 5
+        }
+        ; diffAuthor = santa
+        ; tableDiff = map:{
+            ; GENRE = map:{
+                ; tableName = GENRE
+                ; diffType = ADD
+            }
+            ; BOOK = map:{
+                ; tableName = BOOK
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; GENRE_ID = map:{
+                        ; columnName = GENRE_ID
+                        ; diffType = ADD
+                    }
+                    ; TITLE = map:{
+                        ; columnName = TITLE
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                    ; AUTHOR = map:{
+                        ; columnName = AUTHOR
+                        ; diffType = CHANGE
+                        ; columnSizeDiff = map:{
+                            ; next = 50
+                            ; previous = 255
+                        }
+                        ; notNullDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                    ; ISBN_10 = map:{
+                        ; columnName = ISBN_10
+                        ; diffType = CHANGE
+                        ; columnSizeDiff = map:{
+                            ; next = 10
+                            ; previous = 255
+                        }
+                    }
+                    ; ISBN_13 = map:{
+                        ; columnName = ISBN_13
+                        ; diffType = CHANGE
+                        ; columnSizeDiff = map:{
+                            ; next = 13
+                            ; previous = 255
+                        }
+                    }
+                    ; PUBLISHER = map:{
+                        ; columnName = PUBLISHER
+                        ; diffType = CHANGE
+                        ; columnSizeDiff = map:{
+                            ; next = 25
+                            ; previous = 255
+                        }
+                        ; notNullDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                    ; SHELF_NUMBER = map:{
+                        ; columnName = SHELF_NUMBER
+                        ; diffType = CHANGE
+                        ; columnSizeDiff = map:{
+                            ; next = 3
+                            ; previous = 255
+                        }
+                    }
+                    ; CONTROL_NUMBER = map:{
+                        ; columnName = CONTROL_NUMBER
+                        ; diffType = CHANGE
+                        ; columnSizeDiff = map:{
+                            ; next = 10
+                            ; previous = 255
+                        }
+                    }
+                    ; GENRE = map:{
+                        ; columnName = GENRE
+                        ; diffType = DELETE
+                    }
+                }
+                ; foreignKeyDiff = map:{
+                    ; book_ibfk_1(new) = map:{
+                        ; constraintName = book_ibfk_1(new)
+                        ; diffType = ADD
+                    }
+                }
+                ; indexDiff = map:{
+                    ; GENRE_ID = map:{
+                        ; constraintName = GENRE_ID
+                        ; diffType = ADD
+                    }
+                }
+            }
+        }
+    }
+}

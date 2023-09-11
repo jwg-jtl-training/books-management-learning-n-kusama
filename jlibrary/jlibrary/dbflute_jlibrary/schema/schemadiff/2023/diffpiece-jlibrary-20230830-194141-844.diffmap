@@ -1,0 +1,32 @@
+map:{
+    ; 2023/08/30 19:41:41.844 = map:{
+        ; diffDate = 2023/08/30 19:41:41.844
+        ; tableCount = map:{
+            ; next = 5
+            ; previous = 0
+        }
+        ; diffAuthor = santa
+        ; tableDiff = map:{
+            ; BOOK = map:{
+                ; tableName = BOOK
+                ; diffType = ADD
+            }
+            ; GENERAL_USER = map:{
+                ; tableName = GENERAL_USER
+                ; diffType = ADD
+            }
+            ; ROLE = map:{
+                ; tableName = ROLE
+                ; diffType = ADD
+            }
+            ; STAFF_USER = map:{
+                ; tableName = STAFF_USER
+                ; diffType = ADD
+            }
+            ; USER_ROLE_MAP = map:{
+                ; tableName = USER_ROLE_MAP
+                ; diffType = ADD
+            }
+        }
+    }
+}

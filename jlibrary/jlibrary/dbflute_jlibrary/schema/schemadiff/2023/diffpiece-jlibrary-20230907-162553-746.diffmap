@@ -1,0 +1,172 @@
+map:{
+    ; 2023/09/07 16:25:53.746 = map:{
+        ; diffDate = 2023/09/07 16:25:53.746
+        ; diffAuthor = santa
+        ; tableDiff = map:{
+            ; GENERAL_USER = map:{
+                ; tableName = GENERAL_USER
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; NAME = map:{
+                        ; columnName = NAME
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                    ; BIRTHDAY = map:{
+                        ; columnName = BIRTHDAY
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                    ; PHONE_NUMBER = map:{
+                        ; columnName = PHONE_NUMBER
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                    ; ADDRESS = map:{
+                        ; columnName = ADDRESS
+                        ; diffType = CHANGE
+                        ; columnSizeDiff = map:{
+                            ; next = 255
+                            ; previous = 100
+                        }
+                        ; notNullDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                    ; VERSION = map:{
+                        ; columnName = VERSION
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = false
+                            ; previous = true
+                        }
+                    }
+                }
+            }
+            ; GENRE = map:{
+                ; tableName = GENRE
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; GENRE_CODE = map:{
+                        ; columnName = GENRE_CODE
+                        ; diffType = ADD
+                    }
+                    ; GENRE_NAME = map:{
+                        ; columnName = GENRE_NAME
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = false
+                            ; previous = true
+                        }
+                    }
+                    ; PARENT_GENRE_ID = map:{
+                        ; columnName = PARENT_GENRE_ID
+                        ; diffType = DELETE
+                    }
+                }
+                ; primaryKeyDiff = map:{
+                    ; PRIMARY = map:{
+                        ; constraintName = PRIMARY
+                        ; diffType = CHANGE
+                        ; columnDiff = map:{
+                            ; next = ID, GENRE_CODE
+                            ; previous = ID
+                        }
+                    }
+                }
+            }
+            ; ROLE = map:{
+                ; tableName = ROLE
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; VERSION = map:{
+                        ; columnName = VERSION
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = false
+                            ; previous = true
+                        }
+                    }
+                    ; CREATED = map:{
+                        ; columnName = CREATED
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = false
+                            ; previous = true
+                        }
+                    }
+                    ; MODIFIED = map:{
+                        ; columnName = MODIFIED
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = false
+                            ; previous = true
+                        }
+                    }
+                    ; MODIFIED_BY = map:{
+                        ; columnName = MODIFIED_BY
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = false
+                            ; previous = true
+                        }
+                    }
+                }
+            }
+            ; STAFF_USER = map:{
+                ; tableName = STAFF_USER
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; NAME = map:{
+                        ; columnName = NAME
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                    ; EMAIL = map:{
+                        ; columnName = EMAIL
+                        ; diffType = CHANGE
+                        ; notNullDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                }
+            }
+            ; USER_ROLE_MAP = map:{
+                ; tableName = USER_ROLE_MAP
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; STAFF_USER_ID = map:{
+                        ; columnName = STAFF_USER_ID
+                        ; diffType = CHANGE
+                        ; columnSizeDiff = map:{
+                            ; next = 10
+                            ; previous = 255
+                        }
+                    }
+                    ; GENERAL_USER_ID = map:{
+                        ; columnName = GENERAL_USER_ID
+                        ; diffType = CHANGE
+                        ; columnSizeDiff = map:{
+                            ; next = 10
+                            ; previous = 255
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

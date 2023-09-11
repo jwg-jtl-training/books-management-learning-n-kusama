@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jlibrary
+    username: jlibrary_user
+    password: jlibrary_user
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      encoding: utf-8
+  mvc:
+    static-path-pattern: /**
+  messages:
+    basename: messages
+    cache-duration: -1
+    encoding: UTF-8
+    
+logging:
+  level:
+    web: INFO
+    org:
+      dbflute: DEBUG
+      springframework:
+        security: INFO
+        
+  file:
+    name: ./log/jeducation.log

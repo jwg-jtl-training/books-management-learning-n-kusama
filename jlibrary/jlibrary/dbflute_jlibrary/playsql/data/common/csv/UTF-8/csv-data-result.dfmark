@@ -1,0 +1,10 @@
+
+* * * * * * * * * *
+*                 *
+* Csv Data Result *
+*                 *
+* * * * * * * * * *
+data-directory: playsql/data/common/csv/UTF-8
+
+GENRE.csv (1000)
+ROLE.csv (3)
