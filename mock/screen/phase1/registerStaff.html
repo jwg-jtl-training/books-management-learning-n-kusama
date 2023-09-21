@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="mt-4 pt-2">
-                  <input class="btn btn-primary btn-lg" type="submit" value="Submit" id="btn"/>
+                  <input class="btn btn-primary btn-lg" type="submit" value="Submit" onclick="return confirm('登録してもよろしいですか?')"/>
                 </div>
 
               </form>
@@ -95,16 +95,6 @@
       </div>
     </div>
   </section>
-
-  <script>
-    var btn = document.getElementById('btn');
-    
-    btn.addEventListener('click', function() {
-    
-        window.confirm('登録してもよろしいですか？');
-    
-    })
-  </script>
 
 </body>
 
