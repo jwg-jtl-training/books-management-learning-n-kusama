@@ -48,5 +48,5 @@ out/
 *.tar.gz
 *.rar
 
-# logs配下除外
-/logs/
+# log配下除外
+/log/
