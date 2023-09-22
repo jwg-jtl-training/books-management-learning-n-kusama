@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- BootStrapのCSSの読み込み -->
+  <link href="../../lib/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQueryの読み込み -->
+  <script src="../../lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+  <!-- BootStrapのJSの読み込み -->
+  <script src="../../lib/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+  <title>ログイン</title>
+</head>
+
+<body>
+
+  <section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+
+              <div class="mb-md-5 mt-md-4 pb-2">
+
+                <h2 class="fw-bold mb-2 bg-light text-muted text-uppercase border border-2 border-dark rounded-pill">Login</h2>
+                <p class="text-white-50 mb-5">ログインIDとパスワードを入力してください</p>
+
+                <form class="form" action="#" method="POST">
+
+                  <div class="form-outline form-white mb-4">
+                    <input type="text" class="form-control form-control-lg" />
+                    <label class="form-label" for="loginId">ログインID</label>
+                  </div>
+
+                  <div class="form-outline form-white mb-4">
+                    <input type="password" class="form-control form-control-lg" placeholder="********" />
+                    <label class="form-label" for="password">パスワード</label>
+                  </div>
+                </form>
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+              </div>
+
+              <div>
+                <p class="mb-0">アカウントをお持ちですか? <a href="#!" class="text-white-50 fw-bold">新規登録へ</a>
+                    <p><a href="#!" class="text-white-50 fw-bold">TOPに戻る</a>
+                    </p>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
