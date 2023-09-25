@@ -3,13 +3,13 @@
   <th:block th:with="UrlConsts=${T(jp.co.jwebgate.jlibrary.consts.UrlConsts)}">
     <head>
       <meta charset="UTF-8">
-      <link rel="stylesheet" th:href="@{/css/style.css}">
+      <link rel="stylesheet" th:href="@{../static/css/style.css}">
       <!-- BootStrapのCSSの読み込み -->
-      <link href="/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../static/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
       <!-- jQueryの読み込み -->
-      <script src="/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+      <script src="../static/jquery-3.7.1/jquery-3.7.1.min.js"></script>
       <!-- BootStrapのJSの読み込み -->
-      <script src="/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+      <script src="../static/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
       <title>新規図書登録</title>
       <script th:inline="javascript">
         function selectGenre(){
@@ -109,7 +109,7 @@
         </div>
         <div class="d-md-flex justify-content-md-end pt-5">
           <a class="btn btn-secondary m-1" type="submit" th:href="@{${UrlConsts.SEARCH_BOOK}}">キャンセル</a>
-          <button class="btn btn-primary m-1" type="submit">登録</button>
+          <button class="btn btn-primary m-1" onclick="return confirm('登録してもよろしいですか？')" type="submit">登録</button>
         </div>
       </form>
       <!-- Modal -->
