@@ -22,7 +22,7 @@ import jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 
 /**
- * The behavior of STAFF_USER as TABLE.
+ * The behavior of staff_user as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsStaffUserBhv extends AbstractBehaviorWritable<StaffUser, StaffUserCB> {
@@ -41,7 +41,7 @@ public abstract class BsStaffUserBhv extends AbstractBehaviorWritable<StaffUser,
     /** {@inheritDoc} */
     public StaffUserDbm asDBMeta() { return StaffUserDbm.getInstance(); }
     /** {@inheritDoc} */
-    public String asTableDbName() { return "STAFF_USER"; }
+    public String asTableDbName() { return "staff_user"; }
 
     // ===================================================================================
     //                                                                        New Instance
@@ -363,7 +363,7 @@ public abstract class BsStaffUserBhv extends AbstractBehaviorWritable<StaffUser,
 
     /**
      * Load referrer of userRoleMapList by the set-upper of referrer. <br>
-     * USER_ROLE_MAP by STAFF_USER_ID, named 'userRoleMapList'.
+     * user_role_map by STAFF_USER_ID, named 'userRoleMapList'.
      * <pre>
      * <span style="color: #0000C0">staffUserBhv</span>.<span style="color: #CC4747">loadUserRoleMap</span>(<span style="color: #553000">staffUserList</span>, <span style="color: #553000">mapCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">mapCB</span>.setupSelect...
@@ -394,7 +394,7 @@ public abstract class BsStaffUserBhv extends AbstractBehaviorWritable<StaffUser,
 
     /**
      * Load referrer of userRoleMapList by the set-upper of referrer. <br>
-     * USER_ROLE_MAP by STAFF_USER_ID, named 'userRoleMapList'.
+     * user_role_map by STAFF_USER_ID, named 'userRoleMapList'.
      * <pre>
      * <span style="color: #0000C0">staffUserBhv</span>.<span style="color: #CC4747">loadUserRoleMap</span>(<span style="color: #553000">staffUser</span>, <span style="color: #553000">mapCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">mapCB</span>.setupSelect...

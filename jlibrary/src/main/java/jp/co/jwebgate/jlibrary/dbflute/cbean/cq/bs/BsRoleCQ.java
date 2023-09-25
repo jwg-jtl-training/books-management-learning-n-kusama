@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-query of ROLE.
+ * The base condition-query of role.
  * @author DBFlute(AutoGenerator)
  */
 public class BsRoleCQ extends AbstractBsRoleCQ {
@@ -35,7 +35,7 @@ public class BsRoleCQ extends AbstractBsRoleCQ {
     //                                                                 ===================
     /**
      * Prepare InlineView query. <br>
-     * {select ... from ... left outer join (select * from ROLE) where FOO = [value] ...}
+     * {select ... from ... left outer join (select * from role) where FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">inline()</span>.setFoo...;
      * </pre>
@@ -58,7 +58,7 @@ public class BsRoleCQ extends AbstractBsRoleCQ {
 
     /**
      * Prepare OnClause query. <br>
-     * {select ... from ... left outer join ROLE on ... and FOO = [value] ...}
+     * {select ... from ... left outer join role on ... and FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">on()</span>.setFoo...;
      * </pre>

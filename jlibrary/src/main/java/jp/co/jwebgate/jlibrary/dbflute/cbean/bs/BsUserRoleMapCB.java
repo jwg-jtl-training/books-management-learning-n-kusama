@@ -20,7 +20,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-bean of USER_ROLE_MAP.
+ * The base condition-bean of user_role_map.
  * @author DBFlute(AutoGenerator)
  */
 public class BsUserRoleMapCB extends AbstractConditionBean {
@@ -76,7 +76,7 @@ public class BsUserRoleMapCB extends AbstractConditionBean {
     }
 
     public String asTableDbName() {
-        return "USER_ROLE_MAP";
+        return "user_role_map";
     }
 
     // ===================================================================================
@@ -96,9 +96,9 @@ public class BsUserRoleMapCB extends AbstractConditionBean {
 
     /**
      * Accept the query condition of unique key as equal.
-     * @param staffUserId : UQ+, VARCHAR(10), FK to STAFF_USER. (NotNull)
-     * @param generalUserId : +UQ, IX, VARCHAR(10), FK to GENERAL_USER. (NotNull)
-     * @param roleId : +UQ, IX, NotNull, INT(10), FK to ROLE. (NotNull)
+     * @param staffUserId : UQ+, VARCHAR(10), FK to staff_user. (NotNull)
+     * @param generalUserId : +UQ, IX, VARCHAR(10), FK to general_user. (NotNull)
+     * @param roleId : +UQ, IX, NotNull, INT(10), FK to role. (NotNull)
      * @return this. (NotNull)
      */
     public UserRoleMapCB acceptUniqueOf(String staffUserId, String generalUserId, Integer roleId) {
@@ -257,7 +257,7 @@ public class BsUserRoleMapCB extends AbstractConditionBean {
     //                                                                         ===========
     /**
      * Set up relation columns to select clause. <br>
-     * GENERAL_USER by my GENERAL_USER_ID, named 'generalUser'.
+     * general_user by my GENERAL_USER_ID, named 'generalUser'.
      * <pre>
      * <span style="color: #0000C0">userRoleMapBhv</span>.selectEntity(<span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">cb</span>.<span style="color: #CC4747">setupSelect_GeneralUser()</span>; <span style="color: #3F7E5E">// ...().with[nested-relation]()</span>
@@ -277,7 +277,7 @@ public class BsUserRoleMapCB extends AbstractConditionBean {
 
     /**
      * Set up relation columns to select clause. <br>
-     * ROLE by my ROLE_ID, named 'role'.
+     * role by my ROLE_ID, named 'role'.
      * <pre>
      * <span style="color: #0000C0">userRoleMapBhv</span>.selectEntity(<span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">cb</span>.<span style="color: #CC4747">setupSelect_Role()</span>; <span style="color: #3F7E5E">// ...().with[nested-relation]()</span>
@@ -297,7 +297,7 @@ public class BsUserRoleMapCB extends AbstractConditionBean {
 
     /**
      * Set up relation columns to select clause. <br>
-     * STAFF_USER by my STAFF_USER_ID, named 'staffUser'.
+     * staff_user by my STAFF_USER_ID, named 'staffUser'.
      * <pre>
      * <span style="color: #0000C0">userRoleMapBhv</span>.selectEntity(<span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">cb</span>.<span style="color: #CC4747">setupSelect_StaffUser()</span>; <span style="color: #3F7E5E">// ...().with[nested-relation]()</span>
@@ -369,17 +369,17 @@ public class BsUserRoleMapCB extends AbstractConditionBean {
          */
         public SpecifiedColumn columnId() { return doColumn("ID"); }
         /**
-         * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
+         * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
          * @return The information object of specified column. (NotNull)
          */
         public SpecifiedColumn columnStaffUserId() { return doColumn("STAFF_USER_ID"); }
         /**
-         * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
+         * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
          * @return The information object of specified column. (NotNull)
          */
         public SpecifiedColumn columnGeneralUserId() { return doColumn("GENERAL_USER_ID"); }
         /**
-         * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
+         * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
          * @return The information object of specified column. (NotNull)
          */
         public SpecifiedColumn columnRoleId() { return doColumn("ROLE_ID"); }
@@ -432,10 +432,10 @@ public class BsUserRoleMapCB extends AbstractConditionBean {
             }
         }
         @Override
-        protected String getTableDbName() { return "USER_ROLE_MAP"; }
+        protected String getTableDbName() { return "user_role_map"; }
         /**
          * Prepare to specify functions about relation table. <br>
-         * GENERAL_USER by my GENERAL_USER_ID, named 'generalUser'.
+         * general_user by my GENERAL_USER_ID, named 'generalUser'.
          * @return The instance for specification for relation table to specify. (NotNull)
          */
         public GeneralUserCB.HpSpecification specifyGeneralUser() {
@@ -455,7 +455,7 @@ public class BsUserRoleMapCB extends AbstractConditionBean {
         }
         /**
          * Prepare to specify functions about relation table. <br>
-         * ROLE by my ROLE_ID, named 'role'.
+         * role by my ROLE_ID, named 'role'.
          * @return The instance for specification for relation table to specify. (NotNull)
          */
         public RoleCB.HpSpecification specifyRole() {
@@ -475,7 +475,7 @@ public class BsUserRoleMapCB extends AbstractConditionBean {
         }
         /**
          * Prepare to specify functions about relation table. <br>
-         * STAFF_USER by my STAFF_USER_ID, named 'staffUser'.
+         * staff_user by my STAFF_USER_ID, named 'staffUser'.
          * @return The instance for specification for relation table to specify. (NotNull)
          */
         public StaffUserCB.HpSpecification specifyStaffUser() {

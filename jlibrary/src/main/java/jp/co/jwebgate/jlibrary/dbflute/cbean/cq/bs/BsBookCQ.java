@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-query of BOOK.
+ * The base condition-query of book.
  * @author DBFlute(AutoGenerator)
  */
 public class BsBookCQ extends AbstractBsBookCQ {
@@ -35,7 +35,7 @@ public class BsBookCQ extends AbstractBsBookCQ {
     //                                                                 ===================
     /**
      * Prepare InlineView query. <br>
-     * {select ... from ... left outer join (select * from BOOK) where FOO = [value] ...}
+     * {select ... from ... left outer join (select * from book) where FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">inline()</span>.setFoo...;
      * </pre>
@@ -58,7 +58,7 @@ public class BsBookCQ extends AbstractBsBookCQ {
 
     /**
      * Prepare OnClause query. <br>
-     * {select ... from ... left outer join BOOK on ... and FOO = [value] ...}
+     * {select ... from ... left outer join book on ... and FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">on()</span>.setFoo...;
      * </pre>
@@ -201,14 +201,14 @@ public class BsBookCQ extends AbstractBsBookCQ {
 
     /**
      * Add order-by as ascend. <br>
-     * GENRE_ID: {IX, INT(10), FK to GENRE}
+     * GENRE_ID: {IX, INT(10), FK to genre}
      * @return this. (NotNull)
      */
     public BsBookCQ addOrderBy_GenreId_Asc() { regOBA("GENRE_ID"); return this; }
 
     /**
      * Add order-by as descend. <br>
-     * GENRE_ID: {IX, INT(10), FK to GENRE}
+     * GENRE_ID: {IX, INT(10), FK to genre}
      * @return this. (NotNull)
      */
     public BsBookCQ addOrderBy_GenreId_Desc() { regOBD("GENRE_ID"); return this; }
@@ -424,7 +424,7 @@ public class BsBookCQ extends AbstractBsBookCQ {
     //                                                                       =============
     /**
      * Get the condition-query for relation table. <br>
-     * GENRE by my GENRE_ID, named 'genre'.
+     * genre by my GENRE_ID, named 'genre'.
      * @return The instance of condition-query. (NotNull)
      */
     public GenreCQ queryGenre() {
@@ -436,7 +436,7 @@ public class BsBookCQ extends AbstractBsBookCQ {
         return xgetQueRlMap(prop);
     }
     protected GenreCQ xcreateQueryGenre() {
-        String nrp = xresolveNRP("BOOK", "genre"); String jan = xresolveJAN(nrp, xgetNNLvl());
+        String nrp = xresolveNRP("book", "genre"); String jan = xresolveJAN(nrp, xgetNNLvl());
         return xinitRelCQ(new GenreCQ(this, xgetSqlClause(), jan, xgetNNLvl()), _baseCB, "genre", nrp);
     }
     protected void xsetupOuterJoinGenre() { xregOutJo("genre"); }

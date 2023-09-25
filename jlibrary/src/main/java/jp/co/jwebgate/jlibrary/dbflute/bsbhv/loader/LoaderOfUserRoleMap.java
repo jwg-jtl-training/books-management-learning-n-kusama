@@ -7,7 +7,7 @@ import jp.co.jwebgate.jlibrary.dbflute.exbhv.*;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The referrer loader of USER_ROLE_MAP as TABLE.
+ * The referrer loader of user_role_map as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfUserRoleMap {

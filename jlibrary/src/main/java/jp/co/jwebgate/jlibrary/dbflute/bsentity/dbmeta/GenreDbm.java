@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.allcommon.*;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The DB meta of GENRE. (Singleton)
+ * The DB meta of genre. (Singleton)
  * @author DBFlute(AutoGenerator)
  */
 public class GenreDbm extends AbstractDBMeta {
@@ -58,10 +58,10 @@ public class GenreDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                          Table Info
     //                                                                          ==========
-    protected final String _tableDbName = "GENRE";
-    protected final String _tableDispName = "GENRE";
+    protected final String _tableDbName = "genre";
+    protected final String _tableDispName = "genre";
     protected final String _tablePropertyName = "genre";
-    protected final TableSqlName _tableSqlName = new TableSqlName("GENRE", _tableDbName);
+    protected final TableSqlName _tableSqlName = new TableSqlName("genre", _tableDbName);
     { _tableSqlName.xacceptFilter(DBFluteConfig.getInstance().getTableSqlNameFilter()); }
     public String getTableDbName() { return _tableDbName; }
     public String getTableDispName() { return _tableDispName; }
@@ -171,7 +171,7 @@ public class GenreDbm extends AbstractDBMeta {
     //                                     Referrer Property
     //                                     -----------------
     /**
-     * BOOK by GENRE_ID, named 'bookList'.
+     * book by GENRE_ID, named 'bookList'.
      * @return The information object of referrer property. (NotNull)
      */
     public ReferrerInfo referrerBookList() {

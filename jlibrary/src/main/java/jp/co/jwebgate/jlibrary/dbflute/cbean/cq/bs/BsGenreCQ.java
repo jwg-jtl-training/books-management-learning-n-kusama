@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-query of GENRE.
+ * The base condition-query of genre.
  * @author DBFlute(AutoGenerator)
  */
 public class BsGenreCQ extends AbstractBsGenreCQ {
@@ -35,7 +35,7 @@ public class BsGenreCQ extends AbstractBsGenreCQ {
     //                                                                 ===================
     /**
      * Prepare InlineView query. <br>
-     * {select ... from ... left outer join (select * from GENRE) where FOO = [value] ...}
+     * {select ... from ... left outer join (select * from genre) where FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">inline()</span>.setFoo...;
      * </pre>
@@ -58,7 +58,7 @@ public class BsGenreCQ extends AbstractBsGenreCQ {
 
     /**
      * Prepare OnClause query. <br>
-     * {select ... from ... left outer join GENRE on ... and FOO = [value] ...}
+     * {select ... from ... left outer join genre on ... and FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">on()</span>.setFoo...;
      * </pre>

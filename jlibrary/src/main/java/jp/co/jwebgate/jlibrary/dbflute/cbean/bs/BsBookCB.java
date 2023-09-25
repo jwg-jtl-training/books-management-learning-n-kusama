@@ -20,7 +20,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-bean of BOOK.
+ * The base condition-bean of book.
  * @author DBFlute(AutoGenerator)
  */
 public class BsBookCB extends AbstractConditionBean {
@@ -76,7 +76,7 @@ public class BsBookCB extends AbstractConditionBean {
     }
 
     public String asTableDbName() {
-        return "BOOK";
+        return "book";
     }
 
     // ===================================================================================
@@ -246,7 +246,7 @@ public class BsBookCB extends AbstractConditionBean {
     //                                                                         ===========
     /**
      * Set up relation columns to select clause. <br>
-     * GENRE by my GENRE_ID, named 'genre'.
+     * genre by my GENRE_ID, named 'genre'.
      * <pre>
      * <span style="color: #0000C0">bookBhv</span>.selectEntity(<span style="color: #553000">cb</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">cb</span>.<span style="color: #CC4747">setupSelect_Genre()</span>; <span style="color: #3F7E5E">// ...().with[nested-relation]()</span>
@@ -341,7 +341,7 @@ public class BsBookCB extends AbstractConditionBean {
          */
         public SpecifiedColumn columnPublisher() { return doColumn("PUBLISHER"); }
         /**
-         * GENRE_ID: {IX, INT(10), FK to GENRE}
+         * GENRE_ID: {IX, INT(10), FK to genre}
          * @return The information object of specified column. (NotNull)
          */
         public SpecifiedColumn columnGenreId() { return doColumn("GENRE_ID"); }
@@ -397,10 +397,10 @@ public class BsBookCB extends AbstractConditionBean {
             }
         }
         @Override
-        protected String getTableDbName() { return "BOOK"; }
+        protected String getTableDbName() { return "book"; }
         /**
          * Prepare to specify functions about relation table. <br>
-         * GENRE by my GENRE_ID, named 'genre'.
+         * genre by my GENRE_ID, named 'genre'.
          * @return The instance for specification for relation table to specify. (NotNull)
          */
         public GenreCB.HpSpecification specifyGenre() {

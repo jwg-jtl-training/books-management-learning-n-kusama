@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-query of GENERAL_USER.
+ * The base condition-query of general_user.
  * @author DBFlute(AutoGenerator)
  */
 public class BsGeneralUserCQ extends AbstractBsGeneralUserCQ {
@@ -35,7 +35,7 @@ public class BsGeneralUserCQ extends AbstractBsGeneralUserCQ {
     //                                                                 ===================
     /**
      * Prepare InlineView query. <br>
-     * {select ... from ... left outer join (select * from GENERAL_USER) where FOO = [value] ...}
+     * {select ... from ... left outer join (select * from general_user) where FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">inline()</span>.setFoo...;
      * </pre>
@@ -58,7 +58,7 @@ public class BsGeneralUserCQ extends AbstractBsGeneralUserCQ {
 
     /**
      * Prepare OnClause query. <br>
-     * {select ... from ... left outer join GENERAL_USER on ... and FOO = [value] ...}
+     * {select ... from ... left outer join general_user on ... and FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">on()</span>.setFoo...;
      * </pre>

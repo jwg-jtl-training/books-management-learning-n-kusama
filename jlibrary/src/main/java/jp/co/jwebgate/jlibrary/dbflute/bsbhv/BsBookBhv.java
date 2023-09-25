@@ -22,7 +22,7 @@ import jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 
 /**
- * The behavior of BOOK as TABLE.
+ * The behavior of book as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsBookBhv extends AbstractBehaviorWritable<Book, BookCB> {
@@ -39,7 +39,7 @@ public abstract class BsBookBhv extends AbstractBehaviorWritable<Book, BookCB> {
     /** {@inheritDoc} */
     public BookDbm asDBMeta() { return BookDbm.getInstance(); }
     /** {@inheritDoc} */
-    public String asTableDbName() { return "BOOK"; }
+    public String asTableDbName() { return "book"; }
 
     // ===================================================================================
     //                                                                        New Instance

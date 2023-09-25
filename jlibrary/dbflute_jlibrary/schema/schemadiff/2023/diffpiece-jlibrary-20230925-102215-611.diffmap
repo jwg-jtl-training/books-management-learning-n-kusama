@@ -1,0 +1,57 @@
+map:{
+    ; 2023/09/25 10:22:15.611 = map:{
+        ; diffDate = 2023/09/25 10:22:15.611
+        ; diffAuthor = j_user
+        ; diffGitBranch = master
+        ; tableDiff = map:{
+            ; book = map:{
+                ; tableName = book
+                ; diffType = ADD
+            }
+            ; general_user = map:{
+                ; tableName = general_user
+                ; diffType = ADD
+            }
+            ; genre = map:{
+                ; tableName = genre
+                ; diffType = ADD
+            }
+            ; role = map:{
+                ; tableName = role
+                ; diffType = ADD
+            }
+            ; staff_user = map:{
+                ; tableName = staff_user
+                ; diffType = ADD
+            }
+            ; user_role_map = map:{
+                ; tableName = user_role_map
+                ; diffType = ADD
+            }
+            ; BOOK = map:{
+                ; tableName = BOOK
+                ; diffType = DELETE
+            }
+            ; GENERAL_USER = map:{
+                ; tableName = GENERAL_USER
+                ; diffType = DELETE
+            }
+            ; GENRE = map:{
+                ; tableName = GENRE
+                ; diffType = DELETE
+            }
+            ; ROLE = map:{
+                ; tableName = ROLE
+                ; diffType = DELETE
+            }
+            ; STAFF_USER = map:{
+                ; tableName = STAFF_USER
+                ; diffType = DELETE
+            }
+            ; USER_ROLE_MAP = map:{
+                ; tableName = USER_ROLE_MAP
+                ; diffType = DELETE
+            }
+        }
+    }
+}

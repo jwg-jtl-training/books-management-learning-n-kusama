@@ -3,7 +3,7 @@ package jp.co.jwebgate.jlibrary.dbflute.cbean.nss;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.BookCQ;
 
 /**
- * The nest select set-upper of BOOK.
+ * The nest select set-upper of book.
  * @author DBFlute(AutoGenerator)
  */
 public class BookNss {
@@ -20,7 +20,7 @@ public class BookNss {
     //                                                                     ===============
     /**
      * With nested relation columns to select clause. <br>
-     * GENRE by my GENRE_ID, named 'genre'.
+     * genre by my GENRE_ID, named 'genre'.
      */
     public void withGenre() {
         _query.xdoNss(() -> _query.queryGenre());

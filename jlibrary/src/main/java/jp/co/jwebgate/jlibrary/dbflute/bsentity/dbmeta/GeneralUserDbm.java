@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.allcommon.*;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The DB meta of GENERAL_USER. (Singleton)
+ * The DB meta of general_user. (Singleton)
  * @author DBFlute(AutoGenerator)
  */
 public class GeneralUserDbm extends AbstractDBMeta {
@@ -63,10 +63,10 @@ public class GeneralUserDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                          Table Info
     //                                                                          ==========
-    protected final String _tableDbName = "GENERAL_USER";
-    protected final String _tableDispName = "GENERAL_USER";
+    protected final String _tableDbName = "general_user";
+    protected final String _tableDispName = "general_user";
     protected final String _tablePropertyName = "generalUser";
-    protected final TableSqlName _tableSqlName = new TableSqlName("GENERAL_USER", _tableDbName);
+    protected final TableSqlName _tableSqlName = new TableSqlName("general_user", _tableDbName);
     { _tableSqlName.xacceptFilter(DBFluteConfig.getInstance().getTableSqlNameFilter()); }
     public String getTableDbName() { return _tableDbName; }
     public String getTableDispName() { return _tableDispName; }
@@ -216,7 +216,7 @@ public class GeneralUserDbm extends AbstractDBMeta {
     //                                     Referrer Property
     //                                     -----------------
     /**
-     * USER_ROLE_MAP by GENERAL_USER_ID, named 'userRoleMapList'.
+     * user_role_map by GENERAL_USER_ID, named 'userRoleMapList'.
      * @return The information object of referrer property. (NotNull)
      */
     public ReferrerInfo referrerUserRoleMapList() {

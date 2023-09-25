@@ -9,7 +9,7 @@ import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 
 /**
- * The referrer loader of GENRE as TABLE.
+ * The referrer loader of genre as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfGenre {
@@ -37,7 +37,7 @@ public class LoaderOfGenre {
 
     /**
      * Load referrer of bookList by the set-upper of referrer. <br>
-     * BOOK by GENRE_ID, named 'bookList'.
+     * book by GENRE_ID, named 'bookList'.
      * <pre>
      * <span style="color: #0000C0">genreBhv</span>.<span style="color: #994747">load</span>(<span style="color: #553000">genreList</span>, <span style="color: #553000">genreLoader</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">genreLoader</span>.<span style="color: #CC4747">loadBook</span>(<span style="color: #553000">bookCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {

@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-query of USER_ROLE_MAP.
+ * The base condition-query of user_role_map.
  * @author DBFlute(AutoGenerator)
  */
 public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
@@ -35,7 +35,7 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
     //                                                                 ===================
     /**
      * Prepare InlineView query. <br>
-     * {select ... from ... left outer join (select * from USER_ROLE_MAP) where FOO = [value] ...}
+     * {select ... from ... left outer join (select * from user_role_map) where FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">inline()</span>.setFoo...;
      * </pre>
@@ -58,7 +58,7 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
 
     /**
      * Prepare OnClause query. <br>
-     * {select ... from ... left outer join USER_ROLE_MAP on ... and FOO = [value] ...}
+     * {select ... from ... left outer join user_role_map on ... and FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">on()</span>.setFoo...;
      * </pre>
@@ -101,14 +101,14 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
 
     /**
      * Add order-by as ascend. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
      * @return this. (NotNull)
      */
     public BsUserRoleMapCQ addOrderBy_StaffUserId_Asc() { regOBA("STAFF_USER_ID"); return this; }
 
     /**
      * Add order-by as descend. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
      * @return this. (NotNull)
      */
     public BsUserRoleMapCQ addOrderBy_StaffUserId_Desc() { regOBD("STAFF_USER_ID"); return this; }
@@ -121,14 +121,14 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
 
     /**
      * Add order-by as ascend. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
      * @return this. (NotNull)
      */
     public BsUserRoleMapCQ addOrderBy_GeneralUserId_Asc() { regOBA("GENERAL_USER_ID"); return this; }
 
     /**
      * Add order-by as descend. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
      * @return this. (NotNull)
      */
     public BsUserRoleMapCQ addOrderBy_GeneralUserId_Desc() { regOBD("GENERAL_USER_ID"); return this; }
@@ -141,14 +141,14 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
 
     /**
      * Add order-by as ascend. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
      * @return this. (NotNull)
      */
     public BsUserRoleMapCQ addOrderBy_RoleId_Asc() { regOBA("ROLE_ID"); return this; }
 
     /**
      * Add order-by as descend. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
      * @return this. (NotNull)
      */
     public BsUserRoleMapCQ addOrderBy_RoleId_Desc() { regOBD("ROLE_ID"); return this; }
@@ -330,7 +330,7 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
     //                                                                       =============
     /**
      * Get the condition-query for relation table. <br>
-     * GENERAL_USER by my GENERAL_USER_ID, named 'generalUser'.
+     * general_user by my GENERAL_USER_ID, named 'generalUser'.
      * @return The instance of condition-query. (NotNull)
      */
     public GeneralUserCQ queryGeneralUser() {
@@ -342,7 +342,7 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
         return xgetQueRlMap(prop);
     }
     protected GeneralUserCQ xcreateQueryGeneralUser() {
-        String nrp = xresolveNRP("USER_ROLE_MAP", "generalUser"); String jan = xresolveJAN(nrp, xgetNNLvl());
+        String nrp = xresolveNRP("user_role_map", "generalUser"); String jan = xresolveJAN(nrp, xgetNNLvl());
         return xinitRelCQ(new GeneralUserCQ(this, xgetSqlClause(), jan, xgetNNLvl()), _baseCB, "generalUser", nrp);
     }
     protected void xsetupOuterJoinGeneralUser() { xregOutJo("generalUser"); }
@@ -350,7 +350,7 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
 
     /**
      * Get the condition-query for relation table. <br>
-     * ROLE by my ROLE_ID, named 'role'.
+     * role by my ROLE_ID, named 'role'.
      * @return The instance of condition-query. (NotNull)
      */
     public RoleCQ queryRole() {
@@ -362,7 +362,7 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
         return xgetQueRlMap(prop);
     }
     protected RoleCQ xcreateQueryRole() {
-        String nrp = xresolveNRP("USER_ROLE_MAP", "role"); String jan = xresolveJAN(nrp, xgetNNLvl());
+        String nrp = xresolveNRP("user_role_map", "role"); String jan = xresolveJAN(nrp, xgetNNLvl());
         return xinitRelCQ(new RoleCQ(this, xgetSqlClause(), jan, xgetNNLvl()), _baseCB, "role", nrp);
     }
     protected void xsetupOuterJoinRole() { xregOutJo("role"); }
@@ -370,7 +370,7 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
 
     /**
      * Get the condition-query for relation table. <br>
-     * STAFF_USER by my STAFF_USER_ID, named 'staffUser'.
+     * staff_user by my STAFF_USER_ID, named 'staffUser'.
      * @return The instance of condition-query. (NotNull)
      */
     public StaffUserCQ queryStaffUser() {
@@ -382,7 +382,7 @@ public class BsUserRoleMapCQ extends AbstractBsUserRoleMapCQ {
         return xgetQueRlMap(prop);
     }
     protected StaffUserCQ xcreateQueryStaffUser() {
-        String nrp = xresolveNRP("USER_ROLE_MAP", "staffUser"); String jan = xresolveJAN(nrp, xgetNNLvl());
+        String nrp = xresolveNRP("user_role_map", "staffUser"); String jan = xresolveJAN(nrp, xgetNNLvl());
         return xinitRelCQ(new StaffUserCQ(this, xgetSqlClause(), jan, xgetNNLvl()), _baseCB, "staffUser", nrp);
     }
     protected void xsetupOuterJoinStaffUser() { xregOutJo("staffUser"); }

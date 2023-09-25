@@ -12,7 +12,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.bs.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The condition-query for in-line of STAFF_USER.
+ * The condition-query for in-line of staff_user.
  * @author DBFlute(AutoGenerator)
  */
 public class StaffUserCIQ extends AbstractBsStaffUserCQ {

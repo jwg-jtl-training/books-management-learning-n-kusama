@@ -16,7 +16,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The abstract condition-query of STAFF_USER.
+ * The abstract condition-query of staff_user.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class AbstractBsStaffUserCQ extends AbstractConditionQuery {
@@ -37,7 +37,7 @@ public abstract class AbstractBsStaffUserCQ extends AbstractConditionQuery {
     }
 
     public String asTableDbName() {
-        return "STAFF_USER";
+        return "staff_user";
     }
 
     // ===================================================================================
@@ -306,8 +306,8 @@ public abstract class AbstractBsStaffUserCQ extends AbstractConditionQuery {
 
     /**
      * Set up ExistsReferrer (correlated sub-query). <br>
-     * {exists (select STAFF_USER_ID from USER_ROLE_MAP where ...)} <br>
-     * USER_ROLE_MAP by STAFF_USER_ID, named 'userRoleMapAsOne'.
+     * {exists (select STAFF_USER_ID from user_role_map where ...)} <br>
+     * user_role_map by STAFF_USER_ID, named 'userRoleMapAsOne'.
      * <pre>
      * cb.query().<span style="color: #CC4747">existsUserRoleMap</span>(mapCB <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     mapCB.query().set...
@@ -325,8 +325,8 @@ public abstract class AbstractBsStaffUserCQ extends AbstractConditionQuery {
 
     /**
      * Set up NotExistsReferrer (correlated sub-query). <br>
-     * {not exists (select STAFF_USER_ID from USER_ROLE_MAP where ...)} <br>
-     * USER_ROLE_MAP by STAFF_USER_ID, named 'userRoleMapAsOne'.
+     * {not exists (select STAFF_USER_ID from user_role_map where ...)} <br>
+     * user_role_map by STAFF_USER_ID, named 'userRoleMapAsOne'.
      * <pre>
      * cb.query().<span style="color: #CC4747">notExistsUserRoleMap</span>(mapCB <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     mapCB.query().set...
@@ -352,8 +352,8 @@ public abstract class AbstractBsStaffUserCQ extends AbstractConditionQuery {
 
     /**
      * Prepare for (Query)DerivedReferrer (correlated sub-query). <br>
-     * {FOO &lt;= (select max(BAR) from USER_ROLE_MAP where ...)} <br>
-     * USER_ROLE_MAP by STAFF_USER_ID, named 'userRoleMapAsOne'.
+     * {FOO &lt;= (select max(BAR) from user_role_map where ...)} <br>
+     * user_role_map by STAFF_USER_ID, named 'userRoleMapAsOne'.
      * <pre>
      * cb.query().<span style="color: #CC4747">derivedUserRoleMap()</span>.<span style="color: #CC4747">max</span>(mapCB <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     mapCB.specify().<span style="color: #CC4747">columnFoo...</span> <span style="color: #3F7E5E">// derived column by function</span>

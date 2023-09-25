@@ -20,7 +20,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-bean of GENERAL_USER.
+ * The base condition-bean of general_user.
  * @author DBFlute(AutoGenerator)
  */
 public class BsGeneralUserCB extends AbstractConditionBean {
@@ -76,7 +76,7 @@ public class BsGeneralUserCB extends AbstractConditionBean {
     }
 
     public String asTableDbName() {
-        return "GENERAL_USER";
+        return "general_user";
     }
 
     // ===================================================================================
@@ -379,11 +379,11 @@ public class BsGeneralUserCB extends AbstractConditionBean {
             columnGeneralUserId(); // PK
         }
         @Override
-        protected String getTableDbName() { return "GENERAL_USER"; }
+        protected String getTableDbName() { return "general_user"; }
         /**
          * Prepare for (Specify)DerivedReferrer (correlated sub-query). <br>
-         * {select max(FOO) from USER_ROLE_MAP where ...) as FOO_MAX} <br>
-         * USER_ROLE_MAP by GENERAL_USER_ID, named 'userRoleMapList'.
+         * {select max(FOO) from user_role_map where ...) as FOO_MAX} <br>
+         * user_role_map by GENERAL_USER_ID, named 'userRoleMapList'.
          * <pre>
          * cb.specify().<span style="color: #CC4747">derived${relationMethodIdentityName}()</span>.<span style="color: #CC4747">max</span>(mapCB <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
          *     mapCB.specify().<span style="color: #CC4747">column...</span> <span style="color: #3F7E5E">// derived column by function</span>

@@ -22,7 +22,7 @@ import jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 
 /**
- * The behavior of USER_ROLE_MAP as TABLE.
+ * The behavior of user_role_map as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsUserRoleMapBhv extends AbstractBehaviorWritable<UserRoleMap, UserRoleMapCB> {
@@ -39,7 +39,7 @@ public abstract class BsUserRoleMapBhv extends AbstractBehaviorWritable<UserRole
     /** {@inheritDoc} */
     public UserRoleMapDbm asDBMeta() { return UserRoleMapDbm.getInstance(); }
     /** {@inheritDoc} */
-    public String asTableDbName() { return "USER_ROLE_MAP"; }
+    public String asTableDbName() { return "user_role_map"; }
 
     // ===================================================================================
     //                                                                        New Instance
@@ -160,9 +160,9 @@ public abstract class BsUserRoleMapBhv extends AbstractBehaviorWritable<UserRole
 
     /**
      * Select the entity by the unique-key value.
-     * @param staffUserId : UQ+, VARCHAR(10), FK to STAFF_USER. (NotNull)
-     * @param generalUserId : +UQ, IX, VARCHAR(10), FK to GENERAL_USER. (NotNull)
-     * @param roleId : +UQ, IX, NotNull, INT(10), FK to ROLE. (NotNull)
+     * @param staffUserId : UQ+, VARCHAR(10), FK to staff_user. (NotNull)
+     * @param generalUserId : +UQ, IX, VARCHAR(10), FK to general_user. (NotNull)
+     * @param roleId : +UQ, IX, NotNull, INT(10), FK to role. (NotNull)
      * @return The optional entity selected by the unique key. (NotNull: if no data, empty entity)
      * @throws EntityAlreadyDeletedException When get(), required() of return value is called and the value is null, which means entity has already been deleted (not found).
      * @throws EntityDuplicatedException When the entity has been duplicated.

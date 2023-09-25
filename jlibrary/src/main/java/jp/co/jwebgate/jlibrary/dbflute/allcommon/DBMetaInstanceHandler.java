@@ -31,12 +31,12 @@ public class DBMetaInstanceHandler implements DBMetaProvider {
     protected static final Map<String, String> _tableDbNameClassNameMap;
     static {
         final Map<String, String> tmpMap = newHashMap();
-        tmpMap.put("BOOK", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.BookDbm");
-        tmpMap.put("GENERAL_USER", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.GeneralUserDbm");
-        tmpMap.put("GENRE", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.GenreDbm");
-        tmpMap.put("ROLE", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.RoleDbm");
-        tmpMap.put("STAFF_USER", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.StaffUserDbm");
-        tmpMap.put("USER_ROLE_MAP", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.UserRoleMapDbm");
+        tmpMap.put("book", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.BookDbm");
+        tmpMap.put("general_user", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.GeneralUserDbm");
+        tmpMap.put("genre", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.GenreDbm");
+        tmpMap.put("role", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.RoleDbm");
+        tmpMap.put("staff_user", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.StaffUserDbm");
+        tmpMap.put("user_role_map", "jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.UserRoleMapDbm");
         _tableDbNameClassNameMap = Collections.unmodifiableMap(tmpMap);
     }
 

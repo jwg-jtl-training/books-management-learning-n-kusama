@@ -7,7 +7,7 @@ import jp.co.jwebgate.jlibrary.dbflute.exbhv.*;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The referrer loader of BOOK as TABLE.
+ * The referrer loader of book as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfBook {
