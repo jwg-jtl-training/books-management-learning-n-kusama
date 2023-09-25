@@ -22,7 +22,7 @@ import jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 
 /**
- * The behavior of general_user as TABLE.
+ * The behavior of GENERAL_USER as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsGeneralUserBhv extends AbstractBehaviorWritable<GeneralUser, GeneralUserCB> {
@@ -41,7 +41,7 @@ public abstract class BsGeneralUserBhv extends AbstractBehaviorWritable<GeneralU
     /** {@inheritDoc} */
     public GeneralUserDbm asDBMeta() { return GeneralUserDbm.getInstance(); }
     /** {@inheritDoc} */
-    public String asTableDbName() { return "general_user"; }
+    public String asTableDbName() { return "GENERAL_USER"; }
 
     // ===================================================================================
     //                                                                        New Instance
@@ -363,7 +363,7 @@ public abstract class BsGeneralUserBhv extends AbstractBehaviorWritable<GeneralU
 
     /**
      * Load referrer of userRoleMapList by the set-upper of referrer. <br>
-     * user_role_map by GENERAL_USER_ID, named 'userRoleMapList'.
+     * USER_ROLE_MAP by GENERAL_USER_ID, named 'userRoleMapList'.
      * <pre>
      * <span style="color: #0000C0">generalUserBhv</span>.<span style="color: #CC4747">loadUserRoleMap</span>(<span style="color: #553000">generalUserList</span>, <span style="color: #553000">mapCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">mapCB</span>.setupSelect...
@@ -394,7 +394,7 @@ public abstract class BsGeneralUserBhv extends AbstractBehaviorWritable<GeneralU
 
     /**
      * Load referrer of userRoleMapList by the set-upper of referrer. <br>
-     * user_role_map by GENERAL_USER_ID, named 'userRoleMapList'.
+     * USER_ROLE_MAP by GENERAL_USER_ID, named 'userRoleMapList'.
      * <pre>
      * <span style="color: #0000C0">generalUserBhv</span>.<span style="color: #CC4747">loadUserRoleMap</span>(<span style="color: #553000">generalUser</span>, <span style="color: #553000">mapCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">mapCB</span>.setupSelect...

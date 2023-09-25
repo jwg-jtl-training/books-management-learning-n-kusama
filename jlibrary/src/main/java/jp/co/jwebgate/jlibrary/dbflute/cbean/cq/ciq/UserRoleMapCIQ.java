@@ -12,7 +12,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.bs.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The condition-query for in-line of user_role_map.
+ * The condition-query for in-line of USER_ROLE_MAP.
  * @author DBFlute(AutoGenerator)
  */
 public class UserRoleMapCIQ extends AbstractBsUserRoleMapCQ {

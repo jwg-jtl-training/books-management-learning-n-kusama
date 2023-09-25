@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.allcommon.DBMetaInstanceHandler;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The entity of user_role_map as TABLE. <br>
+ * The entity of USER_ROLE_MAP as TABLE. <br>
  * ユーザー権限マップ
  * @author DBFlute(AutoGenerator)
  */
@@ -31,13 +31,13 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     /** ID: {PK, ID, NotNull, INT(10)} */
     protected Integer _id;
 
-    /** STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user} */
+    /** STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER} */
     protected String _staffUserId;
 
-    /** GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user} */
+    /** GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER} */
     protected String _generalUserId;
 
-    /** ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role} */
+    /** ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE} */
     protected Integer _roleId;
 
     /** REMARKS: {VARCHAR(255)} */
@@ -68,7 +68,7 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
 
     /** {@inheritDoc} */
     public String asTableDbName() {
-        return "user_role_map";
+        return "USER_ROLE_MAP";
     }
 
     // ===================================================================================
@@ -83,9 +83,9 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     /**
      * To be unique by the unique column. <br>
      * You can update the entity by the key when entity update (NOT batch update).
-     * @param staffUserId : UQ+, VARCHAR(10), FK to staff_user. (NotNull)
-     * @param generalUserId : +UQ, IX, VARCHAR(10), FK to general_user. (NotNull)
-     * @param roleId : +UQ, IX, NotNull, INT(10), FK to role. (NotNull)
+     * @param staffUserId : UQ+, VARCHAR(10), FK to STAFF_USER. (NotNull)
+     * @param generalUserId : +UQ, IX, VARCHAR(10), FK to GENERAL_USER. (NotNull)
+     * @param roleId : +UQ, IX, NotNull, INT(10), FK to ROLE. (NotNull)
      */
     public void uniqueBy(String staffUserId, String generalUserId, Integer roleId) {
         __uniqueDrivenProperties.clear();
@@ -98,11 +98,11 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     // ===================================================================================
     //                                                                    Foreign Property
     //                                                                    ================
-    /** general_user by my GENERAL_USER_ID, named 'generalUser'. */
+    /** GENERAL_USER by my GENERAL_USER_ID, named 'generalUser'. */
     protected OptionalEntity<GeneralUser> _generalUser;
 
     /**
-     * [get] general_user by my GENERAL_USER_ID, named 'generalUser'. <br>
+     * [get] GENERAL_USER by my GENERAL_USER_ID, named 'generalUser'. <br>
      * Optional: alwaysPresent(), ifPresent().orElse(), get(), ...
      * @return The entity of foreign property 'generalUser'. (NotNull, EmptyAllowed: when e.g. null FK column, no setupSelect)
      */
@@ -112,18 +112,18 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     }
 
     /**
-     * [set] general_user by my GENERAL_USER_ID, named 'generalUser'.
+     * [set] GENERAL_USER by my GENERAL_USER_ID, named 'generalUser'.
      * @param generalUser The entity of foreign property 'generalUser'. (NullAllowed)
      */
     public void setGeneralUser(OptionalEntity<GeneralUser> generalUser) {
         _generalUser = generalUser;
     }
 
-    /** role by my ROLE_ID, named 'role'. */
+    /** ROLE by my ROLE_ID, named 'role'. */
     protected OptionalEntity<Role> _role;
 
     /**
-     * [get] role by my ROLE_ID, named 'role'. <br>
+     * [get] ROLE by my ROLE_ID, named 'role'. <br>
      * Optional: alwaysPresent(), ifPresent().orElse(), get(), ...
      * @return The entity of foreign property 'role'. (NotNull, EmptyAllowed: when e.g. null FK column, no setupSelect)
      */
@@ -133,18 +133,18 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     }
 
     /**
-     * [set] role by my ROLE_ID, named 'role'.
+     * [set] ROLE by my ROLE_ID, named 'role'.
      * @param role The entity of foreign property 'role'. (NullAllowed)
      */
     public void setRole(OptionalEntity<Role> role) {
         _role = role;
     }
 
-    /** staff_user by my STAFF_USER_ID, named 'staffUser'. */
+    /** STAFF_USER by my STAFF_USER_ID, named 'staffUser'. */
     protected OptionalEntity<StaffUser> _staffUser;
 
     /**
-     * [get] staff_user by my STAFF_USER_ID, named 'staffUser'. <br>
+     * [get] STAFF_USER by my STAFF_USER_ID, named 'staffUser'. <br>
      * Optional: alwaysPresent(), ifPresent().orElse(), get(), ...
      * @return The entity of foreign property 'staffUser'. (NotNull, EmptyAllowed: when e.g. null FK column, no setupSelect)
      */
@@ -154,7 +154,7 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     }
 
     /**
-     * [set] staff_user by my STAFF_USER_ID, named 'staffUser'.
+     * [set] STAFF_USER by my STAFF_USER_ID, named 'staffUser'.
      * @param staffUser The entity of foreign property 'staffUser'. (NullAllowed)
      */
     public void setStaffUser(OptionalEntity<StaffUser> staffUser) {
@@ -269,7 +269,7 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     }
 
     /**
-     * [get] STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user} <br>
+     * [get] STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER} <br>
      * 職員ID
      * @return The value of the column 'STAFF_USER_ID'. (NullAllowed even if selected: for no constraint)
      */
@@ -279,7 +279,7 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     }
 
     /**
-     * [set] STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user} <br>
+     * [set] STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER} <br>
      * 職員ID
      * @param staffUserId The value of the column 'STAFF_USER_ID'. (NullAllowed: null update allowed for no constraint)
      */
@@ -289,7 +289,7 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     }
 
     /**
-     * [get] GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user} <br>
+     * [get] GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER} <br>
      * 利用者ID
      * @return The value of the column 'GENERAL_USER_ID'. (NullAllowed even if selected: for no constraint)
      */
@@ -299,7 +299,7 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     }
 
     /**
-     * [set] GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user} <br>
+     * [set] GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER} <br>
      * 利用者ID
      * @param generalUserId The value of the column 'GENERAL_USER_ID'. (NullAllowed: null update allowed for no constraint)
      */
@@ -309,7 +309,7 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     }
 
     /**
-     * [get] ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role} <br>
+     * [get] ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE} <br>
      * 権限ID
      * @return The value of the column 'ROLE_ID'. (basically NotNull if selected: for the constraint)
      */
@@ -319,7 +319,7 @@ public abstract class BsUserRoleMap extends AbstractEntity implements DomainEnti
     }
 
     /**
-     * [set] ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role} <br>
+     * [set] ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE} <br>
      * 権限ID
      * @param roleId The value of the column 'ROLE_ID'. (basically NotNull if update: for the constraint)
      */

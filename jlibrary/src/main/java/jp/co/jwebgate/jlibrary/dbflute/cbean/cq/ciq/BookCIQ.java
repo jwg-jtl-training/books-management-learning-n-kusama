@@ -12,7 +12,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.bs.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The condition-query for in-line of book.
+ * The condition-query for in-line of BOOK.
  * @author DBFlute(AutoGenerator)
  */
 public class BookCIQ extends AbstractBsBookCQ {

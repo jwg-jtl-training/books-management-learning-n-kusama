@@ -12,7 +12,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.bs.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The condition-query for in-line of genre.
+ * The condition-query for in-line of GENRE.
  * @author DBFlute(AutoGenerator)
  */
 public class GenreCIQ extends AbstractBsGenreCQ {

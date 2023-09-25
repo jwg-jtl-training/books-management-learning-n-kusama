@@ -22,7 +22,7 @@ import jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 
 /**
- * The behavior of genre as TABLE.
+ * The behavior of GENRE as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsGenreBhv extends AbstractBehaviorWritable<Genre, GenreCB> {
@@ -39,7 +39,7 @@ public abstract class BsGenreBhv extends AbstractBehaviorWritable<Genre, GenreCB
     /** {@inheritDoc} */
     public GenreDbm asDBMeta() { return GenreDbm.getInstance(); }
     /** {@inheritDoc} */
-    public String asTableDbName() { return "genre"; }
+    public String asTableDbName() { return "GENRE"; }
 
     // ===================================================================================
     //                                                                        New Instance
@@ -336,7 +336,7 @@ public abstract class BsGenreBhv extends AbstractBehaviorWritable<Genre, GenreCB
 
     /**
      * Load referrer of bookList by the set-upper of referrer. <br>
-     * book by GENRE_ID, named 'bookList'.
+     * BOOK by GENRE_ID, named 'bookList'.
      * <pre>
      * <span style="color: #0000C0">genreBhv</span>.<span style="color: #CC4747">loadBook</span>(<span style="color: #553000">genreList</span>, <span style="color: #553000">bookCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">bookCB</span>.setupSelect...
@@ -367,7 +367,7 @@ public abstract class BsGenreBhv extends AbstractBehaviorWritable<Genre, GenreCB
 
     /**
      * Load referrer of bookList by the set-upper of referrer. <br>
-     * book by GENRE_ID, named 'bookList'.
+     * BOOK by GENRE_ID, named 'bookList'.
      * <pre>
      * <span style="color: #0000C0">genreBhv</span>.<span style="color: #CC4747">loadBook</span>(<span style="color: #553000">genre</span>, <span style="color: #553000">bookCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">bookCB</span>.setupSelect...

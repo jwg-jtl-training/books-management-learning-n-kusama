@@ -518,61 +518,61 @@ pre.spolicyviodisp {
 	<tbody id="table-list-body">
 	<tr>
 		<td class="rownumcell">1</td>
-		<td class="namecell" data-name="book"><a href="#book" title="type=TABLE, primaryKey={ID, CONTROL_NUMBER}, nameLength=4, columnCount=15">book</a></td>
+		<td class="namecell" data-name="BOOK"><a href="#book" title="type=TABLE, primaryKey={ID, CONTROL_NUMBER}, nameLength=4, columnCount=15">BOOK</a></td>
 		<td class="typecell">TABLE</td>
-		<td class="relcell"><a href="#genre" title="book_ibfk_1">genre</a></td>
+		<td class="relcell"><a href="#genre" title="book_ibfk_1">GENRE</a></td>
 		<td class="relcell">&nbsp;</td>
-		<td class="commentcell book_comment"><pre>図書</pre></td>
+		<td class="commentcell BOOK_comment"><pre>図書</pre></td>
 		<td class="subcell">Book</td>
 		<td class="subcell">2023/08/30</td>
 	</tr>
 	<tr>
 		<td class="rownumcell">2</td>
-		<td class="namecell" data-name="general_user"><a href="#general_user" title="type=TABLE, primaryKey={ID, GENERAL_USER_ID}, nameLength=12, columnCount=14">general_user</a></td>
+		<td class="namecell" data-name="GENERAL_USER"><a href="#general_user" title="type=TABLE, primaryKey={ID, GENERAL_USER_ID}, nameLength=12, columnCount=14">GENERAL_USER</a></td>
 		<td class="typecell">TABLE</td>
 		<td class="relcell">&nbsp;</td>
-		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_2">user_role_map</a></td>
-		<td class="commentcell general_user_comment"><pre>一般利用者</pre></td>
+		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_2">USER_ROLE_MAP</a></td>
+		<td class="commentcell GENERAL_USER_comment"><pre>一般利用者</pre></td>
 		<td class="subcell">GeneralUser</td>
 		<td class="subcell">2023/08/30</td>
 	</tr>
 	<tr>
 		<td class="rownumcell">3</td>
-		<td class="namecell" data-name="genre"><a href="#genre" title="type=TABLE, primaryKey={ID, GENRE_CODE}, nameLength=5, columnCount=9">genre</a></td>
+		<td class="namecell" data-name="GENRE"><a href="#genre" title="type=TABLE, primaryKey={ID, GENRE_CODE}, nameLength=5, columnCount=9">GENRE</a></td>
 		<td class="typecell">TABLE</td>
 		<td class="relcell">&nbsp;</td>
-		<td class="relcell"><a href="#book" title="book_ibfk_1">book</a></td>
-		<td class="commentcell genre_comment"><pre>ジャンル</pre></td>
+		<td class="relcell"><a href="#book" title="book_ibfk_1">BOOK</a></td>
+		<td class="commentcell GENRE_comment"><pre>ジャンル</pre></td>
 		<td class="subcell">Genre</td>
 		<td class="subcell">2023/09/03</td>
 	</tr>
 	<tr>
 		<td class="rownumcell">4</td>
-		<td class="namecell" data-name="role"><a href="#role" title="type=TABLE, primaryKey={ID}, nameLength=4, columnCount=9">role</a></td>
+		<td class="namecell" data-name="ROLE"><a href="#role" title="type=TABLE, primaryKey={ID}, nameLength=4, columnCount=9">ROLE</a></td>
 		<td class="typecell">TABLE</td>
 		<td class="relcell">&nbsp;</td>
-		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_3">user_role_map</a></td>
-		<td class="commentcell role_comment"><pre>権限</pre></td>
+		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_3">USER_ROLE_MAP</a></td>
+		<td class="commentcell ROLE_comment"><pre>権限</pre></td>
 		<td class="subcell">Role</td>
 		<td class="subcell">2023/08/30</td>
 	</tr>
 	<tr>
 		<td class="rownumcell">5</td>
-		<td class="namecell" data-name="staff_user"><a href="#staff_user" title="type=TABLE, primaryKey={ID, STAFF_USER_ID}, nameLength=10, columnCount=12">staff_user</a></td>
+		<td class="namecell" data-name="STAFF_USER"><a href="#staff_user" title="type=TABLE, primaryKey={ID, STAFF_USER_ID}, nameLength=10, columnCount=12">STAFF_USER</a></td>
 		<td class="typecell">TABLE</td>
 		<td class="relcell">&nbsp;</td>
-		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_1">user_role_map</a></td>
-		<td class="commentcell staff_user_comment"><pre>職員</pre></td>
+		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_1">USER_ROLE_MAP</a></td>
+		<td class="commentcell STAFF_USER_comment"><pre>職員</pre></td>
 		<td class="subcell">StaffUser</td>
 		<td class="subcell">2023/08/30</td>
 	</tr>
 	<tr>
 		<td class="rownumcell">6</td>
-		<td class="namecell" data-name="user_role_map"><a href="#user_role_map" title="type=TABLE, primaryKey={ID}, nameLength=13, columnCount=10">user_role_map</a></td>
+		<td class="namecell" data-name="USER_ROLE_MAP"><a href="#user_role_map" title="type=TABLE, primaryKey={ID}, nameLength=13, columnCount=10">USER_ROLE_MAP</a></td>
 		<td class="typecell">TABLE</td>
-		<td class="relcell"><a href="#general_user" title="user_role_map_ibfk_2">general_user</a>, <a href="#role" title="user_role_map_ibfk_3">role</a>, <a href="#staff_user" title="user_role_map_ibfk_1">staff_user</a></td>
+		<td class="relcell"><a href="#general_user" title="user_role_map_ibfk_2">GENERAL_USER</a>, <a href="#role" title="user_role_map_ibfk_3">ROLE</a>, <a href="#staff_user" title="user_role_map_ibfk_1">STAFF_USER</a></td>
 		<td class="relcell">&nbsp;</td>
-		<td class="commentcell user_role_map_comment"><pre>ユーザー権限マップ</pre></td>
+		<td class="commentcell USER_ROLE_MAP_comment"><pre>ユーザー権限マップ</pre></td>
 		<td class="subcell">UserRoleMap</td>
 		<td class="subcell">2023/08/30</td>
 	</tr>
@@ -580,11 +580,11 @@ pre.spolicyviodisp {
 </table>
 
 <h2 id="book" title="type=TABLE, primaryKey={ID, CONTROL_NUMBER}, nameLength=4, columnCount=15">
-book
+BOOK
 &nbsp;<span class="tablefirstdatetitle">since 2023/08/30</span>
 </h2>
-<div class="tablecomment book_comment" data-name="book"><pre>図書</pre></div>
-<input type="hidden" value="book">
+<div class="tablecomment BOOK_comment" data-name="BOOK"><pre>図書</pre></div>
+<input type="hidden" value="BOOK">
 <table class="tablecontent">
 	<thead>
 	<tr>
@@ -733,7 +733,7 @@ book
 		<td class="typecell">INT</td>
 		<td class="sizecell"> 10 </td>
 		<td class="defvalcell"> &nbsp;</td>
-		<td class="relcell"><a href="#genre" title="book_ibfk_1">genre</a>&nbsp;</td>
+		<td class="relcell"><a href="#genre" title="book_ibfk_1">GENRE</a>&nbsp;</td>
 		<td class="relcell">&nbsp;</td>
 		<td class="relcell"> &nbsp;</td>
 		<td class="commentcell"><pre>ジャンルID</pre></td>
@@ -897,12 +897,12 @@ book
 </table>
 
 <h2 id="general_user" title="type=TABLE, primaryKey={ID, GENERAL_USER_ID}, nameLength=12, columnCount=14">
-general_user
+GENERAL_USER
 &nbsp;<span class="tablefirstdatetitle">since 2023/08/30</span>
 &nbsp;<span class="bqpcount"><a href="#general_user_sql">(outsideSql=1)</a></span>
 </h2>
-<div class="tablecomment general_user_comment" data-name="general_user"><pre>一般利用者</pre></div>
-<input type="hidden" value="general_user">
+<div class="tablecomment GENERAL_USER_comment" data-name="GENERAL_USER"><pre>一般利用者</pre></div>
+<input type="hidden" value="GENERAL_USER">
 <table class="tablecontent">
 	<thead>
 	<tr>
@@ -957,7 +957,7 @@ general_user
 		<td class="sizecell"> 10 </td>
 		<td class="defvalcell"> &nbsp;</td>
 		<td class="relcell">&nbsp;&nbsp;</td>
-		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_2">user_role_map</a>&nbsp;</td>
+		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_2">USER_ROLE_MAP</a>&nbsp;</td>
 		<td class="relcell"> &nbsp;</td>
 		<td class="commentcell"><pre>利用者ID</pre></td>
 		<td class="subcell">generalUserId</td>
@@ -1196,11 +1196,11 @@ general_user
 </table>
 
 <h2 id="genre" title="type=TABLE, primaryKey={ID, GENRE_CODE}, nameLength=5, columnCount=9">
-genre
+GENRE
 &nbsp;<span class="tablefirstdatetitle">since 2023/09/03</span>
 </h2>
-<div class="tablecomment genre_comment" data-name="genre"><pre>ジャンル</pre></div>
-<input type="hidden" value="genre">
+<div class="tablecomment GENRE_comment" data-name="GENRE"><pre>ジャンル</pre></div>
+<input type="hidden" value="GENRE">
 <table class="tablecontent">
 	<thead>
 	<tr>
@@ -1236,7 +1236,7 @@ genre
 		<td class="sizecell"> 10 </td>
 		<td class="defvalcell"> &nbsp;</td>
 		<td class="relcell">&nbsp;&nbsp;</td>
-		<td class="relcell"><a href="#book" title="book_ibfk_1">book</a>&nbsp;</td>
+		<td class="relcell"><a href="#book" title="book_ibfk_1">BOOK</a>&nbsp;</td>
 		<td class="relcell"> &nbsp;</td>
 		<td class="commentcell"><pre>ID</pre></td>
 		<td class="subcell">id</td>
@@ -1399,11 +1399,11 @@ genre
 </table>
 
 <h2 id="role" title="type=TABLE, primaryKey={ID}, nameLength=4, columnCount=9">
-role
+ROLE
 &nbsp;<span class="tablefirstdatetitle">since 2023/08/30</span>
 </h2>
-<div class="tablecomment role_comment" data-name="role"><pre>権限</pre></div>
-<input type="hidden" value="role">
+<div class="tablecomment ROLE_comment" data-name="ROLE"><pre>権限</pre></div>
+<input type="hidden" value="ROLE">
 <table class="tablecontent">
 	<thead>
 	<tr>
@@ -1439,7 +1439,7 @@ role
 		<td class="sizecell"> 10 </td>
 		<td class="defvalcell"> &nbsp;</td>
 		<td class="relcell">&nbsp;&nbsp;</td>
-		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_3">user_role_map</a>&nbsp;</td>
+		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_3">USER_ROLE_MAP</a>&nbsp;</td>
 		<td class="relcell"> &nbsp;</td>
 		<td class="commentcell"><pre>ID</pre></td>
 		<td class="subcell">id</td>
@@ -1602,12 +1602,12 @@ role
 </table>
 
 <h2 id="staff_user" title="type=TABLE, primaryKey={ID, STAFF_USER_ID}, nameLength=10, columnCount=12">
-staff_user
+STAFF_USER
 &nbsp;<span class="tablefirstdatetitle">since 2023/08/30</span>
 &nbsp;<span class="bqpcount"><a href="#staff_user_sql">(outsideSql=1)</a></span>
 </h2>
-<div class="tablecomment staff_user_comment" data-name="staff_user"><pre>職員</pre></div>
-<input type="hidden" value="staff_user">
+<div class="tablecomment STAFF_USER_comment" data-name="STAFF_USER"><pre>職員</pre></div>
+<input type="hidden" value="STAFF_USER">
 <table class="tablecontent">
 	<thead>
 	<tr>
@@ -1662,7 +1662,7 @@ staff_user
 		<td class="sizecell"> 10 </td>
 		<td class="defvalcell"> &nbsp;</td>
 		<td class="relcell">&nbsp;&nbsp;</td>
-		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_1">user_role_map</a>&nbsp;</td>
+		<td class="relcell"><a href="#user_role_map" title="user_role_map_ibfk_1">USER_ROLE_MAP</a>&nbsp;</td>
 		<td class="relcell"> &nbsp;</td>
 		<td class="commentcell"><pre>職員ID</pre></td>
 		<td class="subcell">staffUserId</td>
@@ -1863,11 +1863,11 @@ staff_user
 </table>
 
 <h2 id="user_role_map" title="type=TABLE, primaryKey={ID}, nameLength=13, columnCount=10">
-user_role_map
+USER_ROLE_MAP
 &nbsp;<span class="tablefirstdatetitle">since 2023/08/30</span>
 </h2>
-<div class="tablecomment user_role_map_comment" data-name="user_role_map"><pre>ユーザー権限マップ</pre></div>
-<input type="hidden" value="user_role_map">
+<div class="tablecomment USER_ROLE_MAP_comment" data-name="USER_ROLE_MAP"><pre>ユーザー権限マップ</pre></div>
+<input type="hidden" value="USER_ROLE_MAP">
 <table class="tablecontent">
 	<thead>
 	<tr>
@@ -1921,7 +1921,7 @@ user_role_map
 		<td class="typecell">VARCHAR</td>
 		<td class="sizecell"> 10 </td>
 		<td class="defvalcell"> &nbsp;</td>
-		<td class="relcell"><a href="#staff_user" title="user_role_map_ibfk_1">staff_user</a>&nbsp;</td>
+		<td class="relcell"><a href="#staff_user" title="user_role_map_ibfk_1">STAFF_USER</a>&nbsp;</td>
 		<td class="relcell">&nbsp;</td>
 		<td class="relcell"> &nbsp;</td>
 		<td class="commentcell"><pre>職員ID</pre></td>
@@ -1940,7 +1940,7 @@ user_role_map
 		<td class="typecell">VARCHAR</td>
 		<td class="sizecell"> 10 </td>
 		<td class="defvalcell"> &nbsp;</td>
-		<td class="relcell"><a href="#general_user" title="user_role_map_ibfk_2">general_user</a>&nbsp;</td>
+		<td class="relcell"><a href="#general_user" title="user_role_map_ibfk_2">GENERAL_USER</a>&nbsp;</td>
 		<td class="relcell">&nbsp;</td>
 		<td class="relcell"> &nbsp;</td>
 		<td class="commentcell"><pre>利用者ID</pre></td>
@@ -1959,7 +1959,7 @@ user_role_map
 		<td class="typecell">INT</td>
 		<td class="sizecell"> 10 </td>
 		<td class="defvalcell"> &nbsp;</td>
-		<td class="relcell"><a href="#role" title="user_role_map_ibfk_3">role</a>&nbsp;</td>
+		<td class="relcell"><a href="#role" title="user_role_map_ibfk_3">ROLE</a>&nbsp;</td>
 		<td class="relcell">&nbsp;</td>
 		<td class="relcell"> &nbsp;</td>
 		<td class="commentcell"><pre>権限ID</pre></td>
@@ -2087,7 +2087,7 @@ user_role_map
 
 
 <h2 id="outsidesql">OutsideSql List</h2>
-<h3 id="general_user_sql"><a href="#general_user">general_user</a></h3>
+<h3 id="general_user_sql"><a href="#general_user">GENERAL_USER</a></h3>
 <dl class="bqplist">
 	<dt>(追加できる最小の一般利用者IDを取得する)selectNewGeneralUserId</dt>
 	<dd>
@@ -2099,7 +2099,7 @@ user_role_map
 		<span class="pmb">(df:pmb)</span>
 	</dd>
 </dl>
-<h3 id="staff_user_sql"><a href="#staff_user">staff_user</a></h3>
+<h3 id="staff_user_sql"><a href="#staff_user">STAFF_USER</a></h3>
 <dl class="bqplist">
 	<dt>(追加できる最小の職員IDを取得する)selectNewStaffUserId</dt>
 	<dd>
@@ -2640,7 +2640,7 @@ function StoreClient() {
 		]
 	}
 	this.pickupStore = {
-		'book': {
+		'BOOK': {
 			'databaseComment': '図書'
 			, 'columns': {
 				'ID': {
@@ -2690,7 +2690,7 @@ function StoreClient() {
 				}
 			}
 		}
-		, 'general_user': {
+		, 'GENERAL_USER': {
 			'databaseComment': '一般利用者'
 			, 'columns': {
 				'ID': {
@@ -2737,7 +2737,7 @@ function StoreClient() {
 				}
 			}
 		}
-		, 'genre': {
+		, 'GENRE': {
 			'databaseComment': 'ジャンル'
 			, 'columns': {
 				'ID': {
@@ -2769,7 +2769,7 @@ function StoreClient() {
 				}
 			}
 		}
-		, 'role': {
+		, 'ROLE': {
 			'databaseComment': '権限'
 			, 'columns': {
 				'ID': {
@@ -2801,7 +2801,7 @@ function StoreClient() {
 				}
 			}
 		}
-		, 'staff_user': {
+		, 'STAFF_USER': {
 			'databaseComment': '職員'
 			, 'columns': {
 				'ID': {
@@ -2842,7 +2842,7 @@ function StoreClient() {
 				}
 			}
 		}
-		, 'user_role_map': {
+		, 'USER_ROLE_MAP': {
 			'databaseComment': 'ユーザー権限マップ'
 			, 'columns': {
 				'ID': {
