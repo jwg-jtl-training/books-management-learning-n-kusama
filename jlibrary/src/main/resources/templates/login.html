@@ -25,7 +25,7 @@
                     <a th:href="@{${UrlConsts.REGISTER_STAFF_USER}}" class="text-white-50 fw-bold text-decoration-none">新規登録</a>
                   </div>
                   <h1 class="fw-bold mb-2 bg-light text-muted text-uppercase border border-2 border-dark rounded-pill mb-5">ログインページ</h1>
-                  <p th:if="${param.error}" class="error" style="color:#ff8888;">ユーザー名またはパスワードが違います。</p>
+                  <p th:if="${param.error}" class="error">ユーザー名またはパスワードが違います。</p>
 
                   <form class="form" th:action="@{${UrlConsts.LOGIN}}" th:method="POST">
                     <div class="form-outline form-white mb-4">
