@@ -26,7 +26,7 @@
                   </div>
                   <h1 class="fw-bold mb-2 bg-light text-muted text-uppercase border border-2 border-dark rounded-pill mb-5">ログインページ</h1>
                   <div class="bg-white w-75 container">
-                    <p th:if="${param.error}" class="error" style="color:#ff8888;">ユーザー名またはパスワードが違います。</p>
+                    <p th:if="${param.error}" class="error" style="color:#ff0000;">ユーザー名またはパスワードが違います。</p>
                   </div>
 
                   <form class="form" th:action="@{${UrlConsts.LOGIN}}" th:method="POST">
