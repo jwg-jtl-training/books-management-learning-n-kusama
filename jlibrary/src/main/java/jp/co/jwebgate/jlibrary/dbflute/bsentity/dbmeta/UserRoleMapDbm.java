@@ -14,7 +14,7 @@ import jp.co.jwebgate.jlibrary.dbflute.allcommon.*;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The DB meta of user_role_map. (Singleton)
+ * The DB meta of USER_ROLE_MAP. (Singleton)
  * @author DBFlute(AutoGenerator)
  */
 public class UserRoleMapDbm extends AbstractDBMeta {
@@ -74,10 +74,10 @@ public class UserRoleMapDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                          Table Info
     //                                                                          ==========
-    protected final String _tableDbName = "user_role_map";
-    protected final String _tableDispName = "user_role_map";
+    protected final String _tableDbName = "USER_ROLE_MAP";
+    protected final String _tableDispName = "USER_ROLE_MAP";
     protected final String _tablePropertyName = "userRoleMap";
-    protected final TableSqlName _tableSqlName = new TableSqlName("user_role_map", _tableDbName);
+    protected final TableSqlName _tableSqlName = new TableSqlName("USER_ROLE_MAP", _tableDbName);
     { _tableSqlName.xacceptFilter(DBFluteConfig.getInstance().getTableSqlNameFilter()); }
     public String getTableDbName() { return _tableDbName; }
     public String getTableDispName() { return _tableDispName; }
@@ -104,17 +104,17 @@ public class UserRoleMapDbm extends AbstractDBMeta {
      */
     public ColumnInfo columnId() { return _columnId; }
     /**
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @return The information object of specified column. (NotNull)
      */
     public ColumnInfo columnStaffUserId() { return _columnStaffUserId; }
     /**
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @return The information object of specified column. (NotNull)
      */
     public ColumnInfo columnGeneralUserId() { return _columnGeneralUserId; }
     /**
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @return The information object of specified column. (NotNull)
      */
     public ColumnInfo columnRoleId() { return _columnRoleId; }
@@ -196,7 +196,7 @@ public class UserRoleMapDbm extends AbstractDBMeta {
     //                                      Foreign Property
     //                                      ----------------
     /**
-     * general_user by my GENERAL_USER_ID, named 'generalUser'.
+     * GENERAL_USER by my GENERAL_USER_ID, named 'generalUser'.
      * @return The information object of foreign property. (NotNull)
      */
     public ForeignInfo foreignGeneralUser() {
@@ -204,7 +204,7 @@ public class UserRoleMapDbm extends AbstractDBMeta {
         return cfi("user_role_map_ibfk_2", "generalUser", this, GeneralUserDbm.getInstance(), mp, 0, org.dbflute.optional.OptionalEntity.class, false, false, false, false, null, null, false, "userRoleMapList", false);
     }
     /**
-     * role by my ROLE_ID, named 'role'.
+     * ROLE by my ROLE_ID, named 'role'.
      * @return The information object of foreign property. (NotNull)
      */
     public ForeignInfo foreignRole() {
@@ -212,7 +212,7 @@ public class UserRoleMapDbm extends AbstractDBMeta {
         return cfi("user_role_map_ibfk_3", "role", this, RoleDbm.getInstance(), mp, 1, org.dbflute.optional.OptionalEntity.class, false, false, false, false, null, null, false, "userRoleMapList", false);
     }
     /**
-     * staff_user by my STAFF_USER_ID, named 'staffUser'.
+     * STAFF_USER by my STAFF_USER_ID, named 'staffUser'.
      * @return The information object of foreign property. (NotNull)
      */
     public ForeignInfo foreignStaffUser() {

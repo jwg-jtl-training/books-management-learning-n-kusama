@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.allcommon.DBMetaInstanceHandler;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The entity of book as TABLE. <br>
+ * The entity of BOOK as TABLE. <br>
  * 図書
  * @author DBFlute(AutoGenerator)
  */
@@ -46,7 +46,7 @@ public abstract class BsBook extends AbstractEntity implements DomainEntity, Ent
     /** PUBLISHER: {NotNull, VARCHAR(25)} */
     protected String _publisher;
 
-    /** GENRE_ID: {IX, INT(10), FK to genre} */
+    /** GENRE_ID: {IX, INT(10), FK to GENRE} */
     protected Integer _genreId;
 
     /** SHELF_NUMBER: {VARCHAR(3)} */
@@ -83,7 +83,7 @@ public abstract class BsBook extends AbstractEntity implements DomainEntity, Ent
 
     /** {@inheritDoc} */
     public String asTableDbName() {
-        return "book";
+        return "BOOK";
     }
 
     // ===================================================================================
@@ -99,11 +99,11 @@ public abstract class BsBook extends AbstractEntity implements DomainEntity, Ent
     // ===================================================================================
     //                                                                    Foreign Property
     //                                                                    ================
-    /** genre by my GENRE_ID, named 'genre'. */
+    /** GENRE by my GENRE_ID, named 'genre'. */
     protected OptionalEntity<Genre> _genre;
 
     /**
-     * [get] genre by my GENRE_ID, named 'genre'. <br>
+     * [get] GENRE by my GENRE_ID, named 'genre'. <br>
      * Optional: alwaysPresent(), ifPresent().orElse(), get(), ...
      * @return The entity of foreign property 'genre'. (NotNull, EmptyAllowed: when e.g. null FK column, no setupSelect)
      */
@@ -113,7 +113,7 @@ public abstract class BsBook extends AbstractEntity implements DomainEntity, Ent
     }
 
     /**
-     * [set] genre by my GENRE_ID, named 'genre'.
+     * [set] GENRE by my GENRE_ID, named 'genre'.
      * @param genre The entity of foreign property 'genre'. (NullAllowed)
      */
     public void setGenre(OptionalEntity<Genre> genre) {
@@ -327,7 +327,7 @@ public abstract class BsBook extends AbstractEntity implements DomainEntity, Ent
     }
 
     /**
-     * [get] GENRE_ID: {IX, INT(10), FK to genre} <br>
+     * [get] GENRE_ID: {IX, INT(10), FK to GENRE} <br>
      * ジャンルID
      * @return The value of the column 'GENRE_ID'. (NullAllowed even if selected: for no constraint)
      */
@@ -337,7 +337,7 @@ public abstract class BsBook extends AbstractEntity implements DomainEntity, Ent
     }
 
     /**
-     * [set] GENRE_ID: {IX, INT(10), FK to genre} <br>
+     * [set] GENRE_ID: {IX, INT(10), FK to GENRE} <br>
      * ジャンルID
      * @param genreId The value of the column 'GENRE_ID'. (NullAllowed: null update allowed for no constraint)
      */

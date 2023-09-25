@@ -20,7 +20,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-bean of genre.
+ * The base condition-bean of GENRE.
  * @author DBFlute(AutoGenerator)
  */
 public class BsGenreCB extends AbstractConditionBean {
@@ -76,7 +76,7 @@ public class BsGenreCB extends AbstractConditionBean {
     }
 
     public String asTableDbName() {
-        return "genre";
+        return "GENRE";
     }
 
     // ===================================================================================
@@ -342,11 +342,11 @@ public class BsGenreCB extends AbstractConditionBean {
             columnGenreCode(); // PK
         }
         @Override
-        protected String getTableDbName() { return "genre"; }
+        protected String getTableDbName() { return "GENRE"; }
         /**
          * Prepare for (Specify)DerivedReferrer (correlated sub-query). <br>
-         * {select max(FOO) from book where ...) as FOO_MAX} <br>
-         * book by GENRE_ID, named 'bookList'.
+         * {select max(FOO) from BOOK where ...) as FOO_MAX} <br>
+         * BOOK by GENRE_ID, named 'bookList'.
          * <pre>
          * cb.specify().<span style="color: #CC4747">derived${relationMethodIdentityName}()</span>.<span style="color: #CC4747">max</span>(bookCB <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
          *     bookCB.specify().<span style="color: #CC4747">column...</span> <span style="color: #3F7E5E">// derived column by function</span>

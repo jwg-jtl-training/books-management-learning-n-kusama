@@ -16,7 +16,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The abstract condition-query of genre.
+ * The abstract condition-query of GENRE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class AbstractBsGenreCQ extends AbstractConditionQuery {
@@ -37,7 +37,7 @@ public abstract class AbstractBsGenreCQ extends AbstractConditionQuery {
     }
 
     public String asTableDbName() {
-        return "genre";
+        return "GENRE";
     }
 
     // ===================================================================================
@@ -159,8 +159,8 @@ public abstract class AbstractBsGenreCQ extends AbstractConditionQuery {
 
     /**
      * Set up ExistsReferrer (correlated sub-query). <br>
-     * {exists (select GENRE_ID from book where ...)} <br>
-     * book by GENRE_ID, named 'bookAsOne'.
+     * {exists (select GENRE_ID from BOOK where ...)} <br>
+     * BOOK by GENRE_ID, named 'bookAsOne'.
      * <pre>
      * cb.query().<span style="color: #CC4747">existsBook</span>(bookCB <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     bookCB.query().set...
@@ -178,8 +178,8 @@ public abstract class AbstractBsGenreCQ extends AbstractConditionQuery {
 
     /**
      * Set up NotExistsReferrer (correlated sub-query). <br>
-     * {not exists (select GENRE_ID from book where ...)} <br>
-     * book by GENRE_ID, named 'bookAsOne'.
+     * {not exists (select GENRE_ID from BOOK where ...)} <br>
+     * BOOK by GENRE_ID, named 'bookAsOne'.
      * <pre>
      * cb.query().<span style="color: #CC4747">notExistsBook</span>(bookCB <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     bookCB.query().set...
@@ -205,8 +205,8 @@ public abstract class AbstractBsGenreCQ extends AbstractConditionQuery {
 
     /**
      * Prepare for (Query)DerivedReferrer (correlated sub-query). <br>
-     * {FOO &lt;= (select max(BAR) from book where ...)} <br>
-     * book by GENRE_ID, named 'bookAsOne'.
+     * {FOO &lt;= (select max(BAR) from BOOK where ...)} <br>
+     * BOOK by GENRE_ID, named 'bookAsOne'.
      * <pre>
      * cb.query().<span style="color: #CC4747">derivedBook()</span>.<span style="color: #CC4747">max</span>(bookCB <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     bookCB.specify().<span style="color: #CC4747">columnFoo...</span> <span style="color: #3F7E5E">// derived column by function</span>

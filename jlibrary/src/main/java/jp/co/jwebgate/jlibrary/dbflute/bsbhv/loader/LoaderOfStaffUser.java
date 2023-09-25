@@ -9,7 +9,7 @@ import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 
 /**
- * The referrer loader of staff_user as TABLE.
+ * The referrer loader of STAFF_USER as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public class LoaderOfStaffUser {
@@ -37,7 +37,7 @@ public class LoaderOfStaffUser {
 
     /**
      * Load referrer of userRoleMapList by the set-upper of referrer. <br>
-     * user_role_map by STAFF_USER_ID, named 'userRoleMapList'.
+     * USER_ROLE_MAP by STAFF_USER_ID, named 'userRoleMapList'.
      * <pre>
      * <span style="color: #0000C0">staffUserBhv</span>.<span style="color: #994747">load</span>(<span style="color: #553000">staffUserList</span>, <span style="color: #553000">userLoader</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">userLoader</span>.<span style="color: #CC4747">loadUserRoleMap</span>(<span style="color: #553000">mapCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {

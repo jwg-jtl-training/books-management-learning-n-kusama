@@ -14,7 +14,7 @@ import jp.co.jwebgate.jlibrary.dbflute.allcommon.*;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The DB meta of book. (Singleton)
+ * The DB meta of BOOK. (Singleton)
  * @author DBFlute(AutoGenerator)
  */
 public class BookDbm extends AbstractDBMeta {
@@ -77,10 +77,10 @@ public class BookDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                          Table Info
     //                                                                          ==========
-    protected final String _tableDbName = "book";
-    protected final String _tableDispName = "book";
+    protected final String _tableDbName = "BOOK";
+    protected final String _tableDispName = "BOOK";
     protected final String _tablePropertyName = "book";
-    protected final TableSqlName _tableSqlName = new TableSqlName("book", _tableDbName);
+    protected final TableSqlName _tableSqlName = new TableSqlName("BOOK", _tableDbName);
     { _tableSqlName.xacceptFilter(DBFluteConfig.getInstance().getTableSqlNameFilter()); }
     public String getTableDbName() { return _tableDbName; }
     public String getTableDispName() { return _tableDispName; }
@@ -137,7 +137,7 @@ public class BookDbm extends AbstractDBMeta {
      */
     public ColumnInfo columnPublisher() { return _columnPublisher; }
     /**
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @return The information object of specified column. (NotNull)
      */
     public ColumnInfo columnGenreId() { return _columnGenreId; }
@@ -228,7 +228,7 @@ public class BookDbm extends AbstractDBMeta {
     //                                      Foreign Property
     //                                      ----------------
     /**
-     * genre by my GENRE_ID, named 'genre'.
+     * GENRE by my GENRE_ID, named 'genre'.
      * @return The information object of foreign property. (NotNull)
      */
     public ForeignInfo foreignGenre() {

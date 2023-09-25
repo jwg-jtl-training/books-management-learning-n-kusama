@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.allcommon.*;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The DB meta of role. (Singleton)
+ * The DB meta of ROLE. (Singleton)
  * @author DBFlute(AutoGenerator)
  */
 public class RoleDbm extends AbstractDBMeta {
@@ -58,10 +58,10 @@ public class RoleDbm extends AbstractDBMeta {
     // ===================================================================================
     //                                                                          Table Info
     //                                                                          ==========
-    protected final String _tableDbName = "role";
-    protected final String _tableDispName = "role";
+    protected final String _tableDbName = "ROLE";
+    protected final String _tableDispName = "ROLE";
     protected final String _tablePropertyName = "role";
-    protected final TableSqlName _tableSqlName = new TableSqlName("role", _tableDbName);
+    protected final TableSqlName _tableSqlName = new TableSqlName("ROLE", _tableDbName);
     { _tableSqlName.xacceptFilter(DBFluteConfig.getInstance().getTableSqlNameFilter()); }
     public String getTableDbName() { return _tableDbName; }
     public String getTableDispName() { return _tableDispName; }
@@ -166,7 +166,7 @@ public class RoleDbm extends AbstractDBMeta {
     //                                     Referrer Property
     //                                     -----------------
     /**
-     * user_role_map by ROLE_ID, named 'userRoleMapList'.
+     * USER_ROLE_MAP by ROLE_ID, named 'userRoleMapList'.
      * @return The information object of referrer property. (NotNull)
      */
     public ReferrerInfo referrerUserRoleMapList() {

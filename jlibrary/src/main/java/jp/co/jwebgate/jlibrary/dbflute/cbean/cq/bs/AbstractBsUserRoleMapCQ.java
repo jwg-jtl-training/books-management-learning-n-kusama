@@ -16,7 +16,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The abstract condition-query of user_role_map.
+ * The abstract condition-query of USER_ROLE_MAP.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
@@ -37,7 +37,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
     }
 
     public String asTableDbName() {
-        return "user_role_map";
+        return "USER_ROLE_MAP";
     }
 
     // ===================================================================================
@@ -174,7 +174,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * Equal(=). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserId The value of staffUserId as equal. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setStaffUserId_Equal(String staffUserId) {
@@ -187,7 +187,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * NotEqual(&lt;&gt;). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserId The value of staffUserId as notEqual. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setStaffUserId_NotEqual(String staffUserId) {
@@ -200,7 +200,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * GreaterThan(&gt;). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserId The value of staffUserId as greaterThan. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setStaffUserId_GreaterThan(String staffUserId) {
@@ -209,7 +209,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LessThan(&lt;). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserId The value of staffUserId as lessThan. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setStaffUserId_LessThan(String staffUserId) {
@@ -218,7 +218,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * GreaterEqual(&gt;=). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserId The value of staffUserId as greaterEqual. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setStaffUserId_GreaterEqual(String staffUserId) {
@@ -227,7 +227,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LessEqual(&lt;=). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserId The value of staffUserId as lessEqual. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setStaffUserId_LessEqual(String staffUserId) {
@@ -236,7 +236,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * InScope {in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserIdList The collection of staffUserId as inScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setStaffUserId_InScope(Collection<String> staffUserIdList) {
@@ -249,7 +249,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * NotInScope {not in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserIdList The collection of staffUserId as notInScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setStaffUserId_NotInScope(Collection<String> staffUserIdList) {
@@ -262,7 +262,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LikeSearch with various options. (versatile) {like '%xxx%' escape ...}. And NullOrEmptyIgnored, SeveralRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user} <br>
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER} <br>
      * <pre>e.g. setStaffUserId_LikeSearch("xxx", op <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> op.<span style="color: #CC4747">likeContain()</span>);</pre>
      * @param staffUserId The value of staffUserId as likeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param opLambda The callback for option of like-search. (NotNull)
@@ -273,7 +273,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LikeSearch with various options. (versatile) {like '%xxx%' escape ...}. And NullOrEmptyIgnored, SeveralRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user} <br>
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER} <br>
      * <pre>e.g. setStaffUserId_LikeSearch("xxx", new <span style="color: #CC4747">LikeSearchOption</span>().likeContain());</pre>
      * @param staffUserId The value of staffUserId as likeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param likeSearchOption The option of like-search. (NotNull)
@@ -285,7 +285,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
     /**
      * NotLikeSearch with various options. (versatile) {not like 'xxx%' escape ...} <br>
      * And NullOrEmptyIgnored, SeveralRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserId The value of staffUserId as notLikeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param opLambda The callback for option of like-search. (NotNull)
      */
@@ -296,7 +296,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
     /**
      * NotLikeSearch with various options. (versatile) {not like 'xxx%' escape ...} <br>
      * And NullOrEmptyIgnored, SeveralRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      * @param staffUserId The value of staffUserId as notLikeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param likeSearchOption The option of not-like-search. (NotNull)
      */
@@ -306,19 +306,19 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * IsNull {is null}. And OnlyOnceRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      */
     public void setStaffUserId_IsNull() { regStaffUserId(CK_ISN, DOBJ); }
 
     /**
      * IsNullOrEmpty {is null or empty}. And OnlyOnceRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      */
     public void setStaffUserId_IsNullOrEmpty() { regStaffUserId(CK_ISNOE, DOBJ); }
 
     /**
      * IsNotNull {is not null}. And OnlyOnceRegistered. <br>
-     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to staff_user}
+     * STAFF_USER_ID: {UQ+, VARCHAR(10), FK to STAFF_USER}
      */
     public void setStaffUserId_IsNotNull() { regStaffUserId(CK_ISNN, DOBJ); }
 
@@ -327,7 +327,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * Equal(=). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserId The value of generalUserId as equal. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGeneralUserId_Equal(String generalUserId) {
@@ -340,7 +340,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * NotEqual(&lt;&gt;). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserId The value of generalUserId as notEqual. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGeneralUserId_NotEqual(String generalUserId) {
@@ -353,7 +353,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * GreaterThan(&gt;). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserId The value of generalUserId as greaterThan. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGeneralUserId_GreaterThan(String generalUserId) {
@@ -362,7 +362,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LessThan(&lt;). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserId The value of generalUserId as lessThan. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGeneralUserId_LessThan(String generalUserId) {
@@ -371,7 +371,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * GreaterEqual(&gt;=). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserId The value of generalUserId as greaterEqual. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGeneralUserId_GreaterEqual(String generalUserId) {
@@ -380,7 +380,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LessEqual(&lt;=). And NullOrEmptyIgnored, OnlyOnceRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserId The value of generalUserId as lessEqual. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGeneralUserId_LessEqual(String generalUserId) {
@@ -389,7 +389,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * InScope {in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserIdList The collection of generalUserId as inScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGeneralUserId_InScope(Collection<String> generalUserIdList) {
@@ -402,7 +402,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * NotInScope {not in ('a', 'b')}. And NullOrEmptyIgnored, NullOrEmptyElementIgnored, SeveralRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserIdList The collection of generalUserId as notInScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGeneralUserId_NotInScope(Collection<String> generalUserIdList) {
@@ -415,7 +415,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LikeSearch with various options. (versatile) {like '%xxx%' escape ...}. And NullOrEmptyIgnored, SeveralRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user} <br>
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER} <br>
      * <pre>e.g. setGeneralUserId_LikeSearch("xxx", op <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> op.<span style="color: #CC4747">likeContain()</span>);</pre>
      * @param generalUserId The value of generalUserId as likeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param opLambda The callback for option of like-search. (NotNull)
@@ -426,7 +426,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LikeSearch with various options. (versatile) {like '%xxx%' escape ...}. And NullOrEmptyIgnored, SeveralRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user} <br>
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER} <br>
      * <pre>e.g. setGeneralUserId_LikeSearch("xxx", new <span style="color: #CC4747">LikeSearchOption</span>().likeContain());</pre>
      * @param generalUserId The value of generalUserId as likeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param likeSearchOption The option of like-search. (NotNull)
@@ -438,7 +438,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
     /**
      * NotLikeSearch with various options. (versatile) {not like 'xxx%' escape ...} <br>
      * And NullOrEmptyIgnored, SeveralRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserId The value of generalUserId as notLikeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param opLambda The callback for option of like-search. (NotNull)
      */
@@ -449,7 +449,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
     /**
      * NotLikeSearch with various options. (versatile) {not like 'xxx%' escape ...} <br>
      * And NullOrEmptyIgnored, SeveralRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      * @param generalUserId The value of generalUserId as notLikeSearch. (basically NotNull, NotEmpty: error as default, or no condition as option)
      * @param likeSearchOption The option of not-like-search. (NotNull)
      */
@@ -459,19 +459,19 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * IsNull {is null}. And OnlyOnceRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      */
     public void setGeneralUserId_IsNull() { regGeneralUserId(CK_ISN, DOBJ); }
 
     /**
      * IsNullOrEmpty {is null or empty}. And OnlyOnceRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      */
     public void setGeneralUserId_IsNullOrEmpty() { regGeneralUserId(CK_ISNOE, DOBJ); }
 
     /**
      * IsNotNull {is not null}. And OnlyOnceRegistered. <br>
-     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to general_user}
+     * GENERAL_USER_ID: {+UQ, IX, VARCHAR(10), FK to GENERAL_USER}
      */
     public void setGeneralUserId_IsNotNull() { regGeneralUserId(CK_ISNN, DOBJ); }
 
@@ -480,7 +480,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param roleId The value of roleId as equal. (basically NotNull: error as default, or no condition as option)
      */
     public void setRoleId_Equal(Integer roleId) {
@@ -493,7 +493,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * NotEqual(&lt;&gt;). And NullIgnored, OnlyOnceRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param roleId The value of roleId as notEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setRoleId_NotEqual(Integer roleId) {
@@ -506,7 +506,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * GreaterThan(&gt;). And NullIgnored, OnlyOnceRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param roleId The value of roleId as greaterThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setRoleId_GreaterThan(Integer roleId) {
@@ -515,7 +515,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LessThan(&lt;). And NullIgnored, OnlyOnceRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param roleId The value of roleId as lessThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setRoleId_LessThan(Integer roleId) {
@@ -524,7 +524,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * GreaterEqual(&gt;=). And NullIgnored, OnlyOnceRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param roleId The value of roleId as greaterEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setRoleId_GreaterEqual(Integer roleId) {
@@ -533,7 +533,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * LessEqual(&lt;=). And NullIgnored, OnlyOnceRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param roleId The value of roleId as lessEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setRoleId_LessEqual(Integer roleId) {
@@ -544,7 +544,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
      * RangeOf with various options. (versatile) <br>
      * {(default) minNumber &lt;= column &lt;= maxNumber} <br>
      * And NullIgnored, OnlyOnceRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param minNumber The min number of roleId. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param maxNumber The max number of roleId. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param opLambda The callback for option of range-of. (NotNull)
@@ -557,7 +557,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
      * RangeOf with various options. (versatile) <br>
      * {(default) minNumber &lt;= column &lt;= maxNumber} <br>
      * And NullIgnored, OnlyOnceRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param minNumber The min number of roleId. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param maxNumber The max number of roleId. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param rangeOfOption The option of range-of. (NotNull)
@@ -568,7 +568,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * InScope {in (1, 2)}. And NullIgnored, NullElementIgnored, SeveralRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param roleIdList The collection of roleId as inScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setRoleId_InScope(Collection<Integer> roleIdList) {
@@ -581,7 +581,7 @@ public abstract class AbstractBsUserRoleMapCQ extends AbstractConditionQuery {
 
     /**
      * NotInScope {not in (1, 2)}. And NullIgnored, NullElementIgnored, SeveralRegistered. <br>
-     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to role}
+     * ROLE_ID: {+UQ, IX, NotNull, INT(10), FK to ROLE}
      * @param roleIdList The collection of roleId as notInScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setRoleId_NotInScope(Collection<Integer> roleIdList) {

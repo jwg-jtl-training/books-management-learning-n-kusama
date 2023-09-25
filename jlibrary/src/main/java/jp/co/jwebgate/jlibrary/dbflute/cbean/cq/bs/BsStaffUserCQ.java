@@ -13,7 +13,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The base condition-query of staff_user.
+ * The base condition-query of STAFF_USER.
  * @author DBFlute(AutoGenerator)
  */
 public class BsStaffUserCQ extends AbstractBsStaffUserCQ {
@@ -35,7 +35,7 @@ public class BsStaffUserCQ extends AbstractBsStaffUserCQ {
     //                                                                 ===================
     /**
      * Prepare InlineView query. <br>
-     * {select ... from ... left outer join (select * from staff_user) where FOO = [value] ...}
+     * {select ... from ... left outer join (select * from STAFF_USER) where FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">inline()</span>.setFoo...;
      * </pre>
@@ -58,7 +58,7 @@ public class BsStaffUserCQ extends AbstractBsStaffUserCQ {
 
     /**
      * Prepare OnClause query. <br>
-     * {select ... from ... left outer join staff_user on ... and FOO = [value] ...}
+     * {select ... from ... left outer join STAFF_USER on ... and FOO = [value] ...}
      * <pre>
      * cb.query().queryMemberStatus().<span style="color: #CC4747">on()</span>.setFoo...;
      * </pre>

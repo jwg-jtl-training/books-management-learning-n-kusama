@@ -22,7 +22,7 @@ import jp.co.jwebgate.jlibrary.dbflute.bsentity.dbmeta.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 
 /**
- * The behavior of role as TABLE.
+ * The behavior of ROLE as TABLE.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class BsRoleBhv extends AbstractBehaviorWritable<Role, RoleCB> {
@@ -39,7 +39,7 @@ public abstract class BsRoleBhv extends AbstractBehaviorWritable<Role, RoleCB> {
     /** {@inheritDoc} */
     public RoleDbm asDBMeta() { return RoleDbm.getInstance(); }
     /** {@inheritDoc} */
-    public String asTableDbName() { return "role"; }
+    public String asTableDbName() { return "ROLE"; }
 
     // ===================================================================================
     //                                                                        New Instance
@@ -335,7 +335,7 @@ public abstract class BsRoleBhv extends AbstractBehaviorWritable<Role, RoleCB> {
 
     /**
      * Load referrer of userRoleMapList by the set-upper of referrer. <br>
-     * user_role_map by ROLE_ID, named 'userRoleMapList'.
+     * USER_ROLE_MAP by ROLE_ID, named 'userRoleMapList'.
      * <pre>
      * <span style="color: #0000C0">roleBhv</span>.<span style="color: #CC4747">loadUserRoleMap</span>(<span style="color: #553000">roleList</span>, <span style="color: #553000">mapCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">mapCB</span>.setupSelect...
@@ -366,7 +366,7 @@ public abstract class BsRoleBhv extends AbstractBehaviorWritable<Role, RoleCB> {
 
     /**
      * Load referrer of userRoleMapList by the set-upper of referrer. <br>
-     * user_role_map by ROLE_ID, named 'userRoleMapList'.
+     * USER_ROLE_MAP by ROLE_ID, named 'userRoleMapList'.
      * <pre>
      * <span style="color: #0000C0">roleBhv</span>.<span style="color: #CC4747">loadUserRoleMap</span>(<span style="color: #553000">role</span>, <span style="color: #553000">mapCB</span> <span style="color: #90226C; font-weight: bold"><span style="font-size: 120%">-</span>&gt;</span> {
      *     <span style="color: #553000">mapCB</span>.setupSelect...

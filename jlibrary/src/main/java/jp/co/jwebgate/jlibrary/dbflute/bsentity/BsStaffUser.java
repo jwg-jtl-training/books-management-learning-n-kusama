@@ -11,7 +11,7 @@ import jp.co.jwebgate.jlibrary.dbflute.allcommon.DBMetaInstanceHandler;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The entity of staff_user as TABLE. <br>
+ * The entity of STAFF_USER as TABLE. <br>
  * 職員
  * @author DBFlute(AutoGenerator)
  */
@@ -72,7 +72,7 @@ public abstract class BsStaffUser extends AbstractEntity implements DomainEntity
 
     /** {@inheritDoc} */
     public String asTableDbName() {
-        return "staff_user";
+        return "STAFF_USER";
     }
 
     // ===================================================================================
@@ -102,11 +102,11 @@ public abstract class BsStaffUser extends AbstractEntity implements DomainEntity
     // ===================================================================================
     //                                                                   Referrer Property
     //                                                                   =================
-    /** user_role_map by STAFF_USER_ID, named 'userRoleMapList'. */
+    /** USER_ROLE_MAP by STAFF_USER_ID, named 'userRoleMapList'. */
     protected List<UserRoleMap> _userRoleMapList;
 
     /**
-     * [get] user_role_map by STAFF_USER_ID, named 'userRoleMapList'.
+     * [get] USER_ROLE_MAP by STAFF_USER_ID, named 'userRoleMapList'.
      * @return The entity list of referrer property 'userRoleMapList'. (NotNull: even if no loading, returns empty list)
      */
     public List<UserRoleMap> getUserRoleMapList() {
@@ -115,7 +115,7 @@ public abstract class BsStaffUser extends AbstractEntity implements DomainEntity
     }
 
     /**
-     * [set] user_role_map by STAFF_USER_ID, named 'userRoleMapList'.
+     * [set] USER_ROLE_MAP by STAFF_USER_ID, named 'userRoleMapList'.
      * @param userRoleMapList The entity list of referrer property 'userRoleMapList'. (NullAllowed)
      */
     public void setUserRoleMapList(List<UserRoleMap> userRoleMapList) {

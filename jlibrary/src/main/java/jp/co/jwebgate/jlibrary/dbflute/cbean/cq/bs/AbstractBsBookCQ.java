@@ -16,7 +16,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The abstract condition-query of book.
+ * The abstract condition-query of BOOK.
  * @author DBFlute(AutoGenerator)
  */
 public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
@@ -37,7 +37,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
     }
 
     public String asTableDbName() {
-        return "book";
+        return "BOOK";
     }
 
     // ===================================================================================
@@ -885,7 +885,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
 
     /**
      * Equal(=). And NullIgnored, OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param genreId The value of genreId as equal. (basically NotNull: error as default, or no condition as option)
      */
     public void setGenreId_Equal(Integer genreId) {
@@ -898,7 +898,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
 
     /**
      * NotEqual(&lt;&gt;). And NullIgnored, OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param genreId The value of genreId as notEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setGenreId_NotEqual(Integer genreId) {
@@ -911,7 +911,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
 
     /**
      * GreaterThan(&gt;). And NullIgnored, OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param genreId The value of genreId as greaterThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setGenreId_GreaterThan(Integer genreId) {
@@ -920,7 +920,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
 
     /**
      * LessThan(&lt;). And NullIgnored, OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param genreId The value of genreId as lessThan. (basically NotNull: error as default, or no condition as option)
      */
     public void setGenreId_LessThan(Integer genreId) {
@@ -929,7 +929,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
 
     /**
      * GreaterEqual(&gt;=). And NullIgnored, OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param genreId The value of genreId as greaterEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setGenreId_GreaterEqual(Integer genreId) {
@@ -938,7 +938,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
 
     /**
      * LessEqual(&lt;=). And NullIgnored, OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param genreId The value of genreId as lessEqual. (basically NotNull: error as default, or no condition as option)
      */
     public void setGenreId_LessEqual(Integer genreId) {
@@ -949,7 +949,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
      * RangeOf with various options. (versatile) <br>
      * {(default) minNumber &lt;= column &lt;= maxNumber} <br>
      * And NullIgnored, OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param minNumber The min number of genreId. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param maxNumber The max number of genreId. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param opLambda The callback for option of range-of. (NotNull)
@@ -962,7 +962,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
      * RangeOf with various options. (versatile) <br>
      * {(default) minNumber &lt;= column &lt;= maxNumber} <br>
      * And NullIgnored, OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param minNumber The min number of genreId. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param maxNumber The max number of genreId. (basically NotNull: if op.allowOneSide(), null allowed)
      * @param rangeOfOption The option of range-of. (NotNull)
@@ -973,7 +973,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
 
     /**
      * InScope {in (1, 2)}. And NullIgnored, NullElementIgnored, SeveralRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param genreIdList The collection of genreId as inScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGenreId_InScope(Collection<Integer> genreIdList) {
@@ -986,7 +986,7 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
 
     /**
      * NotInScope {not in (1, 2)}. And NullIgnored, NullElementIgnored, SeveralRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      * @param genreIdList The collection of genreId as notInScope. (basically NotNull, NotEmpty: error as default, or no condition as option)
      */
     public void setGenreId_NotInScope(Collection<Integer> genreIdList) {
@@ -999,13 +999,13 @@ public abstract class AbstractBsBookCQ extends AbstractConditionQuery {
 
     /**
      * IsNull {is null}. And OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      */
     public void setGenreId_IsNull() { regGenreId(CK_ISN, DOBJ); }
 
     /**
      * IsNotNull {is not null}. And OnlyOnceRegistered. <br>
-     * GENRE_ID: {IX, INT(10), FK to genre}
+     * GENRE_ID: {IX, INT(10), FK to GENRE}
      */
     public void setGenreId_IsNotNull() { regGenreId(CK_ISNN, DOBJ); }
 

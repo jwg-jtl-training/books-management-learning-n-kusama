@@ -12,7 +12,7 @@ import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.bs.*;
 import jp.co.jwebgate.jlibrary.dbflute.cbean.cq.*;
 
 /**
- * The condition-query for in-line of role.
+ * The condition-query for in-line of ROLE.
  * @author DBFlute(AutoGenerator)
  */
 public class RoleCIQ extends AbstractBsRoleCQ {

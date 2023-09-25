@@ -11,7 +11,7 @@ import jp.co.jwebgate.jlibrary.dbflute.allcommon.DBMetaInstanceHandler;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.*;
 
 /**
- * The entity of genre as TABLE. <br>
+ * The entity of GENRE as TABLE. <br>
  * ジャンル
  * @author DBFlute(AutoGenerator)
  */
@@ -63,7 +63,7 @@ public abstract class BsGenre extends AbstractEntity implements DomainEntity, En
 
     /** {@inheritDoc} */
     public String asTableDbName() {
-        return "genre";
+        return "GENRE";
     }
 
     // ===================================================================================
@@ -82,11 +82,11 @@ public abstract class BsGenre extends AbstractEntity implements DomainEntity, En
     // ===================================================================================
     //                                                                   Referrer Property
     //                                                                   =================
-    /** book by GENRE_ID, named 'bookList'. */
+    /** BOOK by GENRE_ID, named 'bookList'. */
     protected List<Book> _bookList;
 
     /**
-     * [get] book by GENRE_ID, named 'bookList'.
+     * [get] BOOK by GENRE_ID, named 'bookList'.
      * @return The entity list of referrer property 'bookList'. (NotNull: even if no loading, returns empty list)
      */
     public List<Book> getBookList() {
@@ -95,7 +95,7 @@ public abstract class BsGenre extends AbstractEntity implements DomainEntity, En
     }
 
     /**
-     * [set] book by GENRE_ID, named 'bookList'.
+     * [set] BOOK by GENRE_ID, named 'bookList'.
      * @param bookList The entity list of referrer property 'bookList'. (NullAllowed)
      */
     public void setBookList(List<Book> bookList) {
