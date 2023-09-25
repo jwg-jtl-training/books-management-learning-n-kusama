@@ -3,34 +3,40 @@
 <th:block th:with="UrlConsts=${T(jp.co.jwebgate.jlibrary.consts.UrlConsts)}">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{../static/css/style.css}">
     <!-- BootStrapのCSSの読み込み -->
-    <link href="/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQueryの読み込み -->
-    <script src="/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="../static/jquery-3.7.1/jquery-3.7.1.min.js"></script>
     <!-- BootStrapのJSの読み込み -->
-    <script src="/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="../static/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
     <title>職員一覧</title>
   </head>
 
   <body>
-    <a th:href="@{${UrlConsts.REGISTER_STAFF_USER}}">職員登録</a>
-   <h1>職員一覧</h1>
-   <hr>
-   <table class="table">
-     <tr>
-       <th>職員ID</th>
-       <th>氏名（フリガナ）</th>
-       <th>メールアドレス</th>
-    </tr>
-    <th:block th:each="staff : ${result}" th:object="${staff}">
-      <tr>
-        <td th:text="*{staffUserId}"></td>
-        <td th:text="*{name} + '（' + *{nameKana} + '）'"></td>
-        <td th:text="*{email}"></td>
+    <div class="container py-5 h-75">
+      <div class="text-end h5 pt-4 pe-4">
+        <a th:href="@{${UrlConsts.REGISTER_STAFF_USER}}" class="text-decoration-none">職員登録</a>
+      </div>
+    <h1 class="pb-3">職員一覧</h1>
+    <hr>
+    <table class="table border-dark" style="table-layout:fixed;width:100%;">
+      <tr class="h5">
+        <th>職員ID</th>
+        <th>氏名（フリガナ）</th>
+        <th>メールアドレス</th>
       </tr>
-    </th:block>
-   </table>
-   <a th:href="@{${UrlConsts.SEARCH_BOOK}}">TOPに戻る</a>
+      <th:block th:each="staff : ${result}" th:object="${staff}">
+        <tr class="text-break">
+          <td th:text="*{staffUserId}"></td>
+          <td th:text="*{name} + '（' + *{nameKana} + '）'"></td>
+          <td th:text="*{email}"></td>
+        </tr>       
+      </th:block>
+    </table>
+    <div class="text-end">
+      <a th:href="@{${UrlConsts.SEARCH_BOOK}}" class="btn btn-primary">TOPに戻る</a>
+    </div>
+    </div>
   </body>
 </html>
