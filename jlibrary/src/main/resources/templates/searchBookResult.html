@@ -14,35 +14,52 @@
   </head>
 
   <body>
-    <h1>図書検索</h1>
-    <form class="form" th:action="@{${UrlConsts.SEARCH_BOOK_RESULT} + '/search'}" th:method="POST" th:object="${form}">
-     <div>
-       <input type="text" th:field="*{title}" placeholder="#{hello.welcome}">
-     </div>
-     <div>
-       <button type="submit">検索</button>
-     </div>
-   </form>
-   <h1>検索結果</h1>
-   <hr>
-   <table class="table">
-     <tr>
-       <th>タイトル</th>
-       <th>著者</th>
-       <th>出版社</th>
-       <th>ISBN</th>
-       <th>ジャンル</th>
-    </tr>
-    <th:block th:each="book : ${result}" th:object="${book}">
-      <tr>
-        <td th:text="*{title}"></td>
-        <td th:text="*{author}"></td>
-        <td th:text="*{publisher}"></td>
-        <td th:text="*{isbn}"></td>
-        <td th:text="*{genreDto.genreName}"></td>
-      </tr>
-    </th:block>
-   </table>
-   <a th:href="@{${UrlConsts.SEARCH_BOOK}}">TOPに戻る</a>
+    <section class="h-auto gradient-custom">
+      <div class="container py-3 h-25">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-lg-9 col-xl-7">
+            <div class="card-body p-4">
+              <h1 class="mb-4 pb-2 pb-md-0 mb-md-5 fst-italic fw-bold text-center">図書検索</h1>
+              <form class="form" th:action="@{${UrlConsts.SEARCH_BOOK_RESULT} + '/search'}" th:method="POST" th:object="${form}">
+		        <div class="row">
+                  <div class="col col-9">
+                    <input type="text" th:field="*{title}" placeholder="#{hello.welcome}" class="form-control form-control-lg border-dark">
+                  </div>
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary btn-lg">検索</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <div class="container py-3 h-75">
+      <h1 class="pb-3">検索結果</h1>
+      <hr>
+      <table class="table border-dark" style="table-layout:fixed;width:100%;">
+        <tr class="h5">
+          <th>タイトル</th>
+          <th>著者</th>
+          <th>出版社</th>
+          <th>ISBN</th>
+          <th>ジャンル</th>
+        </tr>
+        <th:block th:each="book : ${result}" th:object="${book}">
+          <tr class="text-break">
+            <td th:text="*{title}"></td>
+            <td th:text="*{author}"></td>
+            <td th:text="*{publisher}"></td>
+            <td th:text="*{isbn}"></td>
+            <td th:text="*{genreDto.genreName}"></td>
+          </tr>
+        </th:block>
+      </table>
+    <div class="text-end">
+      <a th:href="@{${UrlConsts.SEARCH_BOOK}}" class="btn btn-primary">TOPに戻る</a>
+    </div>
+    
   </body>
 </html>
