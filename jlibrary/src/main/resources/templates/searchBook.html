@@ -13,36 +13,24 @@
     <title>図書検索</title>
   </head>
 
-  <body class="bg-warning-subtle">
-	<ul class="text-end list-unstyled list-inline h5 pt-4 pe-4">
-      <li class="list-inline-item"><a sec:authorize="hasRole('ADMIN')" th:href="@{${UrlConsts.LOGOUT}}" class="text-decoration-none">ログアウトA</a></li>
-      <li class="list-inline-item"><a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.LOGOUT}}" class="text-decoration-none">ログアウトS</a></li>
-      <li class="list-inline-item"><a sec:authorize="hasRole('GENERAL')" th:href="@{${UrlConsts.LOGOUT}}" class="text-decoration-none">ログアウトG</a></li>
+  <body>
+    <a sec:authorize="hasRole('ADMIN')" th:href="@{${UrlConsts.LOGOUT}}">ログアウトA</a>
+    <a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.LOGOUT}}">ログアウトS</a>
+    <a sec:authorize="hasRole('GENERAL')" th:href="@{${UrlConsts.LOGOUT}}">ログアウトG</a>
     
-      <li class="list-inline-item"><a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.STAFF_USER_LIST}}" class="text-decoration-none">職員一覧S</a></li>
-      <li class="list-inline-item"><a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.GENERAL_USER_LIST}}" class="text-decoration-none">利用者一覧S</a></li>
-      <li class="list-inline-item"><a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.REGISTER_BOOK}}" class="text-decoration-none">図書登録S</a></li>
-	</ul>
+    <a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.STAFF_USER_LIST}}">職員一覧S</a>
+    <a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.GENERAL_USER_LIST}}">利用者一覧S</a>
+    <a sec:authorize="hasRole('STAFF')" th:href="@{${UrlConsts.REGISTER_BOOK}}">図書登録S</a>
     
-    <section class="h-auto gradient-custom">
-      <div class="container py-5 h-75">
-        <div class="row justify-content-center align-items-center h-25">
-          <div class="col-12 col-lg-9 col-xl-7">
-            <div class="card-body p-4 p-md-5">
-              <h1 class="mb-4 pb-2 pb-md-0 mb-md-5 fst-italic fw-bold text-center">図書検索</h1>
-              <form class="form" th:action="@{${UrlConsts.SEARCH_BOOK} + '/search'}" th:method="POST" th:object="${form}">
-                <div>
-                  <input type="text" th:field="*{title}" th:placeholder="${message}" class="form-control form-control-lg border-dark mb-5">
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary btn-lg">検索</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
+    
+    <h1>図書検索</h1>
+    <form class="form" th:action="@{${UrlConsts.SEARCH_BOOK} + '/search'}" th:method="POST" th:object="${form}">
+     <div>
+       <input type="text" th:field="*{title}" th:placeholder="${message}">
+     </div>
+     <div>
+       <button type="submit">検索</button>
+     </div>
+   </form>
   </body>
 </html>
