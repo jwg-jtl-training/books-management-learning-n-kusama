@@ -606,3 +606,36 @@ select dfloc.ID as ID, dfloc.STAFF_USER_ID as STAFF_USER_ID, dfloc.GENERAL_USER_
 2023-09-25 10:31:20.223  INFO 6768 --- [http-nio-8080-exec-9] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /bootstrap-5.3.0-dist/css/bootstrap.min.css
 2023-09-25 10:31:20.232  INFO 6768 --- [http-nio-8080-exec-10] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /jquery-3.7.1/jquery-3.7.1.min.js
 2023-09-25 10:31:20.249  INFO 6768 --- [http-nio-8080-exec-2] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /bootstrap-5.3.0-dist/js/bootstrap.min.js
+2023-09-25 10:32:18.784  INFO 6768 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 59 class path changes (0 additions, 0 deletions, 59 modifications)
+2023-09-25 10:32:18.851  INFO 6768 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-25 10:32:18.872  INFO 6768 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-25 10:32:18.885  WARN 6768 --- [Thread-5] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+2023-09-25 10:32:18.907  INFO 6768 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-25 10:32:18.934  INFO 6768 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-25 10:32:19.130  INFO 6768 --- [restartedMain] j.c.j.jlibrary.JlibraryApplication       : Starting JlibraryApplication using Java 17.0.6 on DESKTOP-LDT0LAN with PID 6768 (C:\Users\j_user\Desktop\books-management-learnig\jlibrary\bin\main started by j_user in C:\Users\j_user\Desktop\books-management-learnig\jlibrary)
+2023-09-25 10:32:19.131  INFO 6768 --- [restartedMain] j.c.j.jlibrary.JlibraryApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-09-25 10:32:20.479  INFO 6768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5e184c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-09-25 10:32:20.483  INFO 6768 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2023-09-25 10:32:20.737  INFO 6768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-25 10:32:20.738  INFO 6768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-25 10:32:20.738  INFO 6768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-25 10:32:20.765  INFO 6768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-25 10:32:20.766  INFO 6768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1626 ms
+2023-09-25 10:32:21.948  INFO 6768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5df3594d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7423dc76, org.springframework.security.web.context.SecurityContextPersistenceFilter@6510d8c6, org.springframework.security.web.header.HeaderWriterFilter@47008c2a, org.springframework.security.web.csrf.CsrfFilter@69489aad, org.springframework.security.web.authentication.logout.LogoutFilter@7efc189c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18eddb16, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20683b4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b5d9de0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6748e133, org.springframework.security.web.session.SessionManagementFilter@4820ae9d, org.springframework.security.web.access.ExceptionTranslationFilter@51a2ad0b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13a00b1a]
+2023-09-25 10:32:21.959  INFO 6768 --- [restartedMain] j.c.j.j.d.allcommon.DBFluteInitializer   : ...Initializing DBFlute components
+2023-09-25 10:32:21.962  INFO 6768 --- [restartedMain] j.c.j.j.dbflute.allcommon.DBFluteConfig  : ...Unlocking the configuration of DBFlute
+2023-09-25 10:32:21.962  INFO 6768 --- [restartedMain] j.c.j.j.dbflute.allcommon.DBFluteConfig  : ...Setting dataSourceHandler: jp.co.jwebgate.jlibrary.dbflute.allcommon.DBFluteConfig$SpringTransactionalDataSourceHandler@6f472b6e
+2023-09-25 10:32:21.962  INFO 6768 --- [restartedMain] j.c.j.j.dbflute.allcommon.DBFluteConfig  : ...Locking the configuration of DBFlute
+2023-09-25 10:32:22.264  INFO 6768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-25 10:32:22.295  INFO 6768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-25 10:32:22.304  INFO 6768 --- [restartedMain] j.c.j.jlibrary.JlibraryApplication       : Started JlibraryApplication in 3.257 seconds (JVM running for 161.094)
+2023-09-25 10:32:22.306  INFO 6768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
