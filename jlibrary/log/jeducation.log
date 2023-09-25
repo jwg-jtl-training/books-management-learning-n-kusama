@@ -639,3 +639,5 @@ select dfloc.ID as ID, dfloc.STAFF_USER_ID as STAFF_USER_ID, dfloc.GENERAL_USER_
 2023-09-25 10:32:22.295  INFO 6768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2023-09-25 10:32:22.304  INFO 6768 --- [restartedMain] j.c.j.jlibrary.JlibraryApplication       : Started JlibraryApplication in 3.257 seconds (JVM running for 161.094)
 2023-09-25 10:32:22.306  INFO 6768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-25 10:34:52.249  INFO 6768 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-09-25 10:34:52.274  INFO 6768 --- [RMI TCP Connection(2)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
