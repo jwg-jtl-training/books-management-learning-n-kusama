@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- BootStrapのCSSの読み込み -->
+  <link href="../../lib/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQueryの読み込み -->
+  <script src="../../lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+  <!-- BootStrapのJSの読み込み -->
+  <script src="../../lib/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+  <title>図書検索結果</title>
+</head>
+
+<body>
+			  
+  <section class="h-auto gradient-custom">
+    <div class="container py-5 h-25">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card-body p-4">
+              <form class="form" action="#" method="GET">
+				  <div class="row">
+					  <div class="col col-9">
+		        <input type="text" class="form-control form-control-lg border-dark" placeholder="探している本のタイトルを入力してください。"/>
+		              </div>
+		              <div class="col">
+		          <input type="submit" class="btn btn-primary btn-lg" value="検索">
+		              </div>
+		          </div>
+	          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container py-5 h-75">
+	<h2 class="pb-3">検索結果</h2>
+	<table class="table border-dark" style="table-layout:fixed;width:100%;">
+      <thead>
+	    <tr class="h5">
+		  <th>タイトル</th>
+		  <th>著者</th>
+		  <th style="width:15%;">出版社</th>
+		  <th>ISBN</th>
+		  <th style="width:10%;">ジャンル</th>
+		  <th style="width:10%;"></th>
+		  <th style="width:10%;"></th>
+		</tr>
+	  </thead>
+	  
+	  <tbody>
+	    <tr class="text-break">
+		  <td>なっとく！関数型プログラミング</td>
+		  <td>Michat Ptachta</td>
+		  <td>翔泳社</td>
+		  <td>9784798179803</td>
+		  <td>本・雑誌</td>
+		  <td class="text-end h5 pe-4 text-center">
+			<a href="#" class="text-decoration-none">編集</a></td>
+		  <td>
+			<form class="form" action="#" method="DELETE">	
+				<input type="submit" class="btn btn-primary btn-sm"
+					onclick="return confirm('削除してもよろしいですか？')" value="削除">
+			</form>
+		  </td>
+	    </tr>
+	    
+	    <tr class="text-break">
+		  <td>だれとく！？スパゲッティ型プログラム</td>
+		  <td>ペペロン・チーニ</td>
+		  <td>妄想社</td>
+		  <td>9999876912345</td>
+		  <td>本・雑誌</td>
+		  <td class="text-end h5 pe-4 text-center">
+			<a href="#" class="text-decoration-none">編集</a></td>
+		  <td>
+			<form class="form" action="#" method="DELETE">	
+				<input type="submit" class="btn btn-primary btn-sm"
+					onclick="return confirm('削除してもよろしいですか？')" value="削除">
+			</form>
+		  </td>
+	    </tr>
+	  </tbody>
+	</table>
+  </div>
+ 	
+</body>
+
+</html>
