@@ -17,36 +17,47 @@
   <div class="container py-5 h-75">
 	
 	<ul class="text-end list-unstyled list-inline h5 pt-4 pe-5 me-5">
-	  <li class="list-inline-item"><a href="#" class="text-decoration-none me-5 pe-5">職員登録</a></li>
+	  <li class="list-inline-item"><a href="#" class="text-decoration-none">職員登録</a></li>
     </ul>
 	  
 	<h2 class="pb-3">職員一覧</h2>
-	<table class="table border-dark" style="table-layout:fixed;width:80%;">
-      <thead>
-	    <tr class="h5">
-		  <th>職員ID</th>
-		  <th>氏名（カナ）</th>
-		  <th>メールアドレス</th>
-		  <th>　　　</th>
-		</tr>
-	  </thead>
-	  
-	  <tbody>
+	<table class="table border-dark" style="table-layout:fixed;width:90%;">
+		
+		
+		<thead>
+			<tr class="h5">
+				<th style="width:10%;">職員ID</th>
+				<th style="width:20%;">氏名（カナ）</th>
+				<th style="width:10%;">メールアドレス</th>
+				<th style="width:10%;"></th>
+				<th style="width:10%;"></th>
+			</tr>
+		</thead>
+		
+		<tbody>
+	
 	    <tr class="text-break">
 		  <td>0001</td>
           <td>山田太郎（ヤマダタロウ）</td>
           <td>test@aaaa.co.jp</td>
-		  <td>
-			<a href="#" class="text-decoration-none pe-4">編集</a>
-			<input class="btn btn-primary" type="submit" value="削除"/>
-          </td>
+		  
+
+			<td class="text-end"><a href="#" class="text-decoration-none pe-4">編集</a></td>
+				
+			<td>
+				<form th:action="#" th:method="delete">
+					<input class="btn btn-primary btn-sm" onclick="return confirm('削除してもよろしいですか?')" type="submit" value="削除"/>
+				</form>
+			</td>
+			
 	    </tr>
+
 	  </tbody>
 	</table>
 	
-	<div class="mt-4 pt-3 me-5 pe-5">
-		<div class="text-end me-5 pe-5">
-			<input class="btn btn-primary btn-lg me-5" type="submit" value="TOPに戻る" />
+	<div class="pt-3 me-3 pe-5">
+		<div class="text-end">
+			<input class="btn btn-primary btn-lg " type="submit" value="TOPに戻る" />
         </div>
 	</div>
   </div>
