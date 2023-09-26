@@ -25,14 +25,15 @@
               <form class="form" th:action="@{${UrlConsts.REGISTER_GENERAL_USER} + '/regist'}" th:method="POST"
                       th:object="${form}">
                       
-        <div class="formItem">
-		   <div class="col-12 mb-2">
-             <div class="form-outline w-100">
-               <label class="fs-5 text-decoration-underline text-muted">利用者ID</label>
-               <p class="p-2 fs-2"><mark>G00001</mark></p>
-             </div>
-		   </div>
+       <div class="formItem">
+          <div class="col-12 mb-2">
+           <div class="form-outline w-100">
+             <label for="loginId" class="fs-5 pb-2 text-decoration-underline text-muted">利用者ID</label><br>
+              <input type="hidden" th:field="*{generalUserId">
+              <p class="p-2 fs-2"><mark th:text="*{generalUserId"></mark></p>
+         </div>
         </div>
+       </div>
         
         <div class="row">
            <div class="col-md-6 mb-4">
@@ -103,5 +104,4 @@
      </div>
   </section>
 </body>
-
 </html>
