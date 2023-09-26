@@ -15,7 +15,7 @@ public class RegisterGeneralUserForm {
 	
 	private String phoneNumber;
 	
-	private String addres;
+	private String address;
 	
 	public RegisterGeneralUserForm() {}
 	
