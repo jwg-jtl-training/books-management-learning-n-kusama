@@ -10,31 +10,37 @@
     <script src="/jquery-3.7.1/jquery-3.7.1.min.js"></script>
     <!-- BootStrapのJSの読み込み -->
     <script src="/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-    <title>利用者一覧</title>
+    <title>図書利用者一覧</title>
   </head>
 
   <body>
-    <a th:href="@{${UrlConsts.REGISTER_GENERAL_USER}}">利用者登録</a>
-   <h1>利用者一覧</h1>
-   <hr>
-   <table class="table">
-     <tr>
-       <th>利用者ID</th>
-       <th>氏名（フリガナ）</th>
-       <th>生年月日</th>
-       <th>電話番号</th>
-       <th>住所</th>
-    </tr>
-    <th:block th:each="general : ${result}" th:object="${general}">
-      <tr>
-        <td th:text="*{generalUserId}"></td>
-        <td th:text="*{name} + '（' + *{nameKana} + '）'"></td>
-        <td th:text="*{birthday}"></td>
-        <td th:text="*{phoneNumber}"></td>
-        <td th:text="*{address}"></td>
+    <div class="container py-5 h-75">
+      <div class="text-end h5 pt-4 pe-4">
+        <a th:href="@{${UrlConsts.REGISTER_GENERAL_USER}}" class="text-decoration-none">利用者登録</a>
+      </div>
+    <h1 class="pb-3">図書利用者一覧</h1>
+    <hr>
+    <table class="table border-dark" style="table-layout:fixed;width:100%;">
+      <tr class="h5">
+        <th>利用者ID</th>
+        <th>氏名（フリガナ）</th>
+        <th>生年月日</th>
+        <th>電話番号</th>
+        <th>住所</th>
       </tr>
-    </th:block>
-   </table>
-   <a th:href="@{${UrlConsts.SEARCH_BOOK}}">TOPに戻る</a>
+      <th:block th:each="general : ${result}" th:object="${general}">
+        <tr class="text-break">
+          <td th:text="*{generalUserId}"></td>
+          <td th:text="*{name} + '（' + *{nameKana} + '）'"></td>
+          <td th:text="*{birthday}"></td>
+          <td th:text="*{phoneNumber}"></td>
+          <td th:text="*{address}"></td>
+        </tr>
+      </th:block>
+    </table>
+    <div class="text-end">
+      <a th:href="@{${UrlConsts.SEARCH_BOOK}}" class="btn btn-primary">TOPに戻る</a>
+    </div>
+    </div>
   </body>
 </html>

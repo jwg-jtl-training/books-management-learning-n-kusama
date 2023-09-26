@@ -30,7 +30,7 @@ public class RegisterGeneralUserService {
 		generalUser.setNameKana(form.getNameKana());
 		generalUser.setBirthday(LocalDateUtil.convert01StringToLocalDate(form.getBirthday()));
 		generalUser.setPhoneNumber(form.getPhoneNumber());
-		generalUser.setAddress(form.getAddres());
+		generalUser.setAddress(form.getAddress());
 		userRepository.insertGeneralUser(generalUser);
 		
 		UserRoleMap userRoleMap = new UserRoleMap();
