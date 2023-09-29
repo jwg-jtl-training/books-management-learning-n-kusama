@@ -12,9 +12,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.GeneralUser;
 import jp.co.jwebgate.jlibrary.dbflute.exentity.StaffUser;
 
+/**
+ * UserDtoクラスのテスト
+ * 
+ */
 @SpringBootTest
 class UserDtoTest {
 
+	/**
+	 * UserDtoメソッド(引数：StaffUser,List<String>)のテスト
+	 * 
+	 */
 	@Test
 	void UserDtoWithStaffUser() {
 		StaffUser entity = new StaffUser();
@@ -43,6 +51,11 @@ class UserDtoTest {
 		assertEquals(dto.getRoleCdList(), roleCdList);
 	}
 
+
+	/**
+	 * UserDtoメソッド(引数：GeneralUser,List<String>)のテスト
+	 * 
+	 */
 	@Test
 	void UserDtoWithGeneralUser() {
 		GeneralUser entity = new GeneralUser();
