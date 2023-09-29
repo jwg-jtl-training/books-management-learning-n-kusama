@@ -15,8 +15,9 @@
         function selectGenre(){
           let obj = $('input:radio[name="genre-radio"]:checked');
           $('#genre-code').text(obj.attr('genreCode'));
-          $('#genre-name').text(obj.attr('genreName'));
+          // $('#genre-name').text(obj.attr('genreName'));
           $('#genreId').val(obj.val());
+          document.getElementById("genre").value = obj.attr('genreName');
         }
         
         function generateControlNumber(){
@@ -28,7 +29,8 @@
               success : function(data, status, xhr) {
                 // div#resultBoxへ結果(HTML)を反映
                 $('#controlNumber').val(data);
-                $('#control-number').text(data);
+                // $('#control-number').text(data);
+                document.getElementById("control").value = data;
               },
               error : function(XMLHttpRequest, status, errorThrown) {
               // エラー処理
@@ -37,7 +39,6 @@
         }
       </script>
     </head>
-
     <body class="container">
       <section class="vh-100 gradient-custom">
         <div class="container py-5 h-100">
@@ -53,6 +54,7 @@
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{title}">
+                        <span style="color: red;" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
                       </span>
                     </div>
                     <div class="col-12 row pt-4">
@@ -61,6 +63,7 @@
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{author}">
+                        <span style="color: red;" th:if="${#fields.hasErrors('author')}" th:errors="*{author}"></span>
                       </span>
                     </div>
                     <div class="col-12 row pt-4">
@@ -83,18 +86,19 @@
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{publisher}">
+                        <span style="color: red;" th:if="${#fields.hasErrors('publisher')}" th:errors="*{publisher}"></span>
                       </span>
                     </div>
                     <div class="col-12 row pt-4">
                       <span class="col-1">
                         <label class="form-label">ジャンル</label>
                       </span>
-                      <span class="col-2 pe-0">
-                        <button type="button" class="btn btn-info col-12" data-bs-toggle="modal" data-bs-target="#genreModal">ジャンル選択</button>
+                      <span id="genre-name" class="col-5">
+                        <input class="form-control" type="text" id="genre" th:field="*{genreId}" readonly>
                       </span>
-                      <span id="genre-code" class="col-1 border rounded-2 d-flex align-items-center"></span>
-                      <span id="genre-name" class="col-7 border rounded-2 d-flex align-items-center"></span>
-                      <input class="form-control" type="hidden" th:field="*{genreId}">
+                      <span class="col-2 pe-0">
+                        <button type="button" class="btn btn-info col-6" data-bs-toggle="modal" data-bs-target="#genreModal">設定</button>
+                      </span>
                     </div>
                     <div class="col-12 row pt-4">
                       <span class="col-1">
@@ -102,13 +106,17 @@
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{shelfNumber}">
+                        <span style="color: red;" th:if="${#fields.hasErrors('shelfNumber')}" th:errors="*{shelfNumber}"></span>
                       </span>
+                    </div>
+                    <div class="col-12 row pt-4">
                       <span class="col-1">
-                        <label class="form-label">管理番号</label>
+                        <label class="form-label">管理<br>番号</label>
                       </span>
-                      <span id="control-number" class="col-4 border rounded-2 d-flex align-items-center">
+                      <span id="control-number" class="col-5">
+                      <input class="form-control" type="text" id="control" th:field="*{controlNumber}" readonly>
+                      <span style="color: red;" th:if="${#fields.hasErrors('controlNumber')}" th:errors="*{controlNumber}"></span>
                       </span>
-                      <input class="form-control" type="hidden" th:field="*{controlNumber}">
                       <span class="col-1">
                         <button class="btn btn-warning" type="button" onclick="generateControlNumber()">生成</button>
                       </span>
@@ -165,3 +173,4 @@
     </body>
   </th:block>
 </html>
+
