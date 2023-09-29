@@ -37,7 +37,7 @@ public class RegisterStaffUserService {
 		userRoleMap.setRoleId(EnumRoles.STAFF.getId());
 		
 		userRepository.insertUserRoleMap(userRoleMap);
-		
+	
 	}
 	
 	public String getNewStaffUserId() {
