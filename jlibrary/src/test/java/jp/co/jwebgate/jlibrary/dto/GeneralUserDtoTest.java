@@ -9,9 +9,15 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import jp.co.jwebgate.jlibrary.dbflute.exentity.GeneralUser;
 
+/**
+ * GeneralUserDtoクラスのテスト
+ */
 @SpringBootTest
 class GeneralUserDtoTest {
 
+	/**
+	 * GeneralUserDtoメソッドのテスト
+	 */
 	@Test
 	void test1() {
 
