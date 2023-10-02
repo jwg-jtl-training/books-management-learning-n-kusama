@@ -38,14 +38,14 @@
                       <div class="formItem">
                         <label>氏名</label>
                         <input type="text" class="form-control form-control-lg" th:field="*{name}">
-                      	<span style="color: red;" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+                      	<span class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
                       </div>
                     </div>
                     <div class="col-md-6 mb-4">
                       <div class="formItem">
                         <label>フリガナ</label>
                         <input type="text" class="form-control form-control-lg" th:field="*{nameKana}">
-                      	<span style="color: red;" th:if="${#fields.hasErrors('nameKana')}" th:errors="*{nameKana}"></span>
+                      	<span class="text-danger" th:if="${#fields.hasErrors('nameKana')}" th:errors="*{nameKana}"></span>
                       </div>
                     </div>
                   </div>
@@ -55,7 +55,7 @@
                       <div class="form-outline w-100">
                         <label>生年月日</label>
                         <input type="date" class="form-control form-control-lg w-100" th:field="*{birthday}">
-                        <span style="color: red;" th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}"></span>
+                        <span class="text-danger" th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}"></span>
                       </div>
                     </div>
                   </div>
@@ -65,7 +65,7 @@
                       <div class="form-outline">
                         <label>電話番号</label>
                         <input type="text" th:field="*{phoneNumber}" class="form-control form-control-lg">
-                      	<span style="color: red;" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
+                      	<span class="text-danger" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></span>
                       </div>
                     </div>
                   </div>
@@ -75,7 +75,7 @@
                       <div class="form-outline w-100">
                         <label>住所</label>
                         <input type="text" th:field="*{address}" class="form-control form-control-lg w-100">
-                      	<span style="color: red;" th:if="${#fields.hasErrors('address')}" th:errors="*{address}"></span>
+                      	<span class="text-danger" th:if="${#fields.hasErrors('address')}" th:errors="*{address}"></span>
                       </div>
                     </div>
                   </div>
