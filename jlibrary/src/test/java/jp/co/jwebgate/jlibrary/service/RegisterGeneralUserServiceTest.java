@@ -20,12 +20,6 @@ import jp.co.jwebgate.jlibrary.util.LocalDateUtil;
 /**
  * RegisterGeneralUserServiceクラスのテスト
  */
-/**
- * 
- */
-/**
- * 
- */
 @SpringBootTest
 public class RegisterGeneralUserServiceTest {
 	
