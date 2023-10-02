@@ -15,15 +15,24 @@ import jp.co.jwebgate.jlibrary.consts.UrlConsts;
 import jp.co.jwebgate.jlibrary.form.RegisterGeneralUserForm;
 import jp.co.jwebgate.jlibrary.service.RegisterGeneralUserService;
 
+/**
+ * 利用者登録画面
+ * @author j_user
+ *
+ */
 @Controller
 @RequestMapping(UrlConsts.REGISTER_GENERAL_USER)
-public class RegisterGeneralUserController {
+public class RegisterGeneralUserController extends BaseController {
 
 	@Autowired
 	private RegisterGeneralUserService registerGeneralUserService;
 	
 	private final String VIEW = "registerGeneral";
 	
+	/**
+	 * 初期表示
+	 * @return ModelAndView
+	 */
 	@GetMapping()
 	public ModelAndView show() {
 		
@@ -33,13 +42,21 @@ public class RegisterGeneralUserController {
 		return mav;
 	}
 	
+	/**
+	 * 登録
+	 * @param form
+	 * @param bindingResult
+	 * @return　ModelAndView
+	 */
 	@PostMapping("/regist")
 	public ModelAndView regist(@Valid @ModelAttribute("form") RegisterGeneralUserForm form, BindingResult bindingResult) {
 		
 		ModelAndView mav = new ModelAndView();
 		
 		if(bindingResult.hasErrors()) {
+			mav.addObject("failureMsgs", this.getFieldErrorMsgList(bindingResult));
 			mav.setViewName(VIEW);
+			return mav;
 		}
 		
 		registerGeneralUserService.registerGeneralUser(form);
@@ -49,4 +66,3 @@ public class RegisterGeneralUserController {
 		return mav;
 	}
 }
-
