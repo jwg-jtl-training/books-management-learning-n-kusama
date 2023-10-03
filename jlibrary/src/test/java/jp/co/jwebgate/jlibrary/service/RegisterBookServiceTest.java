@@ -62,6 +62,8 @@ class RegisterBookServiceTest {
 	 * getGenreDtoListメソッドのテスト
 	 * 
 	 */
+
+	//親ジャンルの場合
 	@Test
 	void getGenreDtoListWithGenre() {
 		Genre genre = new Genre();
@@ -85,15 +87,16 @@ class RegisterBookServiceTest {
 		assertEquals(expected, actual);
 	}
 
+	//子ジャンルの場合
 	@Test
-	void getGenreDtoListWithSubGenre() {
+	void getGenreDtoListWithChildrenGenre() {
 		Genre genre = new Genre();
 		genre.setGenreCode("100");
-		Genre subGenre = new Genre();
-		subGenre.setGenreCode("001");
+		Genre childrenGenre = new Genre();
+		childrenGenre.setGenreCode("001");
 		List<Genre> testList = new ArrayList<Genre>();
 		testList.add(genre);
-		testList.add(subGenre);
+		testList.add(childrenGenre);
 
 		Mockito.doReturn(testList).when(mockGenreRepository).selectGenreList();
 
