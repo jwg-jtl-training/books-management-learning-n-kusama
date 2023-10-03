@@ -17,13 +17,17 @@ import jp.co.jwebgate.jlibrary.service.RegisterStaffUserService;
 
 @Controller
 @RequestMapping(UrlConsts.REGISTER_STAFF_USER)
-public class RegisterStaffUserController {
+public class RegisterStaffUserController extends BaseController {
 
 	@Autowired
 	private RegisterStaffUserService registerStaffUserService;
 	
 	private final String VIEW = "registerStaff";
 	
+	/**
+	 * 職員登録画面
+	 * @return
+	 */
 	@GetMapping()
 	public ModelAndView show() {
 		
@@ -33,20 +37,29 @@ public class RegisterStaffUserController {
 		return mav;
 	}
 	
+	/**
+	 * 登録
+	 * @param form
+	 * @param bindingResult
+	 * @return
+	 */
 	@PostMapping()
 	public ModelAndView regist(@Valid @ModelAttribute("form") RegisterStaffUserForm form, BindingResult bindingResult) {
 		
 		ModelAndView mav = new ModelAndView();
 		
 		if(bindingResult.hasErrors()) {
+			mav.addObject("failureMsgs", this.getFieldErrorMsgList(bindingResult));
 			mav.setViewName(VIEW);
+			return mav;
 		}
 		
 		registerStaffUserService.registerStaffUser(form);
-		
-		mav.setViewName(UrlConsts.REDIRECT + UrlConsts.LOGIN);
-		
+		mav.setViewName(UrlConsts.REDIRECT + UrlConsts.STAFF_USER_LIST);
 		return mav;
-	}
+		
+	}	
 }
+
+
 
