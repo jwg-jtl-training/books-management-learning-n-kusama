@@ -94,7 +94,8 @@
                         <label class="form-label">ジャンル</label>
                       </span>
                       <span id="genre-name" class="col-5">
-                        <input class="form-control" type="text" id="genre" th:field="*{genreId}" readonly>
+                        <input class="form-control" type="text" id="genre" readonly>
+                        <input class="form-control" type="hidden" id="genreId" th:field="*{genreId}" readonly>
                       </span>
                       <span class="col-2 pe-0">
                         <button type="button" class="btn btn-info col-6" data-bs-toggle="modal" data-bs-target="#genreModal">設定</button>
