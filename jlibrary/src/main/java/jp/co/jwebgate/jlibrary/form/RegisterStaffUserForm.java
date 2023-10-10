@@ -33,7 +33,7 @@ public class RegisterStaffUserForm {
 	
 	@NotBlank(message = "メールアドレスを入力してください。")
 	@Email
-	@Pattern(regexp = "^[0-9a-zA-Z@]+$", message = "半角英数字で入力してください。")
+	@Pattern(regexp = "^[0-9a-zA-Z@_.+-]+$", message = "半角英数字で入力してください。")
 	@Size(max = 30, message = "30字以内で入力してください。")
 	private String email;
 	
