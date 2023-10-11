@@ -11,6 +11,18 @@
     <script src="/jquery-3.7.1/jquery-3.7.1.min.js"></script>
     <!-- BootStrapのJSの読み込み -->
     <script src="/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script th:inline="javascript">
+    function confirmMessage() {
+		var checkRegisterFlg = confirm("登録してもよろしいですか？");
+		  
+		  if(checkRegisterFlg) {
+				sessionStorage.setItem('key', 'registeredGUser');
+		  }else{
+			  alert("登録をキャンセルしました");
+			  return checkRegisterFlg;
+		  }
+	}
+    </script>
     <title>新規ユーザー登録</title>
   </head>
   
@@ -83,7 +95,7 @@
                   <div class="row">
                     <div class="formItem">
                       <div class="mt-4 pt-2">
-                        <input  class="btn btn-primary btn-lg" onclick="return confirm('登録してもよろしいですか？')" type="submit" value="登録" />
+                        <input  class="btn btn-primary btn-lg" onclick="return confirmMessage()" type="submit" value="登録" />
                         <a type="submit" class="btn btn-primary btn-lg"th:href="@{${UrlConsts.SEARCH_BOOK}}">キャンセル</a>
                       </div>
                     </div>

@@ -42,8 +42,14 @@
 	}
 
 	function confirmMessage() {
-		confirm("登録してもよろしいですか？");
-		sessionStorage.setItem('key', 'registered');
+		var checkRegisterFlg = confirm("登録してもよろしいですか？");
+		  
+		  if(checkRegisterFlg) {
+				sessionStorage.setItem('key', 'registeredBook');
+		  }else{
+			  alert("登録をキャンセルしました");
+			  return checkRegisterFlg;
+		  }
 	}
 </script>
 	</head>
@@ -128,7 +134,7 @@
 									<div class="d-md-flex justify-content-md-end pt-5">
 										<a class="btn btn-secondary m-1" type="submit"
 											th:href="@{${UrlConsts.SEARCH_BOOK}}">キャンセル</a>
-										<button class="btn btn-primary m-1" onclick="confirmMessage()"
+										<button class="btn btn-primary m-1" onclick="return confirmMessage()"
 											type="submit">登録</button>
 									</div>
 								</form>

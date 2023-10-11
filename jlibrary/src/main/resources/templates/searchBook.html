@@ -13,13 +13,14 @@
 <script src="/jquery-3.7.1/jquery-3.7.1.min.js"></script>
 <!-- BootStrapのJSの読み込み -->
 <script src="/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-<script>
+<script th:inline="javascript">
 	var data = sessionStorage.getItem('key');
-	if (data=='registered')
-		confirm("図書の登録が完了しました。");
+	if (data == 'registeredBook')
+		alert("図書の登録が完了しました。");
 	sessionStorage.removeItem('key')
 </script>
 <title>図書検索</title>
+
 	</head>
 
 	<body class="bg-warning-subtle">
