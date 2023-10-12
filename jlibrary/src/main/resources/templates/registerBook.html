@@ -51,6 +51,10 @@
 			  return checkRegisterFlg;
 		  }
 	}
+	
+	function removeValue() {
+		sessionStorage.removeItem('key')
+	}
 </script>
 	</head>
 	<body class="container">
@@ -133,7 +137,7 @@
 									</div>
 									<div class="d-md-flex justify-content-md-end pt-5">
 										<a class="btn btn-secondary m-1" type="submit"
-											th:href="@{${UrlConsts.SEARCH_BOOK}}">キャンセル</a>
+											th:href="@{${UrlConsts.SEARCH_BOOK}}" onclick="removeValue()">キャンセル</a>
 										<button class="btn btn-primary m-1" onclick="return confirmMessage()"
 											type="submit">登録</button>
 									</div>

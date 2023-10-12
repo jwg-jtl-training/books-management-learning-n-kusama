@@ -24,6 +24,10 @@
 			  return checkRegisterFlg;
 		  }
 	}
+    
+    function removeValue() {
+		sessionStorage.removeItem('key')
+	}
  </script>
 <title>職員登録</title>
 	</head>
@@ -93,6 +97,7 @@
 													th:errors="*{password}"></span>
 											</div>
 										</div>
+									</div>
 										<div class="col-md-6 mb-4 pb-2">
 											<div class="formItem">
 												<label for="confirmPassword">パスワード(確認用)</label> <input

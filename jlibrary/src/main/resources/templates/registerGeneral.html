@@ -22,6 +22,10 @@
 			  return checkRegisterFlg;
 		  }
 	}
+    
+    function removeValue() {
+		sessionStorage.removeItem('key')
+	}
     </script>
     <title>新規ユーザー登録</title>
   </head>
@@ -96,7 +100,7 @@
                     <div class="formItem">
                       <div class="mt-4 pt-2">
                         <input  class="btn btn-primary btn-lg" onclick="return confirmMessage()" type="submit" value="登録" />
-                        <a type="submit" class="btn btn-primary btn-lg"th:href="@{${UrlConsts.SEARCH_BOOK}}">キャンセル</a>
+                        <a type="submit" class="btn btn-primary btn-lg" th:href="@{${UrlConsts.SEARCH_BOOK}}" onclick="removeValue()">キャンセル</a>
                       </div>
                     </div>
                   </div>     
