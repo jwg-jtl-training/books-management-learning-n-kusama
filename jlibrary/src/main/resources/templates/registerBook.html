@@ -54,7 +54,7 @@
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{title}">
-                        <span style="color: red;" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
+                        <span class="text-danger" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
                       </span>
                     </div>
                     <div class="col-12 row pt-4">
@@ -63,7 +63,7 @@
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{author}">
-                        <span style="color: red;" th:if="${#fields.hasErrors('author')}" th:errors="*{author}"></span>
+                        <span class="text-danger" th:if="${#fields.hasErrors('author')}" th:errors="*{author}"></span>
                       </span>
                     </div>
                     <div class="col-12 row pt-4">
@@ -72,12 +72,14 @@
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{isbn10}">
+                        <span class="text-danger" th:if="${#fields.hasErrors('isbn10')}" th:errors="*{isbn10}"></span>
                       </span>
                       <span class="col-1">
                         <label class="form-label">ISBN-13</label>
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{isbn13}">
+                        <span class="text-danger" th:if="${#fields.hasErrors('isbn13')}" th:errors="*{isbn13}"></span>
                       </span>
                     </div>
                     <div class="col-12 row pt-4">
@@ -86,7 +88,7 @@
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{publisher}">
-                        <span style="color: red;" th:if="${#fields.hasErrors('publisher')}" th:errors="*{publisher}"></span>
+                        <span class="text-danger" th:if="${#fields.hasErrors('publisher')}" th:errors="*{publisher}"></span>
                       </span>
                     </div>
                     <div class="col-12 row pt-4">
@@ -96,6 +98,7 @@
                       <span id="genre-name" class="col-5">
                         <input class="form-control" type="text" id="genre" readonly>
                         <input class="form-control" type="hidden" id="genreId" th:field="*{genreId}" readonly>
+                        <span class="text-danger" th:if="${#fields.hasErrors('genreId')}" th:errors="*{genreId}"></span>
                       </span>
                       <span class="col-2 pe-0">
                         <button type="button" class="btn btn-info col-6" data-bs-toggle="modal" data-bs-target="#genreModal">設定</button>
@@ -107,7 +110,7 @@
                       </span>
                       <span class="col-5">
                         <input class="form-control" type="text" th:field="*{shelfNumber}">
-                        <span style="color: red;" th:if="${#fields.hasErrors('shelfNumber')}" th:errors="*{shelfNumber}"></span>
+                        <span class="text-danger" th:if="${#fields.hasErrors('shelfNumber')}" th:errors="*{shelfNumber}"></span>
                       </span>
                     </div>
                     <div class="col-12 row pt-4">
@@ -116,7 +119,7 @@
                       </span>
                       <span id="control-number" class="col-5">
                       <input class="form-control" type="text" id="control" th:field="*{controlNumber}" readonly>
-                      <span style="color: red;" th:if="${#fields.hasErrors('controlNumber')}" th:errors="*{controlNumber}"></span>
+                      <span class="text-danger" th:if="${#fields.hasErrors('controlNumber')}" th:errors="*{controlNumber}"></span>
                       </span>
                       <span class="col-1">
                         <button class="btn btn-warning" type="button" onclick="generateControlNumber()">生成</button>

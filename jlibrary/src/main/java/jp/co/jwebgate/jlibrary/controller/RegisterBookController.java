@@ -2,8 +2,11 @@ package jp.co.jwebgate.jlibrary.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +21,7 @@ import jp.co.jwebgate.jlibrary.service.RegisterBookService;
 
 @Controller
 @RequestMapping(UrlConsts.REGISTER_BOOK)
-public class RegisterBookController {
+public class RegisterBookController extends BaseController{
 
 	@Autowired
 	private RegisterBookService registerBookService;
@@ -33,11 +36,19 @@ public class RegisterBookController {
 	}
 	
 	@PostMapping()
-	public ModelAndView regist(@ModelAttribute("form") RegisterBookForm form) {
+	public ModelAndView regist(@Valid @ModelAttribute("form") RegisterBookForm form, BindingResult bindingResult) {
+		
+		ModelAndView mav = new ModelAndView();
+		
+		if(bindingResult.hasErrors()) {
+			mav.addObject("failureMsgs", this.getFieldErrorMsgList(bindingResult));
+			mav.setViewName(VIEW);
+			return mav;
+		}
 		
 		registerBookService.registBook(form);
-		
-		return new ModelAndView(UrlConsts.REDIRECT + UrlConsts.SEARCH_BOOK);
+		mav.setViewName(UrlConsts.REDIRECT + UrlConsts.SEARCH_BOOK);
+		return mav;
 	}
 	
 	@GetMapping("/generate")
@@ -50,5 +61,4 @@ public class RegisterBookController {
 	public List<GenreDto> getGenreList(){
 		return registerBookService.getGenreDtoList();
 	}
-	
 }
