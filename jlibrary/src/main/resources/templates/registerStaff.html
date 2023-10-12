@@ -71,6 +71,8 @@
                         <span class="text-danger" th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}"></span>
                       </div>
                     </div>
+                    <span class="text-danger" th:if="${#fields.hasErrors('passwordValid')}" th:errors="*{passwordValid}"></span>
+                  </div>
                   <div class="formItem">
                     <div class="mt-4 pt-2">
                       <input class="btn btn-primary btn-lg" type="submit" value="登録" onclick="return confirm('登録してもよろしいですか?')"/>

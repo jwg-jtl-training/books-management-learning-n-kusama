@@ -1,5 +1,6 @@
 package jp.co.jwebgate.jlibrary.form;
 
+import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -36,6 +37,15 @@ public class RegisterStaffUserForm {
 	@Pattern(regexp = "^[0-9a-zA-Z@]+$", message = "半角英数字で入力してください。")
 	@Size(max = 30, message = "30字以内で入力してください。")
 	private String email;
+	
+	@AssertTrue(message = "パスワードと確認用パスワードは同一にしてください。")
+    public boolean isPasswordValid() {
+        if (password == null || password.isEmpty()) {
+            return true;
+        }
+
+        return password.equals(confirmPassword);
+    } 
 	
 	public RegisterStaffUserForm() {}
 	
