@@ -23,7 +23,7 @@ public class RegisterStaffUserForm {
 	private String confirmPassword;
 	
 	@NotBlank(message = "氏名カナを入力してください。")
-	@Pattern(regexp = "^[ァ-タダ-ヶー０-９]+$", message = "全角カナで入力してください。")
+	@Pattern(regexp = "^[ァ-タダ-ヶー]+$", message = "カタカナ以外入力できません。")
 	@Size(max = 50, message = "50字以内で入力してください。")
 	private String nameKana;
 	

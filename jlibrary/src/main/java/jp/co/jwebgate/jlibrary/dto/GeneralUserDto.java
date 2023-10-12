@@ -23,7 +23,7 @@ public class GeneralUserDto {
 		this.generalUserId = generalUser.getGeneralUserId();
 		this.name = generalUser.getName();
 		this.nameKana = generalUser.getNameKana();
-		this.birthday = LocalDateUtil.convert01LocalDateToString(generalUser.getBirthday());
+		this.birthday = LocalDateUtil.convert02LocalDateToString(generalUser.getBirthday());
 		this.phoneNumber = generalUser.getPhoneNumber();
 		this.address = generalUser.getAddress();
 		
