@@ -19,9 +19,11 @@ public class BookRepository {
 	
 	public List<Book> selectBookByTitle(String title){
 		return bookBhv.selectList(cb->{
-			if(!StringUtils.isNullOrEmpty(title)) {
-				cb.query().setTitle_LikeSearch(title, op -> op.likeContain());
-			}
+			if(!StringUtils.isNullOrEmpty(title )) {
+				cb.orScopeQuery(orCB -> {
+				orCB.query().setTitle_LikeSearch(title, op -> op.likeContain());
+				orCB.query().setAuthor_LikeSearch(title, op -> op.likeContain());
+			});}
 			cb.setupSelect_Genre();
 		}).getSelectedList();
 	}
