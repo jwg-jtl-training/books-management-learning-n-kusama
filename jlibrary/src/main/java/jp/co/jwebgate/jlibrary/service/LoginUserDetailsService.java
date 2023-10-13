@@ -14,6 +14,11 @@ import jp.co.jwebgate.jlibrary.dbflute.exentity.StaffUser;
 import jp.co.jwebgate.jlibrary.details.LoginUserDetails;
 import jp.co.jwebgate.jlibrary.repository.UserRepository;
 
+/**
+ * ログインユーザーの詳細
+ * @author j_user
+ *
+ */
 @Service
 public class LoginUserDetailsService implements UserDetailsService{
 
@@ -24,6 +29,11 @@ public class LoginUserDetailsService implements UserDetailsService{
 		this.userRepository = userRepository;
 	}
 	
+	
+	/**
+	 * ユーザーIDからユーザー情報を読み込む
+	 *
+	 */
 	@Override
 	public UserDetails loadUserByUsername(String userId) throws UsernameNotFoundException{
 		

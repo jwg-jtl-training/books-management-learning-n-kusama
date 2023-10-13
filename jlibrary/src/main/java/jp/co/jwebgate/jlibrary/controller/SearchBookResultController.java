@@ -15,6 +15,11 @@ import jp.co.jwebgate.jlibrary.dto.BookDto;
 import jp.co.jwebgate.jlibrary.form.SearchBookForm;
 import jp.co.jwebgate.jlibrary.service.SearchBookService;
 
+/**
+ * 図書検索結果画面
+ * @author j_user
+ *
+ */
 @Controller
 @RequestMapping(UrlConsts.SEARCH_BOOK_RESULT)
 public class SearchBookResultController {
@@ -24,6 +29,12 @@ public class SearchBookResultController {
 	@Autowired
 	private SearchBookService searchBookService;
 	
+	/**
+	 * 初期表示
+	 * @param form
+	 * @param bookDtoList
+	 * @return
+	 */
 	@GetMapping()
 	public ModelAndView show(@ModelAttribute("form") SearchBookForm form
 			, @ModelAttribute("result") List<BookDto> bookDtoList) {
@@ -35,6 +46,11 @@ public class SearchBookResultController {
 		return mav;
 	}
 	
+	/**
+	 * 検索
+	 * @param form
+	 * @return
+	 */
 	@PostMapping("/search")
 	public ModelAndView search(@ModelAttribute("form") SearchBookForm form) {
 		List<BookDto> bookDtoList = searchBookService.searchBook(form);

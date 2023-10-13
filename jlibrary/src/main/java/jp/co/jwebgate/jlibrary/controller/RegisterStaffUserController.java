@@ -15,6 +15,11 @@ import jp.co.jwebgate.jlibrary.consts.UrlConsts;
 import jp.co.jwebgate.jlibrary.form.RegisterStaffUserForm;
 import jp.co.jwebgate.jlibrary.service.RegisterStaffUserService;
 
+/**
+ * 職員登録画面
+ * @author j_user
+ *
+ */
 @Controller
 @RequestMapping(UrlConsts.REGISTER_STAFF_USER)
 public class RegisterStaffUserController extends BaseController {
@@ -25,7 +30,7 @@ public class RegisterStaffUserController extends BaseController {
 	private final String VIEW = "registerStaff";
 	
 	/**
-	 * 職員登録画面
+	 * 初期表示
 	 * @return
 	 */
 	@GetMapping()

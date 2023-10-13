@@ -9,6 +9,11 @@ import org.springframework.web.servlet.ModelAndView;
 import jp.co.jwebgate.jlibrary.consts.UrlConsts;
 import jp.co.jwebgate.jlibrary.service.GeneralUserListService;
 
+/**
+ * 利用者一覧画面
+ * @author j_user
+ *
+ */
 @Controller
 @RequestMapping(UrlConsts.GENERAL_USER_LIST)
 public class GeneralUserListController {
@@ -18,6 +23,10 @@ public class GeneralUserListController {
 	
 	private final String VIEW = "generalUserList";
 	
+	/**
+	 * 初期表示
+	 * @return
+	 */
 	@GetMapping()
 	public ModelAndView show() {
 		ModelAndView mav = new ModelAndView(VIEW);

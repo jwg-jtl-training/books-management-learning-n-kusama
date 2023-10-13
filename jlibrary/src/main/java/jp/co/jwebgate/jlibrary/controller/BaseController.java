@@ -10,6 +10,11 @@ import org.springframework.validation.BindingResult;
 @Controller
 public class BaseController {
     
+    /**
+     * エラーメッセージリストを取得
+     * @param bindingResult
+     * @return
+     */
     public List<String> getFieldErrorMsgList(BindingResult bindingResult) {
         
         List<String> errorMsgList = new ArrayList<String>();
