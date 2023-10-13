@@ -9,6 +9,11 @@ import org.springframework.web.servlet.ModelAndView;
 import jp.co.jwebgate.jlibrary.consts.UrlConsts;
 import jp.co.jwebgate.jlibrary.service.StaffUserListService;
 
+/**
+ * 職員一覧画面
+ * @author j_user
+ *
+ */
 @Controller
 @RequestMapping(UrlConsts.STAFF_USER_LIST)
 public class StaffUserListController {
@@ -18,6 +23,10 @@ public class StaffUserListController {
 	
 	private final String VIEW = "staffUserList";
 	
+	/**
+	 * 初期表示
+	 * @return
+	 */
 	@GetMapping()
 	public ModelAndView show() {
 		ModelAndView mav = new ModelAndView(VIEW);

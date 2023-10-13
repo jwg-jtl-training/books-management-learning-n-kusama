@@ -10,12 +10,22 @@ import jp.co.jwebgate.jlibrary.dto.BookDto;
 import jp.co.jwebgate.jlibrary.form.SearchBookForm;
 import jp.co.jwebgate.jlibrary.repository.BookRepository;
 
+/**
+ * 図書検索画面
+ * @author j_user
+ *
+ */
 @Service
 public class SearchBookService {
 
 	@Autowired
 	private BookRepository bookRepository;
 	
+	/**
+	 * 図書検索
+	 * @param form
+	 * @return
+	 */
 	public List<BookDto> searchBook(SearchBookForm form) {
 		List<Book> bookList = bookRepository.selectBookByTitle(form.getTitle());
 		return bookList.stream().map(e->new BookDto(e)).toList();

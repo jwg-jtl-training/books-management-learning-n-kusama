@@ -10,6 +10,15 @@ import jp.co.jwebgate.jlibrary.enums.EnumRoles;
 import jp.co.jwebgate.jlibrary.form.RegisterStaffUserForm;
 import jp.co.jwebgate.jlibrary.repository.UserRepository;
 
+/**
+ * 職員登録画面
+ * @author j_user
+ *
+ */
+/**
+ * @author j_user
+ *
+ */
 @Service
 public class RegisterStaffUserService {
 	
@@ -19,6 +28,10 @@ public class RegisterStaffUserService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	
+	/**
+	 * 職員登録
+	 * @param form
+	 */
 	public void registerStaffUser(RegisterStaffUserForm form) {
 		
 		StaffUser staffUser = new StaffUser();
@@ -40,6 +53,10 @@ public class RegisterStaffUserService {
 	
 	}
 	
+	/**
+	 * 職員IDを取得
+	 * @return
+	 */
 	public String getNewStaffUserId() {
 		return userRepository.getNewStaffUserId();
 	}

@@ -11,6 +11,11 @@ import jp.co.jwebgate.jlibrary.form.RegisterGeneralUserForm;
 import jp.co.jwebgate.jlibrary.repository.UserRepository;
 import jp.co.jwebgate.jlibrary.util.LocalDateUtil;
 
+/**
+ * 利用者登録画面
+ * @author j_user
+ *
+ */
 @Service
 public class RegisterGeneralUserService {
 	
@@ -20,6 +25,10 @@ public class RegisterGeneralUserService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	
+	/**
+	 * 利用者登録
+	 * @param form
+	 */
 	public void registerGeneralUser(RegisterGeneralUserForm form) {
 		
 		GeneralUser generalUser = new GeneralUser();
@@ -42,6 +51,10 @@ public class RegisterGeneralUserService {
 		
 	}
 	
+	/**
+	 * 利用者IDを取得
+	 * @return
+	 */
 	public String getNewGeneralUserId() {
 		return userRepository.getNewGeneralUserId();
 	}

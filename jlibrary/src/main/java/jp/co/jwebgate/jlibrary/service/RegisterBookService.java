@@ -13,6 +13,11 @@ import jp.co.jwebgate.jlibrary.form.RegisterBookForm;
 import jp.co.jwebgate.jlibrary.repository.BookRepository;
 import jp.co.jwebgate.jlibrary.repository.GenreRepository;
 
+/**
+ * 図書登録画面
+ * @author j_user
+ *
+ */
 @Service
 public class RegisterBookService {
 
@@ -24,6 +29,10 @@ public class RegisterBookService {
 	
 	private final String PARENT_GENRE_CODE_MARKER = "0";
 	
+	/**
+	 * 図書登録
+	 * @param form
+	 */
 	public void registBook(RegisterBookForm form) {
 		
 		Book book = new Book();
@@ -40,6 +49,10 @@ public class RegisterBookService {
 		bookRepository.insertBook(book);
 	}
 	
+	/**
+	 * ジャンルのDTOリストを取得
+	 * @return
+	 */
 	public List<GenreDto> getGenreDtoList(){
 		
 		List<Genre> genreList = genreRepository.selectGenreList();
@@ -64,6 +77,10 @@ public class RegisterBookService {
 		return genreDtoList;
 	}
 	
+	/**
+	 * 管理番号の生成
+	 * @return
+	 */
 	public String generateControlNumber() {
 		String maxControlNumber = bookRepository.selectMaxControlNumber();
 		int maxControlNumberInt = Integer.parseInt(maxControlNumber);
