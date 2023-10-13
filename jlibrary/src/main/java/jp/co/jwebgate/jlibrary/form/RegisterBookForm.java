@@ -20,11 +20,9 @@ public class RegisterBookForm {
 	private String publisher;
 	
 	@Size(max = 10, message = "ISBNは10文字以下で入力してください。")
-	@Pattern(regexp = "^[0-9]+$", message = "ISBNを半角数字で入力してください。")
 	private String isbn10;
 	
 	@Size(max = 13, message = "ISBNは13文字以下で入力してください。")
-	@Pattern(regexp = "^[0-9]+$", message =  "ISBNを半角数字で入力してください。")
 	private String isbn13;
 	
 	@NotNull(message = "ジャンルを選択してください。")
