@@ -61,4 +61,9 @@ public class RegisterGeneralUserForm {
 		this.generalUserId = newGeneralUserId;
 	}
 	
+	/**
+	 * 引数なしコンストラクタ
+	 */
+	public RegisterGeneralUserForm() {}
+	
 }

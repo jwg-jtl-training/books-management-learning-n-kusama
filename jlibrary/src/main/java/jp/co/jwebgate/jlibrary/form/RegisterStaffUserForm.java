@@ -67,4 +67,11 @@ public class RegisterStaffUserForm {
 	public RegisterStaffUserForm(String newStaffUserId) {
 		this.staffUserId = newStaffUserId;
 	}
+	
+	/**
+     * 引数なしコンストラクタ
+     */
+	public RegisterStaffUserForm() {
+		
+	}
 }
