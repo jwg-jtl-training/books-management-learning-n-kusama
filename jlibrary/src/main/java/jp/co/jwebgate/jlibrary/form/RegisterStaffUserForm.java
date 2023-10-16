@@ -22,41 +22,41 @@ public class RegisterStaffUserForm {
 	/**
      * パスワード
      */
-	@NotBlank(message = "パスワードを入力してください。")
+	@NotBlank
 	@Pattern(regexp = "^[0-9a-zA-Z]+$", message = "半角英数字で入力してください。")
-	@Size(max = 30, message = "30字以内で入力してください。")
+	@Size(min = 6, max = 30)
 	private String password;
 
 	/**
      * パスワード（確認用）
      */
-	@NotBlank(message = "再確認用のパスワードを入力してください。")
+	@NotBlank
 	@Pattern(regexp = "^[0-9a-zA-Z]+$", message = "半角英数字で入力してください。")
-	@Size(max = 30, message = "30字以内で入力してください。")
+	@Size(min = 6, max = 30)
 	private String confirmPassword;
 
 	/**
      * フリガナ
      */
-	@NotBlank(message = "氏名カナを入力してください。")
+	@NotBlank
 	@Pattern(regexp = "^[ァ-タダ-ヶー]+$", message = "カタカナ以外入力できません。")
-	@Size(max = 50, message = "50字以内で入力してください。")
+	@Size(min = 1, max = 50)
 	private String nameKana;
 
 	/**
      * 氏名
      */
-	@NotBlank(message = "氏名を入力してください。")
-	@Size(max = 25, message = "25字以内で入力してください。")
+	@NotBlank
+	@Size(min = 1, max = 25)
 	private String name;
 
 	/**
      * メールアドレス
      */
-	@NotBlank(message = "メールアドレスを入力してください。")
+	@NotBlank
 	@Email
 	@Pattern(regexp = "^[0-9a-zA-Z@_.+-]+$", message = "半角英数字で入力してください。")
-	@Size(max = 30, message = "30字以内で入力してください。")
+	@Size(min = 6, max = 30)
 	private String email;
 
 
