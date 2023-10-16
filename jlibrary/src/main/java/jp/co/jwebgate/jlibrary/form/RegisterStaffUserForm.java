@@ -5,6 +5,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import jp.co.jwebgate.jlibrary.consts.RegularExpressionConsts;
 import lombok.Data;
 
 /**
@@ -23,7 +24,7 @@ public class RegisterStaffUserForm {
      * パスワード
      */
 	@NotBlank
-	@Pattern(regexp = "^[0-9a-zA-Z]+$", message = "半角英数字で入力してください。")
+	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "半角英数字で入力してください。")
 	@Size(min = 6, max = 30)
 	private String password;
 
@@ -31,7 +32,7 @@ public class RegisterStaffUserForm {
      * パスワード（確認用）
      */
 	@NotBlank
-	@Pattern(regexp = "^[0-9a-zA-Z]+$", message = "半角英数字で入力してください。")
+	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "半角英数字で入力してください。")
 	@Size(min = 6, max = 30)
 	private String confirmPassword;
 
@@ -39,7 +40,7 @@ public class RegisterStaffUserForm {
      * フリガナ
      */
 	@NotBlank
-	@Pattern(regexp = "^[ァ-タダ-ヶー]+$", message = "カタカナ以外入力できません。")
+	@Pattern(regexp = RegularExpressionConsts.fullKana, message = "カタカナ以外入力できません。")
 	@Size(min = 1, max = 50)
 	private String nameKana;
 
@@ -55,7 +56,7 @@ public class RegisterStaffUserForm {
      */
 	@NotBlank
 	@Email
-	@Pattern(regexp = "^[0-9a-zA-Z@_.+-]+$", message = "半角英数字で入力してください。")
+	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "半角英数字で入力してください。")
 	@Size(min = 6, max = 30)
 	private String email;
 

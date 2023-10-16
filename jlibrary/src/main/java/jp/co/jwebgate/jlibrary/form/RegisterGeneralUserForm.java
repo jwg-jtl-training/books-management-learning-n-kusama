@@ -4,6 +4,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import jp.co.jwebgate.jlibrary.consts.RegularExpressionConsts;
 import lombok.Data;
 
 /**
@@ -22,7 +23,7 @@ public class RegisterGeneralUserForm {
 	* フリガナ
 	*/
 	@Size(min = 1, max = 50)
-	@Pattern(regexp = "^[\\u30a0-\\u30ff]+$", message = "フリガナを全角カナで入力してください")
+	@Pattern(regexp = RegularExpressionConsts.fullKana, message = "フリガナを全角カナで入力してください")
 	private String nameKana;
 	
 	/**
@@ -42,7 +43,7 @@ public class RegisterGeneralUserForm {
 	* 電話番号
 	*/
 	@Size(min = 10, max = 11)
-	@Pattern(regexp = "^[0-9]+$", message = "電話番号を半角数字で入力してください")
+	@Pattern(regexp = RegularExpressionConsts.halfNumber, message = "電話番号を半角数字で入力してください")
 	private String phoneNumber;
 	
 	/**
