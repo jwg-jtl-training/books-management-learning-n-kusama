@@ -18,42 +18,41 @@ public class RegisterGeneralUserForm {
 	* 一般利用者ID
 	*/
 	private String generalUserId;
-	
+
 	/**
 	* フリガナ
 	*/
 	@Size(min = 1, max = 50)
-	@Pattern(regexp = RegularExpressionConsts.fullKana, message = "フリガナを全角カナで入力してください")
+	@Pattern(regexp = RegularExpressionConsts.fullKana, message = "{patternZenKana}")
 	private String nameKana;
-	
+
 	/**
 	* 氏名
 	*/
 	@NotBlank
 	@Size(min = 1, max = 25)
 	private String name;
-	
+
 	/**
 	* 生年月日
 	*/
 	@NotBlank
 	private String birthday;
-	
+
 	/**
 	* 電話番号
 	*/
 	@Size(min = 10, max = 11)
-	@Pattern(regexp = RegularExpressionConsts.halfNumber, message = "電話番号を半角数字で入力してください")
+	@Pattern(regexp = RegularExpressionConsts.halfNumber, message = "{patternHanSuzi}")
 	private String phoneNumber;
-	
+
 	/**
 	* 住所
 	*/
 	@NotBlank
 	@Size(min = 1, max = 255)
 	private String address;
-	
-	
+
 	/**
 	* RegisterGeneralUserFormメソッド
 	* 引数がnewGeneralUserIdの場合
@@ -61,10 +60,11 @@ public class RegisterGeneralUserForm {
 	public RegisterGeneralUserForm(String newGeneralUserId) {
 		this.generalUserId = newGeneralUserId;
 	}
-	
+
 	/**
 	 * 引数なしコンストラクタ
 	 */
-	public RegisterGeneralUserForm() {}
-	
+	public RegisterGeneralUserForm() {
+	}
+
 }
