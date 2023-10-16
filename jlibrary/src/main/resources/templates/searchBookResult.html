@@ -23,7 +23,7 @@
               <form class="form" th:action="@{${UrlConsts.SEARCH_BOOK_RESULT} + '/search'}" th:method="POST" th:object="${form}">
 		        <div class="row">
                   <div class="col col-9">
-                    <input type="text" th:field="*{title}" placeholder="#{hello.welcome}" class="form-control form-control-lg border-dark">
+                    <input type="text" th:field="*{title}" th:placeholder="#{hello.welcome}" class="form-control form-control-lg border-dark">
                   </div>
                   <div class="col">
                     <button type="submit" class="btn btn-primary btn-lg">検索</button>
@@ -60,6 +60,6 @@
     <div class="text-end">
       <a th:href="@{${UrlConsts.SEARCH_BOOK}}" class="btn btn-primary">TOPに戻る</a>
     </div>
-    
+    </div>
   </body>
 </html>

@@ -43,7 +43,7 @@
                         <label for="loginId" class="fs-5 pb-2 text-decoration-underline text-muted">職員番号</label><br>
                           <input type="hidden" th:field="*{staffUserId}">
                           <p class="p-2 fs-2"><mark th:text="*{staffUserId}"></mark></p>
-                          <span th:text="#{message}"></span>
+                          <span th:text="#{userIdMessage}"></span>
                       </div>
                     </div>
                   </div>
@@ -87,7 +87,6 @@
                         <span class="text-danger" th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}"></span>
                       </div>
                     </div>
-                    <span class="text-danger" th:if="${#fields.hasErrors('passwordValid')}" th:errors="*{passwordValid}"></span>
                   </div>
                   <div class="formItem">
                     <div class="mt-4 pt-2">
