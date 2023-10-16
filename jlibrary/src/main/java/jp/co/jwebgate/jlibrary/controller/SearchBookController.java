@@ -1,10 +1,8 @@
 package jp.co.jwebgate.jlibrary.controller;
 
 import java.util.List;
-import java.util.Locale;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -29,9 +27,6 @@ public class SearchBookController {
 	@Autowired
 	private SearchBookService searchBookService;
 	
-	@Autowired
-	private MessageSource messageSource;
-	
 	private final String VIEW = "searchBook";
 	private final String VIEW2 = "searchBookResult";
 	
@@ -41,11 +36,8 @@ public class SearchBookController {
 	 */
 	@GetMapping()
 	public ModelAndView show() {
-		
 		ModelAndView mav = new ModelAndView(VIEW);
-		
 		mav.addObject("form", new SearchBookForm());
-		mav.addObject("message", messageSource.getMessage("hello.welcome", new String[] {}, Locale.getDefault()));
 		return mav;
 	}
 	
