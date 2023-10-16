@@ -5,6 +5,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import jp.co.jwebgate.jlibrary.consts.RegularExpressionConsts;
 import lombok.Data;
 
 /**
@@ -54,7 +55,7 @@ public class RegisterBookForm {
      * 棚番号
      */
 	@Size(min = 0, max = 3)
-	@Pattern(regexp = "^[0-9a-zA-Z]+$", message = "棚番号を半角英数字で入力してください。")  
+	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "棚番号を半角英数字で入力してください。")  
 	private String shelfNumber;
 	
 	/**
