@@ -16,63 +16,62 @@ import lombok.Data;
 public class RegisterStaffUserForm {
 
 	/**
-     * 職員ID
-     */
+	 * 職員ID
+	 */
 	private String staffUserId;
 
 	/**
-     * パスワード
-     */
+	 * パスワード
+	 */
 	@NotBlank
-	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "半角英数字で入力してください。")
+	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "{patternHanEisuzi}")
 	@Size(min = 6, max = 30)
 	private String password;
 
 	/**
-     * パスワード（確認用）
-     */
+	 * パスワード（確認用）
+	 */
 	@NotBlank
-	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "半角英数字で入力してください。")
+	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "{patternHanEisuzi}")
 	@Size(min = 6, max = 30)
 	private String confirmPassword;
 
 	/**
-     * フリガナ
-     */
+	 * フリガナ
+	 */
 	@NotBlank
-	@Pattern(regexp = RegularExpressionConsts.fullKana, message = "カタカナ以外入力できません。")
+	@Pattern(regexp = RegularExpressionConsts.fullKana, message = "{patternZenKana}")
 	@Size(min = 1, max = 50)
 	private String nameKana;
 
 	/**
-     * 氏名
-     */
+	 * 氏名
+	 */
 	@NotBlank
 	@Size(min = 1, max = 25)
 	private String name;
 
 	/**
-     * メールアドレス
-     */
+	 * メールアドレス
+	 */
 	@NotBlank
 	@Email
-	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "半角英数字で入力してください。")
+	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "{patternHanEisuzi}")
 	@Size(min = 6, max = 30)
 	private String email;
 
-
 	/**
-     * RegisterStaffUserFormメソッド
-     * 引数がnewStaffUserIdの場合
-     */
+	 * RegisterStaffUserFormメソッド
+	 * 引数がnewStaffUserIdの場合
+	 */
 	public RegisterStaffUserForm(String newStaffUserId) {
 		this.staffUserId = newStaffUserId;
 	}
-	
+
 	/**
-     * 引数なしコンストラクタ
-     */
+	 * 引数なしコンストラクタ
+	 */
 	public RegisterStaffUserForm() {
-		
+
 	}
 }

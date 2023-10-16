@@ -16,52 +16,52 @@ import lombok.Data;
 public class RegisterBookForm {
 
 	/**
-     * タイトル
-     */
+	 * タイトル
+	 */
 	@NotBlank
 	private String title;
-	
+
 	/**
-     * 著者名
-     */
+	 * 著者名
+	 */
 	@NotBlank
 	private String author;
-	
+
 	/**
-     * 出版社
-     */
+	 * 出版社
+	 */
 	@NotBlank
 	private String publisher;
-	
+
 	/**
-     * ISBN-10
-     */
+	 * ISBN-10
+	 */
 	@Size(min = 0, max = 10)
 	private String isbn10;
-	
+
 	/**
-     * ISBN-13
-     */
+	 * ISBN-13
+	 */
 	@Size(min = 0, max = 13)
 	private String isbn13;
-	
+
 	/**
-     * ジャンルID
-     */
+	 * ジャンルID
+	 */
 	@NotNull
 	private Integer genreId;
 
 	/**
-     * 棚番号
-     */
+	 * 棚番号
+	 */
 	@Size(min = 0, max = 3)
-	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "棚番号を半角英数字で入力してください。")  
+	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "{patternHanEisuzi}")
 	private String shelfNumber;
-	
+
 	/**
-     * 管理番号
-     */
+	 * 管理番号
+	 */
 	@NotBlank
 	private String controlNumber;
-	
+
 }
