@@ -65,6 +65,7 @@ public class RegisterStaffUserForm {
 	 * パスワードと確認用パスワードの一致
 	 * @return
 	 */
+
 	@AssertTrue(message = "{AssertTrue}")
     public boolean isPasswordValid() {
         if (password == null || password.isEmpty()) {
