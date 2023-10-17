@@ -1,6 +1,5 @@
 package jp.co.jwebgate.jlibrary.form;
 
-import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -61,20 +60,6 @@ public class RegisterStaffUserForm {
 	@Size(min = 6, max = 30)
 	private String email;
 	
-	/**
-	 * パスワードと確認用パスワードの一致
-	 * @return
-	 */
-
-	@AssertTrue(message = "{AssertTrue}")
-    public boolean isPasswordValid() {
-        if (password == null || password.isEmpty()) {
-            return true;
-        }
-
-        return password.equals(confirmPassword);
-    } 
-
 	/**
 	 * RegisterStaffUserFormメソッド
 	 * 引数がnewStaffUserIdの場合
