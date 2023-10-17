@@ -34,7 +34,7 @@ public class RegisterStaffUserForm {
 	 * フリガナ
 	 */
 	@NotBlank
-	@Pattern(regexp = RegularExpressionConsts.fullKana, message = "{patternZenKana}")
+	@Pattern(regexp = RegularExpressionConsts.halfAlphabetNumber, message = "{patternHanEisuzi}")
 	@Size(max = 50, message = "{sizeMax}")
 	private String nameKana;
 	/**
