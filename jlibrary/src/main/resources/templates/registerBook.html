@@ -74,28 +74,42 @@
 									<div class="col-12 row pt-4">
 										<span class="col-1"> <label class="form-label">タイトル</label>
 										</span> <span class="col-5"> <input class="form-control"
-											type="text" th:field="*{title}"> 
+											type="text" th:field="*{title}"><span
+											class="text-danger" th:if="${#fields.hasErrors('title')}"
+											th:errors="*{title}"></span>
 										</span>
 									</div>
 									<div class="col-12 row pt-4">
 										<span class="col-1"> <label class="form-label">著者</label>
 										</span> <span class="col-5"> <input class="form-control"
-											type="text" th:field="*{author}"> 
+											type="text" th:field="*{author}"><span
+											class="text-danger" th:if="${#fields.hasErrors('author')}"
+											th:errors="*{author}"></span>
 										</span>
 									</div>
 									<div class="col-12 row pt-4">
 										<span class="col-1"> <label class="form-label">ISBN-10</label>
 										</span> <span class="col-5"> <input class="form-control"
-											type="text" th:field="*{isbn10}"> 
+											type="text" th:field="*{isbn10}"> <span
+											class="text-danger" th:if="${#fields.hasErrors('checkISBN')}"
+											th:errors="*{checkISBN}"></span><br> <span
+											class="text-danger"
+											th:if="${#fields.hasErrors('checkISBN10')}"
+											th:errors="*{checkISBN10}"></span>
 										</span> <span class="col-1"> <label class="form-label">ISBN-13</label>
 										</span> <span class="col-5"> <input class="form-control"
-											type="text" th:field="*{isbn13}"> 
+											type="text" th:field="*{isbn13}"> <br> <span
+											class="text-danger"
+											th:if="${#fields.hasErrors('checkISBN13')}"
+											th:errors="*{checkISBN13}"></span>
 										</span>
 									</div>
 									<div class="col-12 row pt-4">
 										<span class="col-1"> <label class="form-label">出版社</label>
 										</span> <span class="col-5"> <input class="form-control"
-											type="text" th:field="*{publisher}">
+											type="text" th:field="*{publisher}"><span
+											class="text-danger" th:if="${#fields.hasErrors('publisher')}"
+											th:errors="*{publisher}"></span>
 										</span>
 									</div>
 									<div class="col-12 row pt-4">
@@ -114,7 +128,13 @@
 									<div class="col-12 row pt-4">
 										<span class="col-1"> <label class="form-label">棚番号</label>
 										</span> <span class="col-5"> <input class="form-control"
-											type="text" th:field="*{shelfNumber}"> 
+											type="text" th:field="*{shelfNumber}"><span
+											class="text-danger"
+											th:if="${#fields.hasErrors('checkShelfNumberSize')}"
+											th:errors="*{checkShelfNumberSize}"></span><br> <span
+											class="text-danger"
+											th:if="${#fields.hasErrors('checkShelfNumber')}"
+											th:errors="*{checkShelfNumber}"></span>
 										</span>
 									</div>
 									<div class="col-12 row pt-4">
@@ -135,7 +155,7 @@
 										<a class="btn btn-secondary m-1" type="submit"
 											th:href="@{${UrlConsts.SEARCH_BOOK}}">キャンセル</a>
 										<button class="btn btn-primary m-1"
-											onclick="return confirm('登録してもよろしいですか？')" type="submit">登録</button>
+											onclick="return confirmMessage()" type="submit">登録</button>
 									</div>
 								</form>
 								<!-- Modal -->
