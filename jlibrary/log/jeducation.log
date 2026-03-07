@@ -9351,3 +9351,37 @@ java.nio.channels.AsynchronousCloseException: null
 2026-02-07 14:22:34.797  INFO 14944 --- [http-nio-8080-exec-4] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /bootstrap-5.3.0-dist/css/bootstrap.min.css
 2026-02-07 14:22:34.798  INFO 14944 --- [http-nio-8080-exec-5] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /css/style.css
 2026-02-07 14:22:34.947  INFO 14944 --- [http-nio-8080-exec-10] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /login
+2026-03-07 14:03:30.231  INFO 14316 --- [restartedMain] j.c.j.jlibrary.JlibraryApplication       : Starting JlibraryApplication using Java 17.0.10 on DESKTOP-I7J0TQB with PID 14316 (C:\Users\j_user\Desktop\20260307\books-management-learning-n-kusama\jlibrary\bin\main started by j_user in C:\Users\j_user\Desktop\20260307\books-management-learning-n-kusama\jlibrary)
+2026-03-07 14:03:30.234  INFO 14316 --- [restartedMain] j.c.j.jlibrary.JlibraryApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-07 14:03:30.341  INFO 14316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-07 14:03:32.597  INFO 14316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7aac21d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2026-03-07 14:03:32.674  INFO 14316 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2026-03-07 14:03:33.585  INFO 14316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-03-07 14:03:33.604  INFO 14316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-07 14:03:33.605  INFO 14316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2026-03-07 14:03:33.785  INFO 14316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-07 14:03:33.786  INFO 14316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3444 ms
+2026-03-07 14:03:36.661  INFO 14316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20e935f5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d70b83c, org.springframework.security.web.context.SecurityContextPersistenceFilter@71c89014, org.springframework.security.web.header.HeaderWriterFilter@707d3220, org.springframework.security.web.csrf.CsrfFilter@5f28beb4, org.springframework.security.web.authentication.logout.LogoutFilter@405df92c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@62872299, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@696e2898, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77361474, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@385ba20f, org.springframework.security.web.session.SessionManagementFilter@205f1be5, org.springframework.security.web.access.ExceptionTranslationFilter@626adfd4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2792a9c9]
+2026-03-07 14:03:36.704  INFO 14316 --- [restartedMain] j.c.j.j.d.allcommon.DBFluteInitializer   : ...Initializing DBFlute components
+2026-03-07 14:03:36.709  INFO 14316 --- [restartedMain] j.c.j.j.dbflute.allcommon.DBFluteConfig  : ...Unlocking the configuration of DBFlute
+2026-03-07 14:03:36.711  INFO 14316 --- [restartedMain] j.c.j.j.dbflute.allcommon.DBFluteConfig  : ...Setting dataSourceHandler: jp.co.jwebgate.jlibrary.dbflute.allcommon.DBFluteConfig$SpringTransactionalDataSourceHandler@24e6d7ce
+2026-03-07 14:03:36.712  INFO 14316 --- [restartedMain] j.c.j.j.dbflute.allcommon.DBFluteConfig  : ...Locking the configuration of DBFlute
+2026-03-07 14:03:37.744  INFO 14316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-07 14:03:37.861  INFO 14316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-03-07 14:03:37.883  INFO 14316 --- [restartedMain] j.c.j.jlibrary.JlibraryApplication       : Started JlibraryApplication in 8.394 seconds (JVM running for 17.523)
+2026-03-07 14:03:40.347  INFO 14316 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-07 14:03:40.347  INFO 14316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-07 14:03:40.349  INFO 14316 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-07 14:03:40.420  INFO 14316 --- [http-nio-8080-exec-1] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /login
+2026-03-07 14:03:41.168  INFO 14316 --- [http-nio-8080-exec-4] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /jquery-3.7.1/jquery-3.7.1.min.js
+2026-03-07 14:03:41.168  INFO 14316 --- [http-nio-8080-exec-3] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /bootstrap-5.3.0-dist/css/bootstrap.min.css
+2026-03-07 14:03:41.168  INFO 14316 --- [http-nio-8080-exec-5] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /bootstrap-5.3.0-dist/js/bootstrap.min.js
+2026-03-07 14:03:41.168  INFO 14316 --- [http-nio-8080-exec-2] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /css/style.css
+2026-03-07 14:03:41.401  INFO 14316 --- [http-nio-8080-exec-7] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /login
+2026-03-07 14:03:44.396  INFO 14316 --- [http-nio-8080-exec-9] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /
+2026-03-07 14:03:44.428  INFO 14316 --- [http-nio-8080-exec-8] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /searchBook
+2026-03-07 14:03:44.554  INFO 14316 --- [http-nio-8080-exec-10] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /css/style.css
+2026-03-07 14:03:44.558  INFO 14316 --- [http-nio-8080-exec-1] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /bootstrap-5.3.0-dist/css/bootstrap.min.css
+2026-03-07 14:03:44.569  INFO 14316 --- [http-nio-8080-exec-5] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /jquery-3.7.1/jquery-3.7.1.min.js
+2026-03-07 14:03:44.585  INFO 14316 --- [http-nio-8080-exec-4] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /bootstrap-5.3.0-dist/js/bootstrap.min.js
+2026-03-07 14:03:44.667  INFO 14316 --- [http-nio-8080-exec-3] j.c.j.j.i.LoggingHandlerInterceptor      : [0:0:0:0:0:0:0:1] GET  /login
