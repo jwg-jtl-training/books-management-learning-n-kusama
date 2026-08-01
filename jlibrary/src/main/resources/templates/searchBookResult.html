@@ -23,7 +23,7 @@
               <form class="form" th:action="@{${UrlConsts.SEARCH_BOOK_RESULT} + '/search'}" th:method="POST" th:object="${form}">
 		        <div class="row">
                   <div class="col col-9">
-                    <input type="text" th:field="*{title}" placeholder="#{hello.welcome}" class="form-control form-control-lg border-dark">
+                    <input type="text" th:field="*{keyword}" placeholder="探している本のタイトルまたは著者名を入力してください" class="form-control form-control-lg border-dark search-input">
                   </div>
                   <div class="col">
                     <button type="submit" class="btn btn-primary btn-lg">検索</button>
