@@ -46,6 +46,7 @@
           <th>出版社</th>
           <th>ISBN</th>
           <th>ジャンル</th>
+          <th>棚番号</th>
         </tr>
         <th:block th:each="book : ${result}" th:object="${book}">
           <tr class="text-break">
@@ -54,6 +55,7 @@
             <td th:text="*{publisher}"></td>
             <td th:text="*{isbn}"></td>
             <td th:text="*{genreDto.genreName}"></td>
+            <td th:text="*{shelfNumber}"></td>
           </tr>
         </th:block>
       </table>
