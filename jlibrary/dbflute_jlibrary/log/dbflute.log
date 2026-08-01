@@ -7583,3 +7583,265 @@ _/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
     repsEnvType      = ut
     refreshProject   = $$AutoDetect$$
 _/_/_/_/_/_/_/_/_/_/ {Sql2Entity}
+2026-07-04 14:19:40,604 [main] INFO  (DfReplaceSchemaTask#begin():94) - +------------------------------------------+
+2026-07-04 14:19:40,605 [main] INFO  (DfReplaceSchemaTask#begin():95) - |                                          |
+2026-07-04 14:19:40,605 [main] INFO  (DfReplaceSchemaTask#begin():96) - |              ReplaceSchema               |
+2026-07-04 14:19:40,612 [main] INFO  (DfReplaceSchemaTask#begin():104) - |                                          |
+2026-07-04 14:19:40,612 [main] INFO  (DfReplaceSchemaTask#begin():105) - +------------------------------------------+
+2026-07-04 14:19:40,612 [main] INFO  (DfReplaceSchemaTask#waitBeforeReps():423) - ...Waiting for your GO SIGN from stdin before ReplaceSchema:
+2026-07-04 14:19:44,009 [main] INFO  (DfDataSourceHandler#prepare():78) - ...Preparing data source:
+2026-07-04 14:19:44,009 [main] INFO  (DfDataSourceHandler#prepare():79) -   driver = com.mysql.jdbc.Driver
+2026-07-04 14:19:44,010 [main] INFO  (DfDataSourceHandler#prepare():80) -   url    = jdbc:mysql://localhost:3306/jlibrary
+2026-07-04 14:19:44,010 [main] INFO  (DfDataSourceHandler#prepare():81) -   user   = jlibrary_user
+2026-07-04 14:19:44,014 [main] INFO  (DfDataSourceHandler#createConnection():166) - ...Connecting to database by data source:
+2026-07-04 14:19:44,447 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():233) -   product = MySQL 9.7.1
+2026-07-04 14:19:44,448 [main] INFO  (DfDataSourceHandler#setupConnectionMetaInfo():234) -   driver  = MySQL Connector Java mysql-connector-java-5.1.49 ( Revision: ad86f36e100e104cd926c6b81c8cab9565750116 ) for JDBC 4.0
+2026-07-04 14:19:44,461 [main] INFO  (DfCreateSchemaProcess#initializeSchemaMainDrop():253) - 
+2026-07-04 14:19:44,461 [main] INFO  (DfCreateSchemaProcess#initializeSchemaMainDrop():254) - * * * * * * * * * * *
+2026-07-04 14:19:44,461 [main] INFO  (DfCreateSchemaProcess#initializeSchemaMainDrop():255) - *                   *
+2026-07-04 14:19:44,462 [main] INFO  (DfCreateSchemaProcess#initializeSchemaMainDrop():256) - * Initialize Schema *
+2026-07-04 14:19:44,462 [main] INFO  (DfCreateSchemaProcess#initializeSchemaMainDrop():257) - *                   *
+2026-07-04 14:19:44,462 [main] INFO  (DfCreateSchemaProcess#initializeSchemaMainDrop():258) - * * * * * * * * * * *
+2026-07-04 14:19:44,466 [main] INFO  (DfTableExtractor#doGetTableList():66) - ...Getting tables:
+2026-07-04 14:19:44,467 [main] INFO  (DfTableExtractor#doGetTableList():67) -   schema = {jlibrary.$$NoNameSchema$$ as main}
+2026-07-04 14:19:44,467 [main] INFO  (DfTableExtractor#doGetTableList():68) -   types  = [TABLE, VIEW]
+2026-07-04 14:19:44,498 [main] INFO  (DfCreateSchemaProcess#createSchema():293) - 
+2026-07-04 14:19:44,498 [main] INFO  (DfCreateSchemaProcess#createSchema():294) - * * * * * * * * *
+2026-07-04 14:19:44,498 [main] INFO  (DfCreateSchemaProcess#createSchema():295) - *               *
+2026-07-04 14:19:44,499 [main] INFO  (DfCreateSchemaProcess#createSchema():296) - * Create Schema *
+2026-07-04 14:19:44,499 [main] INFO  (DfCreateSchemaProcess#createSchema():297) - *               *
+2026-07-04 14:19:44,499 [main] INFO  (DfCreateSchemaProcess#createSchema():298) - * * * * * * * * *
+2026-07-04 14:19:44,500 [main] INFO  (DfSqlFileFireMan#fire():68) - ...Firing: replace-schema.sql
+2026-07-04 14:19:44,503 [main] INFO  (DfSqlFileRunnerBase#traceSql():168) - 
+CREATE TABLE `ROLE` (
+  `ID` INT (50) NOT NULL COMMENT 'ID' AUTO_INCREMENT,
+  `CD` VARCHAR (255) NOT NULL COMMENT 'コード',
+  `NAME` VARCHAR (255) NOT NULL COMMENT '名称',
+  `REMARKS` VARCHAR (255) DEFAULT NULL COMMENT '備考',
+  `DELETE_FLG` CHAR (1) NOT NULL DEFAULT '0' COMMENT '削除フラグ',
+  `VERSION` INT (50) DEFAULT '0' COMMENT 'バージョン',
+  `CREATED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '登録日時',
+  `MODIFIED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
+  `MODIFIED_BY` VARCHAR (255) COMMENT '更新者',
+  PRIMARY KEY(ID)
+)
+COMMENT='権限'
+2026-07-04 14:19:44,519 [main] INFO  (DfSqlFileRunnerBase#traceSql():168) - 
+CREATE TABLE `STAFF_USER` (
+  `ID` INT (50) NOT NULL COMMENT 'ID' AUTO_INCREMENT,
+  `STAFF_USER_ID` VARCHAR (10) NOT NULL COMMENT '職員ID',
+  `PASSWORD` VARCHAR (255) NOT NULL COMMENT 'パスワード',
+  `NAME_KANA` VARCHAR (50) NOT NULL COMMENT '氏名カナ',
+  `NAME` VARCHAR (25) NOT NULL COMMENT '氏名',
+  `EMAIL` VARCHAR (255) NOT NULL COMMENT 'メールアドレス',
+  `REMARKS` VARCHAR (255) DEFAULT NULL COMMENT '備考',
+  `DELETE_FLG` CHAR (1) NOT NULL DEFAULT '0' COMMENT '削除フラグ',
+  `VERSION` INT (50) DEFAULT '0' COMMENT 'バージョン',
+  `CREATED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '登録日時',
+  `MODIFIED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
+  `MODIFIED_BY` VARCHAR (255) COMMENT '更新者',
+  PRIMARY KEY(ID,STAFF_USER_ID),
+  UNIQUE KEY(STAFF_USER_ID)
+)
+COMMENT='職員'
+2026-07-04 14:19:44,533 [main] INFO  (DfSqlFileRunnerBase#traceSql():168) - 
+CREATE TABLE `GENERAL_USER` (
+  `ID` INT (50) NOT NULL COMMENT 'ID' AUTO_INCREMENT,
+  `GENERAL_USER_ID` VARCHAR (10) NOT NULL COMMENT '利用者ID',
+  `PASSWORD` VARCHAR (255) NOT NULL COMMENT 'パスワード',
+  `NAME_KANA` VARCHAR (50) NOT NULL COMMENT 'フリガナ',
+  `NAME` VARCHAR (25) NOT NULL COMMENT '氏名',
+  `BIRTHDAY` DATE NOT NULL COMMENT '生年月日',
+  `PHONE_NUMBER` VARCHAR (11) NOT NULL COMMENT '電話番号',
+  `ADDRESS` VARCHAR (255) NOT NULL COMMENT '住所',
+  `REMARKS` VARCHAR (255) DEFAULT NULL COMMENT '備考',
+  `DELETE_FLG` CHAR (1) NOT NULL DEFAULT '0' COMMENT '削除フラグ',
+  `VERSION` INT (50) DEFAULT '0' COMMENT 'バージョン',
+  `CREATED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '登録日時',
+  `MODIFIED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
+  `MODIFIED_BY` VARCHAR (255) COMMENT '更新者',
+  PRIMARY KEY(ID,GENERAL_USER_ID),
+  UNIQUE KEY(GENERAL_USER_ID)
+)
+COMMENT='一般利用者'
+2026-07-04 14:19:44,547 [main] INFO  (DfSqlFileRunnerBase#traceSql():168) - 
+CREATE TABLE `GENRE` (
+  `ID` INT (50) NOT NULL COMMENT 'ID' AUTO_INCREMENT,
+  `GENRE_NAME` VARCHAR (25) COMMENT 'ジャンル名',
+  `GENRE_CODE` VARCHAR (3) NOT NULL COMMENT 'ジャンルコード',
+  `REMARKS` VARCHAR (255) DEFAULT NULL COMMENT '備考',
+  `DELETE_FLG` CHAR (1) NOT NULL DEFAULT '0' COMMENT '削除フラグ',
+  `VERSION` INT (50) DEFAULT '0' COMMENT 'バージョン',
+  `CREATED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '登録日時',
+  `MODIFIED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
+  `MODIFIED_BY` VARCHAR (255) COMMENT '更新者',
+  PRIMARY KEY(ID,GENRE_CODE)
+)
+COMMENT='ジャンル'
+2026-07-04 14:19:44,556 [main] INFO  (DfSqlFileRunnerBase#traceSql():168) - 
+CREATE TABLE `USER_ROLE_MAP` (
+  `ID` INT (50) NOT NULL COMMENT 'ID' AUTO_INCREMENT,
+  `STAFF_USER_ID` VARCHAR (10) COMMENT '職員ID',
+  `GENERAL_USER_ID` VARCHAR (10) COMMENT '利用者ID',
+  `ROLE_ID` INT (50) NOT NULL COMMENT '権限ID',
+  `REMARKS` VARCHAR (255) DEFAULT NULL COMMENT '備考',
+  `DELETE_FLG` CHAR (1) NOT NULL DEFAULT '0' COMMENT '削除フラグ',
+  `VERSION` INT (50) DEFAULT '0' COMMENT 'バージョン',
+  `CREATED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '登録日時',
+  `MODIFIED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
+  `MODIFIED_BY` VARCHAR (255) COMMENT '更新者',
+  PRIMARY KEY(ID),
+  UNIQUE KEY(STAFF_USER_ID,GENERAL_USER_ID,ROLE_ID),
+  FOREIGN KEY (STAFF_USER_ID) REFERENCES STAFF_USER(STAFF_USER_ID),
+  FOREIGN KEY (GENERAL_USER_ID) REFERENCES GENERAL_USER(GENERAL_USER_ID),
+  FOREIGN KEY (ROLE_ID) REFERENCES ROLE(ID)
+)
+COMMENT='ユーザー権限マップ'
+2026-07-04 14:19:44,569 [main] INFO  (DfSqlFileRunnerBase#traceSql():168) - 
+CREATE TABLE `BOOK` (
+  `ID` INT (50) NOT NULL COMMENT 'ID' AUTO_INCREMENT,
+  `TITLE` VARCHAR (255) NOT NULL COMMENT 'タイトル',
+  `AUTHOR` VARCHAR (50) NOT NULL COMMENT '著者',
+  `ISBN_10` VARCHAR (10) COMMENT 'ISBN-10',
+  `ISBN_13` VARCHAR (13) COMMENT 'ISBN-13',
+  `PUBLISHER` VARCHAR (25) NOT NULL COMMENT '出版社',
+  `GENRE_ID` INT (50) COMMENT 'ジャンルID',
+  `SHELF_NUMBER` VARCHAR (3) COMMENT '棚番号',
+  `CONTROL_NUMBER` VARCHAR (10) NOT NULL COMMENT '管理番号',
+  `REMARKS` VARCHAR (255) DEFAULT NULL COMMENT '備考',
+  `DELETE_FLG` CHAR (1) NOT NULL DEFAULT '0' COMMENT '削除フラグ',
+  `VERSION` INT (50) DEFAULT '0' COMMENT 'バージョン',
+  `CREATED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '登録日時',
+  `MODIFIED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
+  `MODIFIED_BY` VARCHAR (255) COMMENT '更新者',
+  PRIMARY KEY(ID,CONTROL_NUMBER),
+  FOREIGN KEY (GENRE_ID) REFERENCES GENRE(ID)
+)
+COMMENT='図書'
+2026-07-04 14:19:44,572 [main] INFO  (DfSqlFileFireMan#fire():93) - Create Schema: success=5, failure=1 *break (in 1 files)
+2026-07-04 14:19:44,573 [main] ERROR (DfDBFluteTaskUtil#logException():150) - Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to execute DBFlute Task 'ReplaceSchema'.
+
+[Advice]
+Check the exception messages and the stack traces.
+
+[Database Product]
+MySQL 9.7.1
+
+[JDBC Driver]
+MySQL Connector Java mysql-connector-java-5.1.49 ( Revision: ad86f36e100e104cd926c6b81c8cab9565750116 ) for JDBC 4.0
+* * * * * * * * * */
+org.dbflute.exception.SQLFailureException: Look! Read the message below.
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+Failed to execute the SQL!
+
+[SQL File]
+playsql/replace-schema.sql
+
+[Executed SQL]
+CREATE TABLE `BOOK` (
+  `ID` INT (50) NOT NULL COMMENT 'ID' AUTO_INCREMENT,
+  `TITLE` VARCHAR (255) NOT NULL COMMENT 'タイトル',
+  `AUTHOR` VARCHAR (50) NOT NULL COMMENT '著者',
+  `ISBN_10` VARCHAR (10) COMMENT 'ISBN-10',
+  `ISBN_13` VARCHAR (13) COMMENT 'ISBN-13',
+  `PUBLISHER` VARCHAR (25) NOT NULL COMMENT '出版社',
+  `GENRE_ID` INT (50) COMMENT 'ジャンルID',
+  `SHELF_NUMBER` VARCHAR (3) COMMENT '棚番号',
+  `CONTROL_NUMBER` VARCHAR (10) NOT NULL COMMENT '管理番号',
+  `REMARKS` VARCHAR (255) DEFAULT NULL COMMENT '備考',
+  `DELETE_FLG` CHAR (1) NOT NULL DEFAULT '0' COMMENT '削除フラグ',
+  `VERSION` INT (50) DEFAULT '0' COMMENT 'バージョン',
+  `CREATED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '登録日時',
+  `MODIFIED` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新日時',
+  `MODIFIED_BY` VARCHAR (255) COMMENT '更新者',
+  PRIMARY KEY(ID,CONTROL_NUMBER),
+  FOREIGN KEY (GENRE_ID) REFERENCES GENRE(ID)
+)
+COMMENT='図書'
+
+[SQLState]
+HY000
+
+[ErrorCode]
+6125
+
+[SQLException]
+java.sql.SQLException
+Failed to add the foreign key constraint. Missing unique key for constraint 'book_ibfk_1' in the referenced table 'GENRE'
+* * * * * * * * * */
+	at org.dbflute.helper.jdbc.sqlfile.DfSqlFileRunnerBase.throwSQLFailureException(DfSqlFileRunnerBase.java:587)
+	at org.dbflute.helper.jdbc.sqlfile.DfSqlFileRunnerExecute.execSQL(DfSqlFileRunnerExecute.java:80)
+	at org.dbflute.helper.jdbc.sqlfile.DfSqlFileRunnerBase.runTransaction(DfSqlFileRunnerBase.java:122)
+	at org.dbflute.helper.jdbc.sqlfile.DfSqlFileFireMan.processSqlFile(DfSqlFileFireMan.java:174)
+	at org.dbflute.helper.jdbc.sqlfile.DfSqlFileFireMan.fire(DfSqlFileFireMan.java:71)
+	at org.dbflute.logic.replaceschema.process.DfCreateSchemaProcess.createSchema(DfCreateSchemaProcess.java:302)
+	at org.dbflute.logic.replaceschema.process.DfCreateSchemaProcess.execute(DfCreateSchemaProcess.java:154)
+	at org.dbflute.task.DfReplaceSchemaTask.createSchema(DfReplaceSchemaTask.java:309)
+	at org.dbflute.task.DfReplaceSchemaTask.executeCoreProcess(DfReplaceSchemaTask.java:254)
+	at org.dbflute.task.DfReplaceSchemaTask.processReplaceSchema(DfReplaceSchemaTask.java:240)
+	at org.dbflute.task.DfReplaceSchemaTask.doExecute(DfReplaceSchemaTask.java:160)
+	at org.dbflute.task.bs.DfAbstractTexenTask$1.callActualExecute(DfAbstractTexenTask.java:129)
+	at org.dbflute.task.bs.assistant.DfTaskBasicController.doExecute(DfTaskBasicController.java:192)
+	at org.dbflute.task.bs.assistant.DfTaskBasicController.execute(DfTaskBasicController.java:78)
+	at org.dbflute.task.bs.DfAbstractTexenTask.execute(DfAbstractTexenTask.java:151)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:288)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:105)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:357)
+	at org.apache.tools.ant.Target.performTasks(Target.java:385)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1329)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1298)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1181)
+	at org.apache.tools.ant.Main.runBuild(Main.java:698)
+	at org.apache.tools.ant.Main.startAnt(Main.java:199)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:257)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:104)
+Caused by: java.sql.SQLException: Failed to add the foreign key constraint. Missing unique key for constraint 'book_ibfk_1' in the referenced table 'GENRE'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2439)
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:829)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:729)
+	at org.dbflute.helper.jdbc.sqlfile.DfSqlFileRunnerExecute.processNonDispatch(DfSqlFileRunnerExecute.java:98)
+	at org.dbflute.logic.replaceschema.process.DfCreateSchemaProcess$DfSqlFileRunnerExecuteCreateSchema.processNonDispatch(DfCreateSchemaProcess.java:490)
+	at org.dbflute.helper.jdbc.sqlfile.DfSqlFileRunnerExecute.execSQL(DfSqlFileRunnerExecute.java:66)
+	... 28 more
+2026-07-04 14:19:44,577 [main] INFO  (DfDataSourceHandler#destroy():120) - ...closeReally()
+2026-07-04 14:19:44,586 [main] INFO  (DfDBFluteTaskUtil#logFinalMessage():139) - 
+_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+[Final Message]: 00m03s985ms *Abort
+
+  DBFLUTE_CLIENT: {jlibrary}
+    database  = mysql (MySQL 9.7.1)
+    language  = java
+    container = spring
+    package   = jp.co.jwebgate.jlibrary.dbflute
+
+  DBFLUTE_ENVIRONMENT_TYPE: {}
+    driver = com.mysql.jdbc.Driver
+    url    = jdbc:mysql://localhost:3306/jlibrary
+    schema = {jlibrary.$$NoNameSchema$$ as main}
+    user   = jlibrary_user
+    props  = {}
+    additionalSchema = 
+    repsEnvType      = ut
+    refreshProject   = $$AutoDetect$$
+
+ Create Schema: success=5, failure=1 *break (in 1 files) - 00m00s116ms
+  (Initialize Schema) - 00m00s037ms
+  (Create Schema) - 00m00s073ms
+  x replace-schema.sql
+   >> (failed: Look at the exception message)
+    * * * * * *
+    * Failure *
+    * * * * * *
+_/_/_/_/_/_/_/_/_/_/ {ReplaceSchema}

@@ -4,3 +4,7 @@ table, td, th {
 table {
     border-collapse: collapse;
 }
+
+.search-input::placeholder {
+    font-size: 1.0rem;
+}
