@@ -25,18 +25,21 @@ public class BookRepository {
 	/**
 	 * タイトルから図書情報リストの取得
 	 *
-	 * @param title タイトル
+	 * @param keyword キーワード
 	 * @return 図書情報リスト
 	 */
-	public List<Book> selectBookByTitle(String title) {
+	public List<Book> selectBookByTitleOrAuthor(String keyword) {
 		return bookBhv.selectList(cb -> {
-			if (!StringUtils.isNullOrEmpty(title)) {
-				cb.query().setTitle_LikeSearch(title, op -> op.likeContain());
+			if (!StringUtils.isNullOrEmpty(keyword)) {
+				cb.orScopeQuery(orCB -> {
+					cb.query().setTitle_LikeSearch(keyword, op -> op.likeContain());
+					cb.query().setAuthor_LikeSearch(keyword, op -> op.likeContain());
+				});
 			}
 			cb.setupSelect_Genre();
 		}).getSelectedList();
 	}
-
+	
 	/**
 	 * 図書情報の挿入
 	 *

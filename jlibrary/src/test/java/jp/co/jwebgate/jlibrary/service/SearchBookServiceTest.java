@@ -43,7 +43,7 @@ public class SearchBookServiceTest {
 	void test1() {
 		
 		SearchBookForm form = new SearchBookForm();
-		form.setTitle("title");
+		form.setKeyword("title");
 
 		Book book = new Book();
 		book.setTitle("title");
@@ -58,9 +58,9 @@ public class SearchBookServiceTest {
 
 		
 		List<Book> bookList = Arrays.asList(book);
-		Mockito.doReturn(bookList).when(bookRepository).selectBookByTitle(any());
+		Mockito.doReturn(bookList).when(bookRepository).selectBookByTitleOrAuthor(any());
 		
-		List<Book> testBook = bookRepository.selectBookByTitle(form.getTitle());
+		List<Book> testBook = bookRepository.selectBookByTitleOrAuthor(form.getKeyword());
 		
 		List<BookDto> expect = service.searchBook(form);
 		List<BookDto> actual = testBook.stream().map(e->new BookDto(e)).toList();

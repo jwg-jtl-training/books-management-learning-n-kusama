@@ -27,7 +27,7 @@ public class SearchBookService {
 	 * @return
 	 */
 	public List<BookDto> searchBook(SearchBookForm form) {
-		List<Book> bookList = bookRepository.selectBookByTitle(form.getTitle());
+		List<Book> bookList = bookRepository.selectBookByTitleOrAuthor(form.getKeyword());
 		return bookList.stream().map(e->new BookDto(e)).toList();
 	}
 }

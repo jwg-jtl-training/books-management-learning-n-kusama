@@ -12,6 +12,6 @@ public class SearchBookForm {
 	/**
      * タイトル
      */
-	private String title;
+	private String keyword;
 	
 }
